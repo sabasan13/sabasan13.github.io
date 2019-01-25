@@ -3857,7 +3857,7 @@ button {
     max-height: 77px;
   }
   .sales-icon img {
-    height: 100%;
+    width: 100%;
   }
   .container p {
     font-size: 14px;
@@ -3957,6 +3957,20 @@ button {
   }
   .footer .col-6 {
     padding: 0 5px;
+  }
+  .section-5 {
+    background-image: url("../img/bg-m.png");
+    background-repeat: repeat;
+    background-position: top bottom;
+  }
+  .section-3 {
+    background-image: url("../img/bg-m.png");
+    background-repeat: repeat;
+    background-position: top bottom;
+  }
+  .section-7 {
+    background-image: url("../img/bg-m.png");
+    background-repeat: repeat;
   }
 }
 html,
