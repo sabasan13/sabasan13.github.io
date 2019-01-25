@@ -15,11 +15,9 @@
     <div class="wrapper">
       <div class="header">
         <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <div class="logo"><img src="static/img/Logo.png"></div>
-            </div>
-            <div class="col-9 d-inline-flex align-items-center justify-content-end">
+          <div class="nav-bar d-flex justify-content-lg-between">
+            <div class="logo"><img src="static/img/Logo.png"></div>
+            <div class="header-nav__desk">
               <div class="nav-left">
                 <ul>
                   <li><a href="#">Продукт</a></li>
@@ -36,7 +34,7 @@
               <div class="nav-right">
                 <ul>
                   <li><a href="#">Eng</a></li>
-                  <li><a href="#">Rus</a></li>
+                  <li><a class="active" href="#">Rus</a></li>
                 </ul>
               </div>
               <div class="social">
@@ -48,8 +46,43 @@
                 </ul>
               </div>
             </div>
+            <nav class="header-nav__mob">
+              <div class="hamburger-btn">
+                <div class="burger"></div>
+              </div>
+              <div class="nav-list">
+                <div class="nav-right">
+                  <ul class="d-flex align-items-start">
+                    <li><a href="#">Eng</a></li>
+                    <li><a class="active" href="#">Rus</a></li>
+                  </ul>
+                </div>
+                <div class="nav-left">
+                  <ul class="d-flex flex-column align-items-start">
+                    <li><a href="#">Продукт</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="nav-middle">
+                  <ul class="d-flex flex-column align-items-start">
+                    <li><a href="#">Войти</a></li>
+                    <li><a href="#">Зарегистрироваться</a></li>
+                  </ul>
+                </div>
+                <div class="social">
+                  <ul class="d-flex align-items-start">
+                    <li><a href="#"><img src="static/img/fb.png"></a></li>
+                    <li><a href="#"><img src="static/img/twitter.png"></a></li>
+                    <li><a href="#"><img src="static/img/in.png"></a></li>
+                    <li><a href="#"><img src="static/img/telegram.png"></a></li>
+                  </ul>
+                </div>
+                <div class="exit"><img src="static/img/exit.png"></div>
+              </div>
+            </nav>
           </div>
-          <div class="banner">
+          <section class="banner demo" id="banner">
             <div class="row d-inline-flex align-items-center justify-content-end">
               <div class="col-sm-12 col-lg-6">
                 <div class="banner-title">От беспорядка к системности в бизнесе</div>
@@ -63,10 +96,11 @@
                 <div class="video"><img src="static/img/video.png"></div>
               </div>
             </div>
-          </div>
+          </section>
+          <div class="scroll"><a href="#section-2"><span></span></a></div>
         </div>
       </div>
-      <div class="section-2">
+      <section class="section-2" id="section-2">
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
@@ -76,84 +110,84 @@
           <div class="sales">
             <div class="row">
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/01.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/01.png"></div>
                 <div class="sales-desc">
                   <h2>Продажи</h2>
                   <p>Будьте всегда на связи со своими клиентами благодаря автоматизации продаж.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/02.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/02.png"></div>
                 <div class="sales-desc">
                   <h2>Маркетинг</h2>
                   <p>Адаптируйте свои предложения под запросы клиентов.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/03.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/03.png"></div>
                 <div class="sales-desc">
                   <h2>BI аналитика</h2>
                   <p>Регулярно анализируйте, делайте выводы и прогнозируйте результаты управленческих решений любого уровня.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/04.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/04.png"></div>
                 <div class="sales-desc">
                   <h2>Call-center</h2>
                   <p>Быстро организуйте свою телефонию.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/05.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/05.png"></div>
                 <div class="sales-desc">
                   <h2>POS</h2>
                   <p>Все продажи вашего магазина быстро доступны у вас в системе.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/06.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/06.png"></div>
                 <div class="sales-desc">
                   <h2>Project Managment</h2>
                   <p>Управляйте проектами, задачами и ресурсами.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/07.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/07.png"></div>
                 <div class="sales-desc">
                   <h2>Склад</h2>
                   <p>Управляйте складскими резервами, избавляйтесь от неликвидов, оптимизируйте запасы.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/08.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/08.png"></div>
                 <div class="sales-desc">
                   <h2>HR</h2>
                   <p>Подбор, прием и работа с персоналом сильно упрощается.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/09.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/09.png"></div>
                 <div class="sales-desc">
                   <h2>Mobile</h2>
                   <p>Сохраняйте мобильность свою и команды. Будьте доступны и открыты для новых возможностей, не теряя контроль.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/10.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/10.png"></div>
                 <div class="sales-desc">
                   <h2>Сервис для клиентов</h2>
                   <p>Удерживайте клиента, создавайте комфортное взаимодействие и опережайте его желания</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/11.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/11.png"></div>
                 <div class="sales-desc">
                   <h2>Логистика</h2>
                   <p>Адаптируйте существующие и создавайте новые логистические цепочки для повышения эффективности и сокращения издержек.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-                <div class="sales-icon"><img src="static/img/12.png"></div>
+                <div class="sales-icon col-4"><img src="static/img/12.png"></div>
                 <div class="sales-desc">
                   <h2>Производство</h2>
                   <p>Контролируйте все этапы, качество и стоимость каждой заготовки своего продукта.</p>
@@ -161,10 +195,10 @@
               </div>
             </div>
           </div>
-          <div class="btn sales-btn"><a href="#">Узнать больше</a></div>
+          <div class="btn sales-btn"><a href="#section-3">Узнать больше</a></div>
         </div>
-      </div>
-      <div class="section-3">
+      </section>
+      <section class="section-3" id="section-3">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -239,28 +273,30 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-4">
+      </section>
+      <section class="section-4">
         <div class="container">
           <div class="row">
             <div class="col-6">
               <div class="server-item">
                 <div class="server-icon"><img src="static/img/server1.png"></div>
-                <h1 class="server-title">Cloud</h1>
-                <p class="col-8">Быстрый и менее затратный вариант развертывания системы с использованием облачных технологий.</p>
+                <h1>Cloud</h1>
+                <p>Быстрый и менее затратный вариант развертывания системы с использованием облачных технологий.</p>
+                <div class="btn"><a href="">Заказать</a></div>
               </div>
             </div>
             <div class="col-6">
               <div class="server-item">
                 <div class="server-icon"><img src="static/img/server2.png"></div>
-                <h1 class="server-title">On-demand</h1>
-                <p class="col-7">Разворачивание внутри клиентской сети. Более затратно, но и надежно.</p>
+                <h1>On-demand</h1>
+                <p>Разворачивание внутри клиентской сети. Более затратно, но и надежно.</p>
+                <div class="btn"><a href="">Заказать</a></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-5">
+      </section>
+      <section class="section-5">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
@@ -269,42 +305,42 @@
           </div>
           <div class="row security">
             <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-              <div class="security-img"><img src="static/img/0-1.png"></div>
+              <div class="security-img col-4"><img src="static/img/0-1.png"></div>
               <div class="security-desc">
                 <h2>Single tenant</h2>
                 <p>Собственная архитектура для каждой системы</p>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-              <div class="security-img"><img src="static/img/0-2.png"></div>
+              <div class="security-img col-4"><img src="static/img/0-2.png"></div>
               <div class="security-desc">
                 <h2>SSL шифрование</h2>
                 <p>Ваши данные никто не сможет перехватить</p>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-              <div class="security-img"><img src="static/img/0-3.png"></div>
+              <div class="security-img col-4"><img src="static/img/0-3.png"></div>
               <div class="security-desc">
                 <h2>Распределенные дата-центры</h2>
                 <p>Плюсы и возможности резервной работы системы</p>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-              <div class="security-img"><img src="static/img/0-4.png"></div>
+              <div class="security-img col-4"><img src="static/img/0-4.png"></div>
               <div class="security-desc">
                 <h2>Полное шифрование данных</h2>
                 <p>Возможность полного шифрования данных. Никто не сможет их прочесть.</p>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-              <div class="security-img"><img src="static/img/0-5.png"></div>
+              <div class="security-img col-4"><img src="static/img/0-5.png"></div>
               <div class="security-desc">
                 <h2>Резервирование данных</h2>
                 <p>Защита информации от возможных потерь</p>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 d-flex flex-row flex-sm-column">
-              <div class="security-img"><img src="static/img/0-6.png"></div>
+              <div class="security-img col-4"><img src="static/img/0-6.png"></div>
               <div class="security-desc">
                 <h2>Работа по 152 ФЗ</h2>
                 <p></p>
@@ -312,8 +348,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-6">
+      </section>
+      <section class="section-6">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
@@ -360,8 +396,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-7">
+      </section>
+      <section class="section-7">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
@@ -369,38 +405,38 @@
             </div>
           </div>
           <div class="tech row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
               <div class="tech-icon"><img src="static/img/tech1.png"></div>
               <p>Автоматизация развертывания и управления приложениями</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
               <div class="tech-icon"><img src="static/img/tech2.png"></div>
               <p>Удобный менеджер пакетов</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
               <div class="tech-icon"><img src="static/img/tech3.png"></div>
               <p>Для выполнения JavaScript</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
               <div class="tech-icon"><img src="static/img/tech4.png"></div>
               <p>Для разработки веб-приложений</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
               <div class="tech-icon"><img src="static/img/tech5.png"></div>
               <p>Для управления кластерами виртуальных машин</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
               <div class="tech-icon"><img src="static/img/tech6.png"></div>
               <p>Для фронтенд разработок</p>
             </div>
-            <div class="col-lg-3 col">
-              <div class="tech-icon d-flex justify-content-center"><img src="static/img/tech7.png"></div>
+            <div class="col-lg-3 col-6 d-flex align-items-center flex-column align-items-lg-start">
+              <div class="tech-icon d-flex align-items-center"><img src="static/img/tech7.png"></div>
               <p class="d-flex justify-content-center">В качестве менеджера зависимостей для PHP</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-8">
+      </section>
+      <section class="section-8">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
@@ -428,37 +464,32 @@
                 <div class="stat">• Модуль VoiP
                   <div class="stat-name">‒</div>
                 </div>
-                <div class="stat-hide">
-                  <div class="stat">• Модуль workflow
-                    <div class="stat-name">‒</div>
-                  </div>
-                  <div class="stat">• Маркет Плейс
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Модуль dashboard
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Оперативная поддержка
-                    <div class="stat-name">Только по e-mail</div>
-                  </div>
-                  <div class="stat">• Настройка системы
-                    <div class="stat-name">‒</div>
-                  </div>
-                  <div class="stat">• API
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Конструктор форм
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Среда для разработки
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Собственный домен
-                    <div class="stat-name">‒</div>
-                  </div>
+                <div class="stat">• Модуль workflow
+                  <div class="stat-name">‒</div>
                 </div>
-                <div class="stat-btn">
-                  <div class="stat">Подробнее</div>
+                <div class="stat">• Маркет Плейс
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Модуль dashboard
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Оперативная поддержка
+                  <div class="stat-name">Только по e-mail</div>
+                </div>
+                <div class="stat">• Настройка системы
+                  <div class="stat-name">‒</div>
+                </div>
+                <div class="stat">• API
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Конструктор форм
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Среда для разработки
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Собственный домен
+                  <div class="stat-name">‒</div>
                 </div>
                 <div class="btn"><a href="#">Попробовать бесплатно</a></div>
               </div>
@@ -483,37 +514,32 @@
                 <div class="stat">• Модуль VoiP
                   <div class="stat-name">+</div>
                 </div>
-                <div class="stat-hide">
-                  <div class="stat">• Модуль workflow
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Маркет Плейс
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Модуль dashboard
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Оперативная поддержка
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Настройка системы
-                    <div class="stat-name">‒</div>
-                  </div>
-                  <div class="stat">• API
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Конструктор форм
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Среда для разработки
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Собственный домен
-                    <div class="stat-name">‒</div>
-                  </div>
+                <div class="stat">• Модуль workflow
+                  <div class="stat-name">+</div>
                 </div>
-                <div class="stat-btn">
-                  <div class="stat">Подробнее</div>
+                <div class="stat">• Маркет Плейс
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Модуль dashboard
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Оперативная поддержка
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Настройка системы
+                  <div class="stat-name">‒</div>
+                </div>
+                <div class="stat">• API
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Конструктор форм
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Среда для разработки
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Собственный домен
+                  <div class="stat-name">‒</div>
                 </div>
                 <div class="btn"><a href="#">Попробовать бесплатно</a></div>
               </div>
@@ -538,37 +564,32 @@
                 <div class="stat">• Модуль VoiP
                   <div class="stat-name">+</div>
                 </div>
-                <div class="stat-hide">
-                  <div class="stat">• Модуль workflow
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Маркет Плейс
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Модуль dashboard
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Оперативная поддержка
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Настройка системы
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• API
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Конструктор форм
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Среда для разработки
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Собственный домен
-                    <div class="stat-name">+</div>
-                  </div>
+                <div class="stat">• Модуль workflow
+                  <div class="stat-name">+</div>
                 </div>
-                <div class="stat-btn">
-                  <div class="stat">Подробнее</div>
+                <div class="stat">• Маркет Плейс
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Модуль dashboard
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Оперативная поддержка
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Настройка системы
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• API
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Конструктор форм
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Среда для разработки
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Собственный домен
+                  <div class="stat-name">+</div>
                 </div>
                 <div class="btn"><a href="#">Попробовать бесплатно</a></div>
               </div>
@@ -589,45 +610,149 @@
                 <div class="stat">• Модуль VoiP
                   <div class="stat-name">+</div>
                 </div>
-                <div class="stat-hide">
-                  <div class="stat">• Модуль workflow
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Маркет Плейс
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Модуль dashboard
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Оперативная поддержка
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Настройка системы
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• API
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Конструктор форм
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Среда для разработки
-                    <div class="stat-name">+</div>
-                  </div>
-                  <div class="stat">• Собственный домен
-                    <div class="stat-name">+</div>
-                  </div>
+                <div class="stat">• Модуль workflow
+                  <div class="stat-name">+</div>
                 </div>
-                <div class="stat-btn">
-                  <div class="stat">Подробнее</div>
+                <div class="stat">• Маркет Плейс
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Модуль dashboard
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Оперативная поддержка
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Настройка системы
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• API
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Конструктор форм
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Среда для разработки
+                  <div class="stat-name">+</div>
+                </div>
+                <div class="stat">• Собственный домен
+                  <div class="stat-name">+</div>
                 </div>
                 <div class="btn"><a href="#">Попробовать бесплатно</a></div>
               </div>
             </div>
           </div>
+          <div class="slider">
+            <ul class="js-index-slider">
+              <li>
+                <div class="price-item">
+                  <div class="price-title">Free (Beta)</div>
+                  <div class="price-desciption">
+                    <div class="price-value">0</div>
+                    <div class="price-currency">₽</div>
+                    <div class="price-decs"></div>
+                  </div>
+                  <div class="stat">• Объём данных
+                    <div class="stat-name">1 Гбайт</div>
+                  </div>
+                  <div class="stat">• Пользователей
+                    <div class="stat-name">∞</div>
+                  </div>
+                  <div class="stat">• Модуль Документы
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat">• Модуль VoiP
+                    <div class="stat-name">‒</div>
+                  </div>
+                  <div class="stat-btn d-flex justify-content-between">
+                    <div class="stat">Подробнее</div>
+                    <div class="btn-arrow"><img src="static/img/arrow-down.png"></div>
+                  </div>
+                  <div class="btn"><a href="#">Попробовать бесплатно</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="price-item">
+                  <div class="price-title">Standard</div>
+                  <div class="price-desciption">
+                    <div class="price-value">500</div>
+                    <div class="price-currency">₽</div>
+                    <div class="price-decs"></div>
+                  </div>
+                  <div class="stat">• Объём данных
+                    <div class="stat-name">10гб/ на пользователя</div>
+                  </div>
+                  <div class="stat">• Пользователей
+                    <div class="stat-name">∞</div>
+                  </div>
+                  <div class="stat">• Модуль Документы
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat">• Модуль VoiP
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat-btn d-flex justify-content-between">
+                    <div class="stat">Подробнее</div>
+                    <div class="btn-arrow"><img src="static/img/arrow-down.png"></div>
+                  </div>
+                  <div class="btn"><a href="#">Попробовать бесплатно</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="price-item">
+                  <div class="price-title">Expert</div>
+                  <div class="price-desciption">
+                    <div class="price-value">1000</div>
+                    <div class="price-currency">₽</div>
+                    <div class="price-decs"></div>
+                  </div>
+                  <div class="stat">• Объём данных
+                    <div class="stat-name">1 Гбайт</div>
+                  </div>
+                  <div class="stat">• Пользователей
+                    <div class="stat-name">∞</div>
+                  </div>
+                  <div class="stat">• Модуль Документы
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat">• Модуль VoiP
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat-btn d-flex justify-content-between">
+                    <div class="stat">Подробнее</div>
+                    <div class="btn-arrow"><img src="static/img/arrow-down.png"></div>
+                  </div>
+                  <div class="btn"><a href="#">Попробовать бесплатно</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="price-item">
+                  <div class="price-title">On-demand</div>
+                  <div class="price-desciption"><span>По договоренности</span></div>
+                  <div class="stat">• Объём данных
+                    <div class="stat-name">∞</div>
+                  </div>
+                  <div class="stat">• Пользователей
+                    <div class="stat-name">∞</div>
+                  </div>
+                  <div class="stat">• Модуль Документы
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat">• Модуль VoiP
+                    <div class="stat-name">+</div>
+                  </div>
+                  <div class="stat-btn d-flex justify-content-between">
+                    <div class="stat">Подробнее</div>
+                    <div class="btn-arrow"><img src="static/img/arrow-down.png"></div>
+                  </div>
+                  <div class="btn"><a href="#">Попробовать бесплатно</a></div>
+                </div>
+              </li>
+            </ul>
+            <div class="js-index-slider__pager"><a href="" data-slide-index="0"></a><a href="" data-slide-index="1"></a><a href="" data-slide-index="2"></a><a href="" data-slide-index="3"></a></div>
+          </div>
         </div>
-      </div>
-      <div class="section-9">
+      </section>
+      <section class="section-9">
         <div class="container">
           <div class="row form-section">
             <div class="col-12 f-flex">
@@ -644,8 +769,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
+      </section>
+      <section class="footer">
         <div class="container">
           <div class="row d-flex justify-content-sm-between">
             <div class="col-lg-3 col-sm-6">
@@ -682,7 +807,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>
