@@ -3192,6 +3192,14 @@ button {
   color: #fff;
   text-decoration: none;
 }
+.btn-2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
 .btn-2 a {
   margin: 0 auto;
   font-weight: 300;
@@ -4061,10 +4069,10 @@ body {
 }
 .scroll a span {
   position: absolute;
-  top: -180%;
+  top: -150px;
   left: 50%;
-  width: 30px;
-  height: 50px;
+  width: 19px;
+  height: 38px;
   margin-left: -15px;
   border: 2px solid #fff;
   border-radius: 50px;
