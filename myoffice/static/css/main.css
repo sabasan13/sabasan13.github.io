@@ -3459,7 +3459,7 @@ button {
 }
 .price-item .btn a {
   font-size: 1.6rem;
-  width: 240px;
+  max-width: 240px;
   height: 40px;
   border-radius: 20px;
   color: #c94d4e;
@@ -3883,6 +3883,11 @@ button {
     margin-bottom: 31px;
   }
   .btn a {
+    max-width: 230px;
+    max-height: 48px;
+    margin-bottom: 24px;
+  }
+  .btn-2 a {
     max-width: 230px;
     max-height: 48px;
     margin-bottom: 24px;
