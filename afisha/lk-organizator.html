@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1 shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header class="header-lk container" id="header">
+      <div class="header__leftside">
+        <div class="logo"><img alt="" src="static/img/logo.png"></div>
+        <div class="burger"><img src="static/img/burger.svg" alt=""></div>
+      </div>
+      <div class="header__rightside">
+        <div class="mail">helloblet@gmail.com </div>
+      </div>
+      <div class="tel">+7 (920) 404-33-55              
+        <div class="bell"><!--<a href="#">-->Заказать звонок<!--</a>--></div>
+      </div>
+      <div class="log"><a class="d-flex" href="index.html"><img alt="" src="static/img/user.png">
+          <div class="cabinet_name">Владимир</div></a>
+        <div class="cabinet">Выйти</div>
+      </div>
+    </header>
+    <div class="header-bottom header-bottom_second">
+      <div class="container justify-content-center">
+        <div class="row align-items-center">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="menu-wrap">
+              <nav>
+                <ul>
+                  <li><a href="index.html">О сервисе</a></li>
+                  <li><a href="index.html">Афиша</a></li>
+                  <li><a href="index.html">Организаторам</a></li>
+                  <li><a href="index.html">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-lk">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 header-bottom_text"><a href="#">Активные мероприятия</a></div>
+          <div class="col-lg-3 header-bottom_text"><a class="active" href="#">Добавить мероприятие</a></div>
+        </div>
+      </div>
+    </div>
+    <main class="private-office">
+      <div class="container step-popup">
+        <div class="container step-1">
+          <h1>Шаг 1</h1>
+          <p class="text-center title-text">Заполните форму с информацией о мероприятии</p>
+          <div class="private-office-form">
+            <form class="row">
+              <div class="col-lg-6 d-flex flex-column">
+                <select> 
+                  <option>Категория</option>
+                  <option>Категория</option>
+                </select>
+                <input class="input--mb" type="text" placeholder="Название мероприятия">
+                <div class="d-lg-flex justify-content-between align-items-center check-box">
+                  <div class="file_text">Афиша     375x 456 px</div>
+                  <input type="file" id="file"><label for="file" class="btn-1">Загрузить</label>
+                </div>
+                <select>
+                  <option>Возрастной ценз</option>
+                  <option>Возрастной ценз</option>
+                </select>
+                <select>
+                  <option>Город</option>
+                  <option>Город</option>
+                </select>
+                <input type="text" placeholder="Площадка для мероприятия">
+              </div>
+              <div class="col-lg-6 d-flex flex-column">
+                <input type="text" placeholder="Адрес площадки">
+                <textarea placeholder="Краткое описание (пресс релиз)"></textarea>
+                <div class="d-lg-flex justify-content-between">
+                  <div class="form-group">
+                    <div class="input-group date" id="datetimepicker2">
+                      <input class="form-control" type="text" placeholder="Укажите дату"><span class="input-group-addon"><img src="static/img/calendar.png" alt=""></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group date" id="datetimepicker3">
+                      <input class="form-control" type="text" placeholder="Укажите время"><span class="input-group-addon"><img src="static/img/clock.png" alt=""></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container step-2">
+          <h1>Шаг 2</h1>
+          <p class="title-text text-center">Выберите один из вариантов работы</p>
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column">
+              <div class="Rectangle"><a href="#popup-1">
+                  <button class="btn btn_sales">Купон на скидку</button></a></div>
+              <p class="step_text text--br">После покупки купона Sold Out, клиенты получают на адрес своей электронной почты подтверждение. Они придут  в нужное время в нужное место и оплатят билет в Вашей кассе, предъявив электронное подтверждение от Sold Out. </p>
+              <p class="step_text">В личном кабинете вы оперативно сможете отслеживать количество ожидаемых зрителей.</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column">
+              <div class="Rectangle"><a href="#popup-2">
+                  <button class="btn btn_promocode">Промокод</button></a></div>
+              <p class="step_text text--br">Вы формируете промокоды для покупки билетов со скидкой и передаете их нам накануне мероприятия. </p>
+              <p class="step_text">Наши подписчики купят билет на Вашем официальном сайте, а Вы отследите продажи через свою билетную платформу.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="private-office_first-popup first" id="popup-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <h1>Опишите Ваши условия выкупа билета покупателем со скидкой по купону перед мероприятием</h1>
+                </div>
+                <div class="col-lg-12">
+                  <div class="first-popup_text m-auto">
+                    <p class="text-center">Билеты по распечатке купона выкупаем в кассе театра за час до начала спектакля</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="first-popup_desc m-auto">
+                    <p class="text-center">Данное сообщение увидит пользователь при приобретении купона. По желанию, вы можете отредактировать его.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="first-popu-price d-flex align-items-center flex-column">
+                    <div class="first-popup_without d-lg-flex justify-content-end align-items-center">
+                      <p>Цена (без скидки)</p>
+                      <input class="popup_input" type="text">
+                    </div>
+                    <div class="first-popup_with d-lg-flex justify-content-end align-items-center">
+                      <p>Цена по купону Sold out</p>
+                      <input class="popup_input" type="text">
+                    </div>
+                    <div class="first-popup_sale d-lg-flex justify-content-end align-items-center">
+                      <p>Скидка </p>
+                      <input type="text" value="13%" readonly>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Rectangle">
+                <button class="btn">Добавить мероприятие в афишу</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="private-office_first-popup second" id="popup-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <input class="promocode_input" type="text" value="2W35gfukdn45Wr, 2W35gfukdn45Wr...">
+              </div>
+              <div class="col-lg-12">
+                <div class="promocode_text m-auto">
+                  <p class="text-center">Введите промокоды через пробел или запятую</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="first-popu-price d-flex align-items-center flex-column">
+                  <div class="first-popup_without d-lg-flex justify-content-end align-items-center">
+                    <p>Цена (без скидки)</p>
+                    <input class="popup_input" type="text">
+                  </div>
+                  <div class="first-popup_with d-lg-flex justify-content-end align-items-center">
+                    <p>Цена по купону Sold out</p>
+                    <input class="popup_input" type="text">
+                  </div>
+                  <div class="first-popup_sale d-lg-flex justify-content-end align-items-center">
+                    <p>Скидка </p>
+                    <input type="text" value="13%" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="promocode_link d-flex align-items-center flex-column"><a href="#">https://promokod.pikabu.ru/</a>
+                  <p>Ссылка для использования промокода</p>
+                </div>
+              </div>
+            </div>
+            <div class="Rectangle">
+              <button class="btn">Добавить мероприятие в афишу</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popup_bg"></div>
+    <footer id="footer">
+      <div class="footer container">
+        <div class="footer__top">
+          <div class="confidentiality">Политика конфиденциальности</div>
+          <div class="footer-mail">helloblet@gmail.com </div>
+          <div class="footer-tel">+7 (920) 404-33-55  </div>
+          <div class="social"><a href="index.html"><img alt="" src="static/img/whatsapp.png"></a><a href="index.html">        <img alt="" src="static/img/camera.png"></a><a href="index.html"><img alt="" src="static/img/paper-plane.png"></a></div>
+        </div>
+        <div class="footer__top--mobile">
+          <div class="footer-mail">helloblet@gmail.com </div>
+          <div class="footer-tel">+7 (920) 404-33-55  </div>
+          <div class="social"><a href="index.html"><img alt="" src="static/img/whatsapp.png"></a><a href="index.html">        <img alt="" src="static/img/camera.png"></a><a href="index.html"><img alt="" src="static/img/paper-plane.png"></a></div>
+          <div class="confidentiality">Политика конфиденциальности</div>
+        </div>
+        <p class="footer-bottom">Sold out 2019. Все права защищены</p>
+      </div><!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
