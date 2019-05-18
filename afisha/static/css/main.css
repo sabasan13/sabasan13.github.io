@@ -16,6 +16,7 @@ main h1 {
 input {
   height: 6.7rem;
   box-shadow: 0 0 8px rgba(47,42,121,0.15);
+  -webkit-box-shadow: 0 0 8px rgba(47,42,121,0.15);
   background-color: #fff;
   border: none;
   color: #000;
@@ -571,9 +572,8 @@ main {
   z-index: 10;
   box-shadow: 0 0 8px rgba(47,42,121,0.15);
   background-color: #fdfdfd;
-  position: absolute;
-  top: -3.6rem;
-  left: 0;
+  position: fixed;
+  top: 0;
   padding: 11rem 0 12.8rem;
 }
 .private-office_first-popup h1 {
