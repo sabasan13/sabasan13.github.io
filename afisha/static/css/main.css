@@ -429,7 +429,7 @@ a.btn_second:hover {
 .private-office .input-group-addon {
   z-index: 5;
   right: 2.5rem;
-  top: 1.5rem;
+  top: 1rem;
   position: absolute;
   background-color: #fff;
   border-radius: 0;
@@ -460,6 +460,38 @@ input.form-control {
 }
 .header-lk a:hover {
   text-decoration: none;
+}
+.main {
+  padding: 0 0 11.5rem;
+}
+.main-page .select {
+  max-width: 35.9rem;
+}
+.main-page .Rectangle .btn {
+  padding: 0;
+  max-width: 45.6rem;
+  height: 5.5rem;
+}
+.main-page .strike {
+  font-size: 18px;
+}
+.main-page .panel-body p {
+  font-size: 1.6rem;
+  font-family: 'Circe', sans-serif;
+}
+.main-page .organization .request {
+  padding-top: 0;
+}
+.main-page .poster h2 {
+  padding: 30px 0 25px;
+}
+.main-page .service {
+  padding-top: 40px;
+}
+.glyphicon {
+  top: -15px !important;
+  width: 50px !important;
+  height: 50px !important;
 }
 @media (max-width: 1200px) {
   #header.header-lk {
@@ -572,7 +604,7 @@ main {
   z-index: 10;
   box-shadow: 0 0 8px rgba(47,42,121,0.15);
   background-color: #fdfdfd;
-  position: fixed;
+  position: absolute;
   top: 0;
   padding: 11rem 0 12.8rem;
 }
@@ -637,7 +669,37 @@ main {
 .header-bottom_second {
   display: none;
 }
+@media only screen and (max-width: 767px) {
+  .main-page .select {
+    max-width: 767px;
+  }
+  .main-page .Rectangle .btn {
+    max-width: 767px;
+  }
+  .main-page .Rectangle {
+    max-width: 767px;
+  }
+  .main-page .Rectangle {
+    width: 100%;
+  }
+  .steps h4 {
+    padding: 30px 20px 40px 0;
+    text-align: center !important;
+    margin-left: -30px !important;
+  }
+  .steps {
+    padding: 100px 50px 0 50px !important;
+  }
+  .discount,
+  .promo-code {
+    padding-bottom: 85px !important;
+  }
+}
 @media only screen and (max-width: 840px) {
+  .poster {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
   .menu-wrap {
     display: -ms-flexbox !important;
     display: flex !important;
@@ -671,6 +733,17 @@ main {
   }
 }
 @media only screen and (max-width: 991px) {
+  .footer-tel,
+  .footer-mail {
+    margin: 0 auto 20px !important;
+  }
+  .leave {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .organization .leave .btn {
+    margin: 0 auto;
+  }
   main h1 {
     font-size: 2.4rem;
   }
@@ -895,8 +968,11 @@ main {
   #header.header-lk {
     padding: 0px 0 5px;
   }
+  .container.step-popup {
+    padding: 0;
+  }
   .private-office_first-popup {
-    position: static;
+    position: absolute;
     box-shadow: none;
     background: #fff;
     padding: 1rem 0;
@@ -930,5 +1006,10 @@ main {
   input[type=checkbox],
   input[type=radio] {
     width: 2.4rem;
+  }
+}
+@media only screen and (max-width: 758px) {
+  .registration-form input {
+    max-width: 70rem;
   }
 }

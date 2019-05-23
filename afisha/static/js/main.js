@@ -38,7 +38,7 @@ $('.burger').click(function(){
 	});
 });
 
-if ($(window).width() > 600) {
+if ($(window).width() > 100) {
 
   	
 $('.btn_promocode').click(function(){
@@ -74,23 +74,7 @@ $('.btn_sales').click(function(){
   }  
 
 
-if ($(window).width() < 600) {
-
-  	$('.btn_promocode').click(function(){
-	$('.private-office_first-popup.second').fadeIn();
-	$('main').height($('.private-office_first-popup.second').height());
-	$('.step-1').fadeOut();
-	$('.step-2').fadeOut();
-
-});
-
-$('.btn_sales').click(function(){
-	$('.private-office_first-popup.first').fadeIn()
-	$('.step-1').fadeOut();
-	$('.step-2').fadeOut();
-});
-  
-  }  
+ 
 });
 
 

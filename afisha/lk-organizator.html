@@ -7,10 +7,11 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js" type="text/javascript" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <title>Главная страница
     </title>
@@ -122,43 +123,41 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="private-office_first-popup first" id="popup-1">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <h1>Опишите Ваши условия выкупа билета покупателем со скидкой по купону перед мероприятием</h1>
+        <div class="private-office_first-popup first" id="popup-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <h1>Опишите Ваши условия выкупа билета покупателем со скидкой по купону перед мероприятием</h1>
+              </div>
+              <div class="col-lg-12">
+                <div class="first-popup_text m-auto">
+                  <p class="text-center">Билеты по распечатке купона выкупаем в кассе театра за час до начала спектакля</p>
                 </div>
-                <div class="col-lg-12">
-                  <div class="first-popup_text m-auto">
-                    <p class="text-center">Билеты по распечатке купона выкупаем в кассе театра за час до начала спектакля</p>
+              </div>
+              <div class="col-lg-12">
+                <div class="first-popup_desc m-auto">
+                  <p class="text-center">Данное сообщение увидит пользователь при приобретении купона. По желанию, вы можете отредактировать его.</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="first-popu-price d-flex align-items-center flex-column">
+                  <div class="first-popup_without d-lg-flex justify-content-end align-items-center">
+                    <p>Цена (без скидки)</p>
+                    <input class="popup_input" type="text">
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="first-popup_desc m-auto">
-                    <p class="text-center">Данное сообщение увидит пользователь при приобретении купона. По желанию, вы можете отредактировать его.</p>
+                  <div class="first-popup_with d-lg-flex justify-content-end align-items-center">
+                    <p>Цена по купону Sold out</p>
+                    <input class="popup_input" type="text">
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="first-popu-price d-flex align-items-center flex-column">
-                    <div class="first-popup_without d-lg-flex justify-content-end align-items-center">
-                      <p>Цена (без скидки)</p>
-                      <input class="popup_input" type="text">
-                    </div>
-                    <div class="first-popup_with d-lg-flex justify-content-end align-items-center">
-                      <p>Цена по купону Sold out</p>
-                      <input class="popup_input" type="text">
-                    </div>
-                    <div class="first-popup_sale d-lg-flex justify-content-end align-items-center">
-                      <p>Скидка </p>
-                      <input type="text" value="13%" readonly>
-                    </div>
+                  <div class="first-popup_sale d-lg-flex justify-content-end align-items-center">
+                    <p>Скидка </p>
+                    <input type="text" value="13%" readonly disabled>
                   </div>
                 </div>
               </div>
-              <div class="Rectangle">
-                <button class="btn">Добавить мероприятие в афишу</button>
-              </div>
+            </div>
+            <div class="Rectangle">
+              <button class="btn">Добавить мероприятие в афишу</button>
             </div>
           </div>
         </div>
@@ -185,7 +184,7 @@
                   </div>
                   <div class="first-popup_sale d-lg-flex justify-content-end align-items-center">
                     <p>Скидка </p>
-                    <input type="text" value="13%" readonly>
+                    <input type="text" value="13%" readonly disabled>
                   </div>
                 </div>
               </div>

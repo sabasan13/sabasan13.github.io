@@ -272,6 +272,7 @@ font-size: 24px;
   margin: 0 auto;
    text-align: center;
     width: 295px;
+    margin-bottom: 25px;
    }
 .today  ul li {
    display: inline-block;
@@ -286,6 +287,8 @@ font-size: 24px;
   color: rgb(49, 49, 49);
    }
    .post{
+     display: flex;
+     justify-content: center;
     padding: 5px 15px 240px 15px;
    }
    .posters {
@@ -332,21 +335,23 @@ font-size: 18px;
   font-family: "Circe";
   color: rgb(255, 255, 255);
   font-weight: bold;
-
+  margin-left: -39px;
   -moz-transform: matrix( 0.73101265822785,0,0,0.73123123123123,0,0);
   -webkit-transform: matrix( 0.73101265822785,0,0,0.73123123123123,0,0);
   -ms-transform: matrix( 0.73101265822785,0,0,0.73123123123123,0,0);
   position: relative;
 background-color: #454545;
+width: 119.5%;
 }
 .coupon .btn{
   font-size: 24px;
   font-family: "Circe";
   color: rgb(255, 255, 255);
-padding: 10px 12px 5px; 
+padding: 7px 12px 5px; 
 text-align: left;
 letter-spacing: -0.03em;
 width: 100%;
+text-align: center;
 }
 .coupon .btn:hover {
   background-color: #fff;
@@ -356,12 +361,12 @@ width: 100%;
 }
 
 .service{
-font-size: 48px;
+  font-size: 48px;
   font-family: "Circe";
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 80px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -417,7 +422,7 @@ font-size: 14px;
 }
 .Ellipse span{
 color: #fff;
- padding-left: 26px;
+ padding-left: 20px;
  font-size: 24px;
 }
 
@@ -738,9 +743,6 @@ padding: 8px 30px 8px;
 font-size: 20px;
   padding: 13px 6px 14px 6px;
 }
-.Rectangle{
-margin-left: 7px;
-}
 .Polygon_1 img {
     padding: 18px 0px 13px 71px;
 }
@@ -764,9 +766,7 @@ margin-left: 7px;
     padding: 16px 1px 16px 1px;
     max-width: 455px;
 }
-.Rectangle{
-margin-left: 5px;
-}
+
 .Polygon_1{
    padding: 5px 5px 0 7px;
 }
