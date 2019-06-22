@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+   <title>Easy-Loot.ru - Уникальный магазин брендовых одежд</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+ <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Не хватает ресурсов для покупки брендовых вещей? У тебя есть возможность! Испытай свою удачу, и выбей самую дорогую вещь которая присутствует на сайте. После ты можешь выбрать удобную для себя доставку, и забрать вещь себе!">
+    <meta property="og:site_name" content="Интернет магазин брендовых одежд — EasyLoot">
+  <meta property="og:image" content="images/logog.png">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="48x48">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" href="css/main.min.css?290186432">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+</head>
+<body>
+<div id="filter" class="arcticmodal-overlay" style="display: none;background-color: rgb(0, 0, 0); opacity: 0.8;"></div>
+<div id="prize" class="arcticmodal-container" style="display: none;">
+<table class="arcticmodal-container_i"><tbody><tr><td class="arcticmodal-container_i2"><div id="exampleModal4" class="box-modal">
+        <div class="win-modal_close arcticmodal-close" onclick="document.getElementById('prize').style = 'display:none';document.getElementById('filter').style = 'display:none'"><img src="img/close.png" alt=""></div>
+        <div id="exampleModal4" class="win-form">
+            <div class="win-game-complete">
+
+                <div class="bg-form">
+                    <img src="img/bg-win.png" alt="">
+                </div>
+
+                <div class="comp-title">
+                    <p class="sub">Поздравляем, вы выиграли</p>
+                    <p id="prize-product" class="title"></p>
+                </div>
+
+                <div class="win-item" style="margin-top: -20px;">
+                    <img id="prize-img" src="img/items/.png" alt="">
+                </div>
+
+                <div class="win-button" style="cursor:pointer;">
+                    <a class="comp-sell" id="get-prize" onclick="">Продать <span id="pricewin"></span>p</a>
+                    <a class="comp-order" href="profile">Заказать</a>
+                    <a class="comp-more" id="button-game-again" onclick="document.getElementById('prize').style = 'display:none';document.getElementById('filter').style = 'display:none'">Крутить еще</a>
+                </div>
+
+            </div>
+        </div>
+    </div></td></tr></tbody></table></div>
+   <div id="deposit" class="popup" style="display: none; font-family:'PT Sans', sans-serif;">
+  <form action="" method="post">
+    <div class="popup-container" style="top: 50%; height: 480px;">
+        <div class="eas close" onclick="popupClose('#deposit');"><span class="flaticon-close"></span></div>
+        <p class="head-h3">Пополнить баланс</p>
+        <div class="info">Баланс начисляется моментально, но иногда процесс может занять 1-2 минуты. Если Вы не нашли нужную платежную систему, выберите Free-Kassa. </div>
+        <p class="head-h4">Сумма</p>
+        <div class="cls"></div>
+        <div class="amount-l">
+                <input style="border: 0; box-shadow: none;" type="text" class="inp" id="depositbalance" maxlength="4" min="1" max="5000" value="100" name="amount">
+            
+        </div>
+        <div class="amount-r">
+            Минимальная сумма: <b>20р</b>
+        <div class="cls"></div>
+        </div>
+        <div class="cls"></div>
+        <p class="head-h4">Выберите платежную систему</p>
+        <div class="cls"></div>
+        <input type="hidden" name="payment" id="payment_id" value="63">
+        <span class="payment-method eas pm-qiwi active" onclick="changePaymentMethod('qiwi', 63);"><img src="img/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+        <span class="payment-method eas pm-visa" onclick="changePaymentMethod('visa', 94);"><img src="img/payment-card.svg"><span class="flaticon-check"></span></span>
+        <span class="payment-method eas pm-yandex" onclick="changePaymentMethod('yandex', 45);"><img src="img/payment-yandex.svg"><span class="flaticon-check"></span></span>
+        <!-- <span class="payment-method eas pm-webmoney" onclick="changePaymentMethod('webmoney', -1);"><img src="/img/payment-webmoney.svg"><span class="flaticon-check"></span></span> -->
+        <span class="payment-method eas pm-mts" onclick="changePaymentMethod('mts', 84);"><img src="img/payment-mts.svg"><span class="flaticon-check"></span></span>
+        <span class="payment-method eas pm-biline" onclick="changePaymentMethod('biline', 83);"><img src="img/payment-biline.svg"><span class="flaticon-check"></span></span>
+        <span class="payment-method eas pm-mega" onclick="changePaymentMethod('mega', 82);"><img src="img/payment-mega.svg"><span class="flaticon-check"></span></span>
+        <span class="payment-method eas pm-tele2" onclick="changePaymentMethod('tele2', 132);"><img src="img/payment-tele2.svg"><span class="flaticon-check"></span></span>
+        <span class="payment-method eas pm-freekassa" onclick="changePaymentMethod('freekassa', 0);"><img src="img/payment-freekassa.svg"><span class="flaticon-check"></span></span>
+      <div class="cls"></div>
+        <div class="foo"><input style="color: #000;text-shadow: none;width: 184px;height: 46px;display: inline-block;font-weight: bold;font-size: 16px;" type="submit" class="btn orange rounded" value="Пополнить баланс" onclick="depositNow();"></div>
+    </div>
+    <div class="popup-overlay" onclick="popupClose('#deposit');"></div>
+  </form>
+</div>
+  <div class="inputs">
+  <div class="inputs_info inputs_green alert-success" style="display:none;">
+    <em></em>
+  </div>
+  <div class="inputs_info inputs_red alert-error" style="display: none;">
+    <em></em>
+  </div>
+</div> <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="nav-block">
+                <div class="navbar-head">
+                   <li class="header-logo"><a href="/"><img src="img/header-logo.png" alt=""></a></li> 
+                <button type="button" class="navbar-toggle">
+                <div id="nav-icon1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </button>
+            </div>
+                <ul class="nav">
+        
+                    <li class="menu-center-item">
+                      <ul class="menu-center">
+                        <li class="header-logo"><a href="/"><img src="img/header-logo.png" alt=""></a></li> 
+                    <li class="nav-button-header active"><a class="main-link" href="/">Главная</a></li>
+                    
+                    <li class="nav-button-header"><a class="main-link" href="delivery">Доставка</a></li>
+          <li class="nav-button-header"><a class="main-link" href="opinions">Отзывы</a></li>
+          <li class="nav-button-header"><a class="main-link" href="about-us">О нас</a></li>
+          <li class="nav-button-header"><a class="main-link" href="faq">FAQ</a></li>
+          </ul>
+      </li>                                      
+                   <li class="order3"><div class="authorization"><a href="https://oauth.vk.com/authorize?client_id=6915677&amp;display=page&amp;redirect_uri=http://easy-loot.ru/&amp;response_type=code&amp;v=5.62">Войти через ВК</a>
+                    </div></li>                
+                     </ul>
+            </div>
+        </div>
+                        <div class="mobile-menu-overlay"></div>
+                    <div class="menu-dp" style="display: none;">
+                         <div class="nav-mobile-block">
+                <ul class="nav">
+                    <li class="nav-button-header active"><a class="main-link" href="/">Главная</a></li>
+                    <li class="nav-button-header"><a class="main-link" href="faq">FAQ</a></li>
+                    <li class="nav-button-header"><a class="main-link" href="delivery">Доставка</a></li>
+          <li class="nav-button-header"><a class="main-link" href="opinions">Отзывы</a></li>
+          <li class="nav-button-header"><a class="main-link" href="about-us">О нас</a></li>                                       
+                   <li class="order3"><div class="authorization"><a href="https://oauth.vk.com/authorize?client_id=6915677&amp;display=page&amp;redirect_uri=http://easy-loot.ru/&amp;response_type=code&amp;v=5.62">Войти через ВК</a>
+                    </div></li>                  </ul>
+            </div>
+        </div>         
+                    </div>
+    </div>
+<div class="filter"> 
+     <div class="livedrop-block">
+        <div class="livedrop">
+ <a href="/user?id=230980307" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c622.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c511.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c323.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-gray "><img width="50px" height="50px" src="img/items/c231.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-pink "><img width="50px" height="50px" src="img/items/c212.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-pink "><img width="50px" height="50px" src="img/items/c225.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-gray "><img width="50px" height="50px" src="img/items/c231.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-gray "><img width="50px" height="50px" src="img/items/c230.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-purple "><img width="50px" height="50px" src="img/items/c216.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-yellow"><img width="50px" height="50px" src="img/items/c215.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=230980307" class="item">
+    <div class="align live-purple "><img width="50px" height="50px" src="img/items/b622.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c638621/v638621307/3c218/mr7Hn9Dj0YM.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Инсаф</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-gray "><img width="50px" height="50px" src="img/items/c230.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c312.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-pink "><img width="50px" height="50px" src="img/items/c226.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-gray "><img width="50px" height="50px" src="img/items/c415.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-gray"><img width="50px" height="50px" src="img/items/c324.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c323.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c223.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-gray "><img width="50px" height="50px" src="img/items/c415.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a><a href="/user?id=281990077" class="item">
+    <div class="align live-blue "><img width="50px" height="50px" src="img/items/c323.png" alt=""></div>
+    <div class="caption"><div class="caption-avatar"><img src="https://pp.userapi.com/c824500/v824500816/47d9a/IGNjESH1x_k.jpg?ava=1" alt=""></div>
+    <div class="caption-name"><span>Николай</span></div></div>
+    </a>        </div>
+    <div class="liveName"> <p class="liveName-text1">Live лента</p>
+        <p class="liveName-text2">Топ игроков</p>
+    </div>
+    </div>
+  <div class="information-block">
+        <div class="container">
+            <div class="row">
+                <div class="information">
+          <ul class="elipse-block">
+                        <li class="order4">
+                            <div class="elipse">
+                                <div class="elipse-number"><span id="boxes">1118</span></div>
+                                <div class="elipse-stroke"><span>Открыто кейсов</span></div>
+                            </div>
+                        </li>
+                        <li class="order2">
+                            <div class="elipse"><div class="elipse-number"><span id="users">57</span></div>
+                                <div class="elipse-stroke"><span>Пользователей</span></div>
+                            </div>
+                        </li>
+                        <li class="order1">
+            <div class="elipse"><div class="elipse-number"><span id="online">0</span></div>
+              <div class="elipse-stroke"><span>Онлайн</span></div>
+                         </div>
+                        </li>
+                        <li class="order5">
+              <div class="elipse"><div class="elipse-number"><span id="ub">0</span></div>
+                                <div class="elipse-stroke"><span>Открыто сегодня</span></div>
+                            </div>
+                        </li>
+          </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+.information-block {
+    background-color: #21182d;
+}
+.elipse-block .elipse .elipse-icone {
+  background-color: #21182d;
+}
+
+.option-item img{
+width:70% !important;
+}
+
+.option-item h3 {
+margin: -20px 40px 5px !important;
+}
+
+.header .nav-block .nav {
+    margin: -5px !important;
+}
+
+.option {
+margin-top: -50px !important;
+}
+</style>
+<div class="infomain">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 banner">
+
+
+    <div class="furbolka">  
+      <p class="furbolka-text"> + При <span class="color-yellow">первом</span> заказе <br><span class="color-pink">  футболка</span> в  <br>подарок</p>
+      <div class="furbolka-img">  
+      <img src="img/image009.png" alt="">
+      </div>
+    </div>
+
+      <div class="swiper-container">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/banner0.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/banner1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/banner2.png" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="button-prev">
+      <img src="img/left-arrow.png" alt="">
+    </div>
+    <div class="button-next">
+      <img src="img/right-arrow.png" alt="">
+    </div>
+
+</div>
+<div class="stiker">  
+      <p class="stiker-text"> + <span class="color-yellow"> Бесплатный</span><br> стикер пак</p>
+      <img class="stiker-1" src="img/1.png" alt="">
+      <img class="stiker-2" src="img/2.png" alt="">
+
+<img class="stiker-3" src="img/3.png" alt="">
+
+<img class="stiker-4" src="img/4.png" alt="">
+
+<img class="stiker-5"src="img/5.png" alt="">
+
+</div>
+    </div>
+    <div class="col-lg-12 col-sm-12 case">
+
+      <div class="case-title"> 
+        <span class="color-pink">  Кейсы</span>, которые <br> <span class="color-yellow">  хочется открывать</span>
+      </div>
+      <div class="case-btn">ПОПРОБОВАТЬ</div>
+      </div>
+  </div>
+</div>
+</div>
+          
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery.js"></script>
+
+
+  <script src="js/profile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    
+     <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+      },
+    });
+  </script>    
+
+</body>
+</html>
