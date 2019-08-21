@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Sungent';
+    src: url('Sungent.woff2') format('woff2'),
+        url('Sungent.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
