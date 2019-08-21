@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('Impact.woff2') format('woff2'),
+        url('Impact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    src: url('RotondaC.woff2') format('woff2'),
+        url('RotondaC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Equestria_Cyrillic';
+    src: url('Equestria_Cyrillic.woff2') format('woff2'),
+        url('Equestria_Cyrillic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    src: url('RotondaC-Bold.woff2') format('woff2'),
+        url('RotondaC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
