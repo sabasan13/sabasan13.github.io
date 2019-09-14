@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Manrope3';
+    src: url('Manrope3-Semibold.woff2') format('woff2'),
+        url('Manrope3-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope3';
+    src: url('Manrope3-Light.woff2') format('woff2'),
+        url('Manrope3-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope3';
+    src: url('Manrope3-ExtraBold.woff2') format('woff2'),
+        url('Manrope3-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope3';
+    src: url('Manrope3-Medium.woff2') format('woff2'),
+        url('Manrope3-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope3';
+    src: url('Manrope3-Thin.woff2') format('woff2'),
+        url('Manrope3-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope3';
+    src: url('Manrope3-Regular.woff2') format('woff2'),
+        url('Manrope3-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
