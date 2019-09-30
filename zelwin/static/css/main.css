@@ -3384,16 +3384,15 @@ h1 {
     background: #fff;
     left: 15px;
     margin: 0 auto;
-    transition: transform 0.5s ease;
-    transform: translateX(-100%);
-    opacity: 0;
+    transition: 1s ease;
+    transform: translateX(-150%);
+    height: 100%;
   }
   .account-item {
-    margin-top: 8rem;
+    margin-top: 7rem;
   }
   .account.active .account-items {
     transform: translateX(0);
-    opacity: 1;
   }
   .account.active .burger span:nth-child(1) {
     transform: rotate(-135deg);
@@ -3401,7 +3400,6 @@ h1 {
     top: 0.7rem;
   }
   .account.active .burger span:nth-child(2) {
-    left: -500%;
     opacity: 0;
   }
   .account.active .burger span:nth-child(3) {
