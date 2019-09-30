@@ -7,5 +7,10 @@ $('.question-tab').on('click', function(){
 
 
   $('.menu').on('click', function(){
-    $('.header-bottom').toggleClass("active");
+    $('.header .container').toggleClass("active");
+  })
+
+
+  $('.account .burger').on('click', function(){
+    $('.account').toggleClass("active");
   })

@@ -2968,6 +2968,9 @@ main {
 .header {
   padding: 1.8rem 0 8.5rem;
 }
+.header .container {
+  position: relative;
+}
 .header-top {
   margin-bottom: 1.7rem;
 }
@@ -3017,34 +3020,33 @@ main {
 .header nav a.active {
   color: #e92100;
 }
-.header .burger {
+.burger {
   width: 7rem;
   height: 7rem;
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   left: -5.5rem;
   padding: 2.6rem 1.9rem 2.4rem 2.2rem;
 }
-.header .burger span {
+.burger span {
   display: block;
   width: 100%;
   height: 0.2rem;
   background: #000;
 }
-.header .burger.active {
+.burger.active {
   background-color: #f0f0f0;
 }
-.header .burger.menu {
+.burger.menu {
   width: 2.9rem;
   height: 2rem;
   padding: 0;
   left: auto;
-  right: 0;
+  left: 1.5rem;
   display: none;
 }
-.header .burger.menu span {
+.burger.menu span {
   transition: 0.25s ease-in-out;
   position: relative;
   transform: rotate(0deg);
@@ -3054,8 +3056,6 @@ main {
   width: 100%;
   box-shadow: 0 0.7rem 5.9rem rgba(0,0,0,0.31);
   background-color: #fff;
-  position: absolute;
-  top: 0;
   padding: 9.9rem 0 9.4rem;
 }
 .account__img {
@@ -3327,30 +3327,87 @@ h1 {
     position: absolute;
     width: 100%;
     background: #fff;
+    padding-top: 3rem;
   }
   .header-bottom nav li {
     margin: 2rem 0;
     text-align: center;
   }
-  .header-bottom.active .menu span:nth-child(1) {
+  .header-top {
+    transform-origin: top;
+    transition: transform 0.5s ease;
+    transform: scaleY(0);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    background: #fff;
+    z-index: 1;
+    margin: 1rem auto;
+  }
+  .header .container.active .header-bottom nav {
+    transform: scaleY(1);
+  }
+  .header .container.active .menu span:nth-child(1) {
     transform: rotate(-135deg);
     position: relative;
     top: 0.7rem;
   }
-  .header-bottom.active .menu span:nth-child(2) {
-    right: -500%;
+  .header .container.active .menu span:nth-child(2) {
+    left: -500%;
     opacity: 0;
   }
-  .header-bottom.active .menu span:nth-child(3) {
+  .header .container.active .menu span:nth-child(3) {
     top: -1.1rem;
     position: relative;
     transform: rotate(135deg);
   }
-  .header-bottom.active nav {
+  .header .container.active .header-top {
     transform: scaleY(1);
   }
   .account-bonus:after {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .account .burger {
+    display: -ms-flexbox;
+    display: flex;
+    top: 2rem;
+  }
+  .account {
+    position: relative;
+  }
+  .account-items {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    left: 15px;
+    margin: 0 auto;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .account-item {
+    margin-top: 8rem;
+  }
+  .account.active .account-items {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .account.active .burger span:nth-child(1) {
+    transform: rotate(-135deg);
+    position: relative;
+    top: 0.7rem;
+  }
+  .account.active .burger span:nth-child(2) {
+    left: -500%;
+    opacity: 0;
+  }
+  .account.active .burger span:nth-child(3) {
+    top: -1.1rem;
+    position: relative;
+    transform: rotate(135deg);
   }
 }
 @media screen and (max-width: 575px) {
@@ -3375,15 +3432,9 @@ h1 {
     padding-left: 0;
     padding-right: 0;
   }
-  .account {
-    top: -82px;
-  }
 }
 @media screen and (max-width: 400px) {
   html {
     font-size: 6px;
-  }
-  .account {
-    top: -70px;
   }
 }
