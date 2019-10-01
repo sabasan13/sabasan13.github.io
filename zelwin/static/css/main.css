@@ -3043,7 +3043,7 @@ main {
   height: 2rem;
   padding: 0;
   left: auto;
-  left: 1.5rem;
+  left: 15px;
   display: none;
 }
 .burger.menu span {
@@ -3204,6 +3204,8 @@ h1 {
   margin-right: -1px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .search button {
   border: none;
@@ -3301,6 +3303,351 @@ h1 {
   height: auto;
   transform: scaleY(1);
 }
+.account {
+  width: 100%;
+  box-shadow: 0 0.7rem 5.9rem rgba(0,0,0,0.31);
+  background-color: #fff;
+  padding: 9.9rem 0 9.4rem;
+}
+.account__img {
+  width: 15rem;
+  height: 14.9rem;
+  background: url("../img/ava-ph.png");
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.account__img img {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.account__name {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+}
+.account__name span {
+  display: block;
+}
+.account__lvl {
+  font-size: 1.6rem;
+  color: #000;
+}
+.account__lvl span {
+  margin-left: 1.8rem;
+}
+.account__desc {
+  color: #b2b5b6;
+  font-size: 1.6rem;
+}
+.account__desc:first-child {
+  margin-bottom: 2.2rem;
+}
+.account__desc span {
+  margin-top: 0.5rem;
+  color: #313131;
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
+}
+.account-bonus {
+  position: relative;
+}
+.account-bonus:after {
+  width: 1px;
+  height: 80%;
+  background-color: #dadada;
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4.5rem;
+}
+.account__btn.btn {
+  width: 100%;
+  margin-bottom: 3.2rem;
+  height: 4.3rem;
+}
+.account__btn.btn:last-child {
+  margin-bottom: 0;
+}
+.account-info {
+  position: relative;
+  padding-bottom: 2.8rem;
+}
+.account-info:after {
+  width: 85%;
+  height: 1px;
+  background-color: #dadada;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.account-item {
+  margin-top: 9rem;
+  transition: 0.5s;
+}
+.account-item:hover {
+  transform: scale(1.2);
+}
+.account-item img {
+  height: 11rem;
+  margin-bottom: 2rem;
+}
+.account-item span {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+p {
+  line-height: 2.4rem;
+}
+.balance table {
+  width: 100%;
+}
+.balance p {
+  margin-bottom: 2.8rem;
+}
+.balance-item {
+  padding: 3.1rem 3.6rem 3.4rem 3.1rem;
+  background-color: #f1f1f1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 5.3rem;
+}
+.balance-item__info {
+  color: #b2b5b6;
+  font-size: 1.6rem;
+}
+.balance-item__info span {
+  display: block;
+  color: #313131;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.balance__btn {
+  width: 16.7rem;
+  height: 4.3rem;
+}
+.balance-table-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 3px solid #e92100;
+}
+.balance-table-head__title {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 0.2rem;
+}
+.balance-table-head-tabs {
+  display: -ms-flexbox;
+  display: flex;
+}
+.balance-table-head__tab {
+  padding: 1.6rem 1.9rem 1.1rem 2.5rem;
+  color: #000;
+  cursor: pointer;
+}
+.balance-table-head__tab.active {
+  background: #e92100;
+  color: #fff;
+}
+.balance-table table {
+  padding: 0 15px;
+}
+.balance-table table tr {
+  height: 4rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #dadada;
+}
+.balance-table table tr.table-head td {
+  color: #bfbfbf;
+  font-size: 1.4rem;
+}
+.balance-table table tr td {
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.referall-table-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 3px solid #e92100;
+}
+.referall-table-head__title {
+  color: #bfbfbf;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.6rem 0 1.1rem 2.1rem;
+}
+.referall-table-head-tabs {
+  display: -ms-flexbox;
+  display: flex;
+}
+.referall-table-head__tab {
+  padding: 1.6rem 1.9rem 1.1rem 2.5rem;
+  color: #000;
+  cursor: pointer;
+}
+.referall-table-head__tab.active {
+  background: #e92100;
+  color: #fff;
+}
+.referall-table-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 4.2rem;
+  background-color: #f1f1f1;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 2.1rem;
+}
+.referall-table-title__text {
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  font-size: 1.6rem;
+}
+.referall-table-title__text .red {
+  color: #e92100;
+  margin-left: 0.5rem;
+}
+.referall-table-title__text span {
+  margin-left: 3.2rem;
+}
+.referall-table table {
+  padding: 0 15px;
+}
+.referall-table table tr {
+  height: 4rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #dadada;
+}
+.referall-table table tr.table-head td {
+  color: #bfbfbf;
+  font-size: 1.4rem;
+}
+.referall-table table tr td {
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.referall-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 4rem;
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 1rem 0 1.9rem;
+  margin-bottom: 2.5rem;
+}
+.referall-link__name {
+  color: #313131;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.referall-link__name img {
+  margin-left: 1rem;
+  width: 1.4rem;
+  cursor: pointer;
+}
+.referall-social {
+  display: -ms-flexbox;
+  display: flex;
+}
+.referall-social li {
+  margin-left: 1.8rem;
+}
+.referall-social li img {
+  height: 2.1rem;
+}
+.referall-info-items {
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 6.8rem;
+}
+.referall-info-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.referall-info-item img {
+  width: 6.5rem;
+  margin-right: 1.8rem;
+}
+.referall-info-item__text {
+  color: #bfbfbf;
+  font-size: 1.4rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.referall-info-item__text span {
+  display: block;
+  color: #313131;
+  font-size: 2.4rem;
+  margin-top: 0.7rem;
+}
+.invite__name {
+  color: #bfbfbf;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: right;
+}
+.invite__name span {
+  color: #313131;
+  font-size: 2.4rem;
+  display: block;
+  line-height: 2.4rem;
+}
+.copy-notification {
+  color: #fff;
+  background-color: rgba(0,0,0,0.8);
+  padding: 20px;
+  border-radius: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  margin-top: -30px;
+  margin-left: -85px;
+  display: none;
+  text-align: center;
+}
 @media screen and (max-width: 1199px) {
   .account-bonus:after {
     left: -1.5rem;
@@ -3325,7 +3672,7 @@ h1 {
     transition: transform 0.5s ease;
     transform: scaleY(0);
     position: absolute;
-    width: 100%;
+    width: calc(100% - 30px);
     background: #fff;
     padding-top: 3rem;
   }
@@ -3407,6 +3754,37 @@ h1 {
     position: relative;
     transform: rotate(135deg);
   }
+  .invite__name {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .invite__name span {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  .referall-info-item {
+    margin-bottom: 2rem;
+  }
+  .referall-info-items {
+    margin-bottom: 3rem;
+  }
+  .referall-table {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .referall-table-head {
+    width: 69rem;
+  }
+  .referall-table-title {
+    width: 69rem;
+  }
+  .referall-table table {
+    width: 69rem;
+  }
+  .balance-table-head__title {
+    font-size: 1.6rem;
+    padding-top: 1.6rem;
+  }
 }
 @media screen and (max-width: 575px) {
   html {
@@ -3422,13 +3800,15 @@ h1 {
   }
   .header .burger {
     top: -7rem;
-    left: 0;
     transform: translateY(0);
   }
   #account .container {
     position: relative;
     padding-left: 0;
     padding-right: 0;
+  }
+  .header__logo {
+    width: 16rem;
   }
 }
 @media screen and (max-width: 400px) {
