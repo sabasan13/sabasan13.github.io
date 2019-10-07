@@ -3303,11 +3303,11 @@ main {
   width: 100%;
 }
 .start-video:after {
-  width: 339px;
-  height: 307px;
+  width: 37.6rem;
+  height: 30.7rem;
   position: absolute;
   content: "";
-  background: url("../img/video-cat.png");
+  background: url("../img/video-cat.webp");
   background-size: 100% 100%;
   top: -28.9rem;
   left: 52%;
@@ -3328,7 +3328,7 @@ main {
   width: 28rem;
   height: 21.6rem;
   position: absolute;
-  background: url("../img/cat-head.png");
+  background: url("../img/cat-head.webp");
   background-size: 100% 100%;
   top: -13.4rem;
   left: 50%;
