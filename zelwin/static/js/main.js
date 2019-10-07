@@ -20,10 +20,10 @@ $('.question-tab').on('click', function(){
     }
   });
 
-
-  $('.account .burger').on('click', function(){
-    $('.account').toggleClass("active");
-  })
+$('.account .burger').click(function(){
+  $(".account .burger").removeClass("active focus");
+  $('.account').toggleClass("active");
+});
 
   $(document).ready(function () {
     $(".referall-link__name img").click(function (event) {
@@ -60,3 +60,29 @@ function CopyToClipboard(value, showNotification, notificationText) {
         });
     }
 }
+
+
+$('.banner-action__log').click(function(){
+  $(".popup-log").fadeIn(500);
+});
+$('.banner-action__sign').click(function(){
+  $(".popup-sign").fadeIn(500);
+});
+$('.popup__close').click(function(){
+  $(".popup").fadeOut(500);
+});
+$('.about__play').click(function(){
+  $(".popup-video").fadeIn(500);
+});
+
+$(document).mouseup(function (e){
+  var div1 = $(".popup-container"); 
+  // тут указываем ID элемента
+  if (!div1.is(e.target) // если клик был не по нашему блоку
+      && div1.has(e.target).length === 0) { // и не по его дочерним элементам
+        $(".popup").fadeOut(500);
+    // скрываем его
+  }
+});
+
+
