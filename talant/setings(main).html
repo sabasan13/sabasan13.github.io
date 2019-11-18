@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Настройки</title>
+	<!--META-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--END META-->
+
+	<!--FONTS-->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!--END FONTS-->
+
+	<!--JQUERY-->
+	<script src="libs/jquery/jquery-3.1.1.min.js"></script>
+	<script src="libs/jquery/jquery-migrate-1.4.1.min.js"></script>
+	<!--END JQUERY-->
+	
+	<!--BOOTSTRAP 3.3.7-->
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7/bootstrap.min.css">
+	<script src="libs/bootstrap-3.3.7/bootstrap.min.js"></script>
+	<!--END BOOTSTRAP 3.3.7-->
+
+	<!--FANCYBOX-->
+	<!--END FANCYBOX-->
+
+	<!--STYLES-->
+	<link rel="stylesheet" href="css/magnificPopup.css">	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!--END STYLES-->
+
+	<!--SCRIPTS-->
+	<script src="js/magnificPopup.js"></script>
+	<script src="js/scrollbot.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+	<!--END SCRIPTS-->
+</head>
+<body>
+
+
+	<!--HEADER-->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="row df aic">
+				<div class="col-xs-3 mob-menu">
+					<div class="animated-icon3">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="mob-menu__drop">
+						<div class="mob-menu__drop__content">
+							<div class="mob-menu__drop__content__top">
+								<a href="#" class="mob-menu__drop__content__logo">
+									<img src="img/header-logo.png" alt="">
+									<span>оплата за результат</span>
+								</a>
+							</div>
+							<div class="mob-menu__drop__content__list">
+								<a href="#">
+									Задания
+								</a>
+								<a href="#">
+									Отклики
+								</a>
+								<a href="#">
+									Как работает Таланты Тут?
+								</a>
+								<a href="#">
+									Техническая поддержка
+								</a>
+								<a href="#">
+									Популярные вопросы
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-2 col-xs-3 header__logo">
+					<a href="#" class="header__logo__link">
+						<div class="header__logo__link__image">
+							<img src="img/header-logo.png">
+						</div>
+						<span class="header__logo__link__text">
+							оплата за результат
+						</span>
+					</a>
+				</div>
+				<div class="col-lg-6 col-sm-5 header__menu">
+					<div class="header__menu__item active">
+						<a href="#" class="header__menu__item__link">
+							Задания
+						</a>
+					</div>
+					<div class="header__menu__item">
+						<a href="#" class="header__menu__item__link">
+							Отклики
+						</a>
+					</div>
+					<div class="header__menu__item header__menu__item__drop-box">
+						<a href="#" class="header__menu__item__link">
+							Помощь
+							<span class="header__menu__item__link__arrow">
+								<svg width="12" height="8" viewBox="0 0 12 8"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.40594 7.17412L0.246292 2.0143C-0.0820933 1.68607 -0.0820933 1.15391 0.246292 0.825843C0.574386 0.497749 1.10652 0.497749 1.43459 0.825843L6.00009 5.39149L10.5654 0.825976C10.8937 0.497882 11.4257 0.497882 11.7538 0.825976C12.0821 1.15407 12.0821 1.68621 11.7538 2.01443L6.5941 7.17425C6.42998 7.3383 6.2151 7.42023 6.00011 7.42023C5.78502 7.42023 5.56999 7.33814 5.40594 7.17412Z"/>
+								</svg>
+							</span>
+						</a>
+						<div class="header__menu__item__drop">
+							<a href="#">
+								Как работает Таланты Тут?
+							</a>
+							<a href="#">
+								Техническая поддержка
+							</a>
+							<a href="#">
+								Популярные вопросы	
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--
+					HEADER BUTTONS
+				<div class="col-lg-4 header__buttons">
+					<a href="#" class="header__login">
+						Вход
+					</a>
+					<a href="#" class="header__signup">
+						Регистрация
+					</a>
+				</div>
+				-->
+				<div class="col-lg-4 col-sm-5 col-xs-9 header__user-panel">
+					<div class="header__user-panel__interact header__user-panel__messages">
+						<div class="header__user-panel__interact__button">
+							<svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.91961 4.98668C2.1726 5.1652 2.93523 5.69543 4.20753 6.57709C5.47986 7.45875 6.45456 8.13761 7.13165 8.6137C7.20604 8.66588 7.36409 8.77933 7.60587 8.95418C7.84769 9.12915 8.04861 9.27055 8.2085 9.3784C8.36849 9.48621 8.56192 9.60716 8.78896 9.74104C9.01592 9.87481 9.22987 9.97543 9.43076 10.042C9.63168 10.1092 9.81768 10.1425 9.98878 10.1425H10H10.0113C10.1824 10.1425 10.3684 10.1092 10.5694 10.042C10.7702 9.97543 10.9843 9.8747 11.2111 9.74104C11.438 9.607 11.6314 9.48617 11.7914 9.3784C11.9514 9.27055 12.1522 9.12915 12.3941 8.95418C12.6358 8.77917 12.794 8.66588 12.8684 8.6137C13.5528 8.13761 15.2941 6.92848 18.0916 4.98644C18.6347 4.60714 19.0885 4.14946 19.453 3.61372C19.8178 3.07821 20 2.51643 20 1.9287C20 1.43756 19.8232 1.01714 19.4697 0.667468C19.1163 0.31772 18.6977 0.142944 18.2142 0.142944H1.78564C1.21276 0.142944 0.771892 0.336367 0.463112 0.723212C0.154371 1.11013 0 1.59377 0 2.17408C0 2.64282 0.204681 3.15077 0.613847 3.69761C1.02297 4.24449 1.45837 4.67422 1.91961 4.98668Z"/>
+								<path d="M18.8838 6.18078C16.4436 7.83242 14.5906 9.11601 13.3259 10.0313C12.9018 10.3437 12.5578 10.5875 12.2936 10.7623C12.0294 10.9371 11.678 11.1157 11.2389 11.2979C10.8 11.4804 10.3909 11.5713 10.0114 11.5713H10H9.98881C9.60935 11.5713 9.20007 11.4804 8.76116 11.2979C8.32224 11.1157 7.97062 10.9371 7.70648 10.7623C7.44242 10.5875 7.09826 10.3437 6.6742 10.0313C5.66968 9.29473 3.82076 8.01106 1.12735 6.18078C0.70313 5.89823 0.327387 5.57436 0 5.20984V14.0712C0 14.5626 0.174776 14.9828 0.524523 15.3325C0.874192 15.6823 1.29466 15.8571 1.78576 15.8571H18.2144C18.7054 15.8571 19.1258 15.6823 19.4755 15.3325C19.8253 14.9826 20 14.5626 20 14.0712V5.20984C19.68 5.56682 19.3081 5.89069 18.8838 6.18078Z"/>
+							</svg>
+
+						</div>
+					</div>
+					<div class="header__user-panel__interact header__user-panel__interact_unread header__user-panel__notification">
+						<div class="header__user-panel__interact__button">
+							<svg width="18" height="20" viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.99998 20C10.1333 20 11.0513 19.0821 11.0513 17.9487H6.94873C6.94868 19.0821 7.86666 20 8.99998 20Z"/>
+								<path d="M15.1539 13.8462V8.71793C15.1539 5.56409 13.477 2.93332 10.5385 2.23587V1.53846C10.5385 0.687163 9.85136 0 9.00007 0C8.14877 0 7.4616 0.687163 7.4616 1.53846V2.23591C4.52314 2.93337 2.84622 5.56413 2.84622 8.71798V13.8462L0.794922 15.8975V16.9231H17.2052V15.8975L15.1539 13.8462Z" />
+							</svg>
+						</div>
+						<div class="header__user-panel__notification__drop">
+							<div class="header__user-panel__notification__drop__content">
+								<!--
+									Смена статуса - header__user-panel__notification__drop__content__list__item_change-status
+
+									Финансы прихода - header__user-panel__notification__drop__content__list__item_finance-coming
+
+									Финансы расход - header__user-panel__notification__drop__content__list__item_finance-expense
+
+									Системные предупреждение - header__user-panel__notification__drop__content__list__item_system-warnings
+
+									Системные информирование - header__user-panel__notification__drop__content__list__item_system-informing
+								-->
+								<div class="header__user-panel__notification__drop__content__list">
+									<a href="#" class="header__user-panel__notification__drop__content__list__item header__user-panel__notification__drop__content__list__item_ch">
+										Выведено с баланса - 3 000 р.
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item header__user-panel__notification__drop__content__list__item_finance-coming">
+										Переведно в арбитраж “Установить душевую каб в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item header__user-panel__notification__drop__content__list__item_system-informing">
+										Переведно в арбитраж “Установить душевую каб в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item header__user-panel__notification__drop__content__list__item_system-warnings">
+										Заказчик зарезервировал средства на “Установить душевую каб ...”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Сообщения в “Установить душевую кабину в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item header__user-panel__notification__drop__content__list__item_finance-coming">
+										Пополнен баланс на 3000р.
+
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Выведено с баланса - 3 000 р.
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Переведно в арбитраж “Установить душевую каб в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Заказчик зарезервировал средства на “Установить душевую каб ...”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Сообщения в “Установить душевую кабину в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Пополнен баланс на 3000р.
+
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Выведено с баланса - 3 000 р.
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Переведно в арбитраж “Установить душевую каб в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Заказчик зарезервировал средства на “Установить душевую каб ...”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Сообщения в “Установить душевую кабину в ванную комнату”
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item">
+										Пополнен баланс на 3000р.
+
+									</a>
+									<a href="#" class="header__user-panel__notification__drop__content__list__item" >
+										Сообщения в “Установить душевую кабину в ванную комнату”
+									</a>
+								</div>
+							</div>
+							<div class="header__user-panel__notification__drop__bottom">
+								<div class="header__user-panel__notification__drop__show-all">
+									<span class="header__user-panel__notification__drop__show-all__show">
+										Показать ещё (24)
+									</span>
+									<span class="header__user-panel__notification__drop__show-all__hide">
+										Свернуть обратно
+									</span>
+								</div>
+								<div class="header__user-panel__notification__drop__open-setings">
+									<svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.953 6.66733C14.9293 6.45648 14.6835 6.29803 14.4709 6.29803C13.7836 6.29803 13.1737 5.89446 12.9179 5.27033C12.6566 4.63107 12.8251 3.88555 13.3373 3.41568C13.4986 3.26828 13.5181 3.02154 13.3829 2.85015C13.0311 2.40344 12.6313 1.99993 12.1948 1.65021C12.0238 1.51303 11.773 1.53212 11.6248 1.69626C11.1777 2.19136 10.3747 2.37537 9.75421 2.11646C9.10848 1.84483 8.70128 1.1905 8.74113 0.488121C8.75425 0.267501 8.59301 0.075679 8.37306 0.0500618C7.81283 -0.0147346 7.24769 -0.0167438 6.68579 0.045597C6.46835 0.0695956 6.30711 0.256897 6.31442 0.474727C6.33887 1.17019 5.92676 1.81307 5.28745 2.07494C4.67437 2.32536 3.877 2.14291 3.43085 1.65222C3.28339 1.4906 3.03665 1.47073 2.86487 1.60462C2.41537 1.95729 2.00655 2.36113 1.65154 2.80416C1.51307 2.97639 1.53345 3.22603 1.6963 3.37421C2.2183 3.84693 2.38685 4.59893 2.11566 5.24555C1.85676 5.86204 1.21661 6.25935 0.483755 6.25935C0.245945 6.25171 0.0765597 6.41133 0.0505518 6.62754C-0.0154166 7.191 -0.0161979 7.76513 0.0473148 8.33317C0.070867 8.54492 0.324192 8.70197 0.53912 8.70197C1.19222 8.68528 1.81925 9.08963 2.08229 9.72973C2.34449 10.369 2.17594 11.1141 1.66293 11.5843C1.50247 11.7317 1.4821 11.9781 1.61733 12.1495C1.96581 12.5933 2.3657 12.9972 2.80381 13.3498C2.97565 13.4883 3.22568 13.4688 3.37464 13.3046C3.82336 12.8083 4.62631 12.6246 5.24436 12.884C5.89171 13.1548 6.29891 13.8091 6.25906 14.5119C6.24605 14.7326 6.40807 14.9248 6.62713 14.95C6.91372 14.9834 7.20204 15.0001 7.49114 15.0001C7.76556 15.0001 8.04004 14.985 8.31446 14.9545C8.53195 14.9305 8.69308 14.7432 8.68577 14.525C8.6606 13.8299 9.07343 13.187 9.71191 12.9256C10.3291 12.6735 11.1231 12.858 11.5693 13.3482C11.7176 13.5095 11.9626 13.529 12.1354 13.3956C12.584 13.0437 12.992 12.6402 13.3487 12.196C13.4871 12.0241 13.4676 11.7741 13.3039 11.626C12.7819 11.1532 12.6125 10.4011 12.8837 9.75495C13.1386 9.14667 13.755 8.73825 14.418 8.73825L14.5107 8.74065C14.7258 8.75812 14.9236 8.59247 14.9497 8.37297C15.0158 7.809 15.0166 7.23537 14.953 6.66733ZM7.51207 10.0177C6.13254 10.0177 5.0104 8.89552 5.0104 7.51599C5.0104 6.13651 6.13254 5.01433 7.51207 5.01433C8.89154 5.01433 10.0137 6.13651 10.0137 7.51599C10.0137 8.89552 8.89154 10.0177 7.51207 10.0177Z"/>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div class="header__user-panel__notification__drop-setings">
+							<div class="header__user-panel__notification__drop-setings__top">
+								<div class="header__user-panel__notification__drop-setings__top__left">
+									<div class="header__user-panel__notification__drop-setings__top__back">
+										<svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8 1L1 8.37705L8 16" stroke="#6C7185"/>
+										</svg>
+									</div>
+									<div class="header__user-panel__notification__drop-setings__top__left__title">
+										Тип уведомления
+									</div>
+								</div>
+								<div class="header__user-panel__notification__drop-setings__top__right">
+									<img src="img/pc.svg" alt="">
+									Push
+								</div>
+							</div>
+							<div class="header__user-panel__notification__drop-setings__lines">
+								<label class="checkbox-line">
+									<div class="checkbox-line__title">
+										Смена статуса
+									</div>
+									<div class="checkbox-line__checkbox">
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</label>
+								<label class="checkbox-line">
+									<div class="checkbox-line__title">
+										Финансы приход
+									</div>
+									<div class="checkbox-line__checkbox">
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</label>
+								<label class="checkbox-line">
+									<div class="checkbox-line__title">
+										Финансы расход
+									</div>
+									<div class="checkbox-line__checkbox">
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</label>
+								<label class="checkbox-line">
+									<div class="checkbox-line__title">
+										Системные предупреждение
+									</div>
+									<div class="checkbox-line__checkbox">
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</label>
+								<label class="checkbox-line">
+									<div class="checkbox-line__title">
+										Системные информирование
+									</div>
+									<div class="checkbox-line__checkbox">
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="header__user-panel__interact header__user-panel__user">
+						<div class="header__user-panel__user__avatar">
+							<img src="img/photo.png">
+						</div>
+						<a href="#" class="header__user-panel__user__nickname">
+							Сергей
+						</a>
+						<div class="header__user-panel__user__arrow">
+							<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.40594 7.17412L0.246292 2.0143C-0.0820933 1.68607 -0.0820933 1.15391 0.246292 0.825843C0.574386 0.497749 1.10652 0.497749 1.43459 0.825843L6.00009 5.39149L10.5654 0.825976C10.8937 0.497882 11.4257 0.497882 11.7538 0.825976C12.0821 1.15407 12.0821 1.68621 11.7538 2.01443L6.5941 7.17425C6.42998 7.3383 6.2151 7.42023 6.00011 7.42023C5.78502 7.42023 5.56999 7.33814 5.40594 7.17412Z"></path>
+							</svg>
+						</div>
+						<div class="user-panel__drop">
+							<a href="#">
+								Анкета
+							</a>
+							<a href="#">
+								Настройки
+							</a>
+							<div class="user-panel__finance">
+								Финансы: <span>10 000 р.</span>
+							</div>
+							<div class="user-panel__finance user-panel__finance_zero">
+								Финансы: <span>0 р.</span> <a href="#">пополнить</a>
+							</div>
+							<a href="#">
+								Помощь
+							</a>
+							<div class="type-account type-account_customer">
+								<div class="type-account__title type-account__title__customer">
+									Я заказчик
+								</div>
+								<div class="type-account__switch">
+									<span></span>
+								</div>
+								<div class="type-account__title type-account__title__master">
+									Я мастер
+								</div>
+							</div>
+							<div class="user-panel__whats-new">
+								Что нового?
+								<span>3</span>
+							</div>
+							<a href="#" class="user-panel__exit">
+								Выход
+							</a>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<!--HEADER MESSAGES-->
+	<div class="messages">
+		<div class="messages-container">
+			<div class="messages__top">
+				Чаты
+				<div class="messages__close">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.42678 5.95997L0.115276 11.2715C-0.0322861 11.419 -0.0322861 11.6581 0.115276 11.8057C0.188964 11.8795 0.285714 11.9163 0.382276 11.9163C0.479026 11.9163 0.575589 11.8795 0.649276 11.8057L6.00071 6.45422L11.3522 11.8057C11.426 11.8795 11.5226 11.9163 11.6192 11.9163C11.7157 11.9163 11.8125 11.8795 11.8862 11.8057C12.0337 11.6581 12.0337 11.419 11.8862 11.2715L6.57484 5.95997L11.8897 0.644719C12.0373 0.497156 12.0373 0.258094 11.8897 0.110531C11.7422 -0.0368438 11.5031 -0.0368438 11.3557 0.110531L6.0009 5.46572L0.645526 0.110719C0.497964 -0.0366563 0.259089 -0.0366563 0.111526 0.110719C-0.0360361 0.258281 -0.0360361 0.497344 0.111526 0.644906L5.42678 5.95997Z" fill="white" stroke="white" stroke-width="0.5"/>
+					</svg>
+				</div>
+			</div>
+			<div class="messages-content">
+				<div class="messages-content__chats">
+					<div class="messages-content__chats__list">
+						<div class="messages-content__chats__list__items">
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-row">
+										<img src="img/chat-photo2.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>	
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-row">
+										<img src="img/chat-photo2.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>	
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-row">
+										<img src="img/chat-photo2.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>
+							<div class="messages-content__chats__item">
+								<div class="messages-content__chats__item__left">
+									<div class="messages-content__chats__item__number">
+										3
+									</div>
+									<a href="#" class="avatar avatar-rectangle">
+										<img src="img/chat-photo.png" alt="/">
+									</a>						
+								</div>		
+								<div class="messages-content__chats__item__right">
+									<div class="messages-content__chats__item__right__top">
+										<a href="#" class="messages-content__chats__item__nickname">
+											Ирина Д.
+										</a>
+										<a href="#" class="messages-content__chats__item__project">
+											Сделать ремонт в ванной комнате для...
+										</a>
+									</div>
+									<div class="messages-content__chats__item__right__top__bottom">
+										<a href="#">
+											Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста
+										</a>
+									</div>
+								</div>					
+							</div>					
+						</div>						
+					</div>
+					<div class="messages-content__chats__show-all">
+						<span>
+							Показать всё (15)
+						</span>
+					</div>
+				</div>
+				<div class="messages-content__user-chat">
+					<div class="messages-content__user-chat__panel">
+						<div class="messages-content__user-chat__panel__back">
+							<svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 1L1 8.37705L8 16" stroke="#6C7185"></path>
+							</svg>
+						</div>
+						<div class="avatar-rectangle">
+							<img src="img/chat-photo.png">
+						</div>
+						<div class="messages-content__user-chat__panel__info">
+							<a href="#" class="username">
+								Ирина Д.
+							</a>
+							<a href="#" class="messages-content__user-chat__panel__info__task">
+								Сделать ремонт в ванной комнате для...
+							</a>
+						</div>
+						<div class="messages-content__user-chat__panel__menu">
+							<svg width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="2" cy="2" r="2" />
+								<circle cx="2" cy="10" r="2" />
+								<circle cx="2" cy="18" r="2" />
+							</svg>
+						</div>
+						<div class="messages-content__user-chat__panel__menu-drop">
+							<a href="#">Посмотреть информацию о чате</a>
+							<a href="#">Выключить уведомления</a>
+							<a href="#">Заблокировать</a>
+						</div>
+					</div>
+					<!--
+						обозначаем блок когда печатает собеседник классом messages-content__user-chat-bar__companion-typing
+					-->
+					<div class="messages-content__user-chat-bar messages-content__user-chat-bar__companion-typing">
+						<div class="messages-content__user-chat-bar-list">
+							<div class="messages__message__more">
+								Показать <a href="#">ещё 5</a> сообщений или <a href="#">все 29</a>
+							</div>
+							<div class="messages__message messages__message_user unread">
+								<span>
+									Добрый день. Вы отозвались на заказ “Ремонт раковины за 2 копейки. Подскажите, вы точно сделает ремонт за 2 копейки?
+								</span>							
+							</div>
+							<div class="messages__message messages__message_user read">
+								<span>
+									Добрый день. Вы отозвались на заказ “Ремонт раковины за 2 копейки. <a href="#">Подскажите, вы точно сделает ремонт за 2 копейки?</a>
+								</span>							
+							</div>
+							<div class="messages__message messages__message_user read">
+								<span>
+									Добрый день. Вы отозвались.</a>
+								</span>							
+							</div>
+							<div class="messages__message__info">
+								17:46
+							</div>
+							<div class="messages__message__new">
+								<span>
+									У вас <a href="">3 новых сообщения</a>
+								</span>							
+							</div>
+							<div class="messages__message messages__message_companion unread">
+								<span>
+									Конечно, я ж не балабол
+								</span>
+							</div>
+							<div class="messages__message messages__message__photos modal-gallery">
+								<!--
+									здесь прописываем одно из фото которые прячем
+								-->
+								
+								<!--
+									используем класс messages__message__photos__photo что-бы спрятать ненужные фотографии(в галереи отображатся будут)
+								-->
+								<a href="img/image.jpg" class="messages__message__photos__photo messages__message__photos__photo_hide modal-one"  title="изображение">
+									<img src="img/image.jpg" alt="">
+								</a>
+								<a href="img/image.jpg" class="messages__message__photos__photo modal-one"  title="изображение">
+									<img src="img/image.jpg" alt="">
+								</a>
+								<a href="img/image2.jpg" class="messages__message__photos__photo modal-one" title="изображение">
+									<img src="img/image2.jpg" alt="">
+								</a>
+								<a href="img/image.jpg" class="messages__message__photos__photo modal-one" title="изображение">
+									<img src="img/image.jpg" alt="">
+								</a>
+								<a href="img/image2.jpg" class="messages__message__photos__more-photos modal-one" title="изображение">
+									+2
+								</a>
+							</div>
+							<div class="messages__message messages__message_companion unread">
+								<span>
+									<a href="#">Мне уже выезжать?</a>
+								</span>							
+							</div>
+							<div class="messages__message__info">
+								Сергей Антонюк 17:48
+							</div>
+							<div class="messages-typing">
+								<div class="messages-typing-bar">
+									<div class='sk-three-bounce'>
+									    <div class='sk-bounce-1 sk-child'></div>
+									    <div class='sk-bounce-2 sk-child'></div>
+									    <div class='sk-bounce-3 sk-child'></div>
+									</div>
+								</div>		
+								<div class="messages-typing-name">
+									Сергей пишет...
+								</div>					
+							</div>
+						</div>
+					</div>
+					<form action="" class="messages-content__user-chat__sender">
+						<div class="messages-content__user-chat__sender__input-bar">
+							<input type="text" placeholder="Напишите сообщение...">
+							<label>
+								<input type="file" multiple>
+								<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.42213 15.9514C2.6026 15.9514 1.83254 15.632 1.25338 15.053C0.0577124 13.8572 0.0577124 11.9114 1.25338 10.7157L10.7346 1.23405C11.4984 0.469402 12.5151 0.0488281 13.596 0.0488281C14.677 0.0488281 15.6936 0.469402 16.4575 1.23405C17.2221 1.99849 17.6432 3.01454 17.6432 4.09538C17.6432 5.17644 17.2226 6.19245 16.4581 6.95643L8.99436 14.4195C8.77028 14.6435 8.40739 14.6435 8.18341 14.4195C7.95933 14.1955 7.95933 13.8326 8.18341 13.6084L15.647 6.14538C16.1949 5.59764 16.4961 4.86952 16.4961 4.09538C16.4961 3.32138 16.1942 2.5928 15.6465 2.045C15.0987 1.49727 14.3706 1.19584 13.596 1.19584C12.8215 1.19584 12.0934 1.49727 11.5455 2.045L2.06443 11.5267C1.3162 12.2755 1.3162 13.4932 2.06443 14.2419C2.79023 14.9667 4.05389 14.9667 4.77965 14.2419L11.1461 7.87496C11.3192 7.70185 11.4184 7.46222 11.4184 7.21796C11.4184 6.97028 11.3216 6.73681 11.1456 6.56092C10.7839 6.19913 10.1941 6.19804 9.83228 6.56092L5.48426 10.9094C5.26031 11.1336 4.89725 11.1336 4.67331 10.9094C4.44922 10.6855 4.44922 10.3224 4.67331 10.0985L9.02118 5.75001C9.82996 4.94128 11.1468 4.94128 11.9566 5.75001C12.3493 6.14256 12.5654 6.66407 12.5654 7.21799C12.5654 7.76457 12.3437 8.29947 11.9572 8.68591L5.59074 15.053C5.01158 15.632 4.24148 15.9514 3.42213 15.9514Z"/>
+								</svg>
+							</label>
+						</div>						
+						<button>
+							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white"/>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--HEADER WHAT'S NEW-->
+	<div class="whats-new">
+		<div class="whats-new__container">
+			<div class="whats-new__top">
+		        <div class="whats-new__title">
+		            Что нового?
+		        </div>
+		        <div class="whats-new__close">
+		            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                <path d="M7.23542 7.94638L0.153417 15.0284C-0.043333 15.2251 -0.043333 15.5439 0.153417 15.7406C0.251667 15.8391 0.380667 15.8881 0.509417 15.8881C0.638417 15.8881 0.767167 15.8391 0.865417 15.7406L8.00067 8.60538L15.1359 15.7406C15.2344 15.8391 15.3632 15.8881 15.4919 15.8881C15.6207 15.8881 15.7497 15.8391 15.8479 15.7406C16.0447 15.5439 16.0447 15.2251 15.8479 15.0284L8.76617 7.94638L15.8527 0.859381C16.0494 0.662631 16.0494 0.343881 15.8527 0.147131C15.6559 -0.0493691 15.3372 -0.0493691 15.1407 0.147131L8.00092 7.28738L0.860417 0.147381C0.663667 -0.0491191 0.345167 -0.0491191 0.148417 0.147381C-0.048333 0.344131 -0.048333 0.662881 0.148417 0.859631L7.23542 7.94638Z" fill="white" stroke="white" />
+		            </svg>
+
+		        </div>
+		    </div>
+		    <div class="whats-new__content">
+		        <div class="whats-new__list">
+		            <div class="whats-new__post">
+		                <div class="whats-new__post__body">
+		                    <div class="whats-new__post__top">
+		                        <div class="whats-new__post__status whats-new__post__status_update">
+		                            Обновление
+		                        </div>
+		                        <div class="whats-new__post__date">
+		                            29.06.2019
+		                        </div>
+		                    </div>
+		                    <div class="whats-new__post__title">
+		                        Новые стикеры для переписки!
+		                    </div>
+		                    <img src="img/post_photo.jpg" class="whats-new__post__img">
+		                    <div class="whats-new__post__text">
+		                        <p>
+		                            Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития.
+		                        </p>
+		                        <p>
+		                            Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.
+		                        </p>
+		                        <p>
+		                            С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+		                        </p>
+		                    </div>
+		                    <a href="#" class="whats-new__post__link">
+		                        Протестить новые стикеры
+		                    </a>
+		                    <div class="sender-title">
+		                        Пожалуйста, оцените важность обновления:
+		                    </div>
+		                    <div class="sender-title">
+		                        Спасибо большое! Ваша оценка очень важна для нас.
+		                    </div>
+		                </div>
+		                <div class="whats-new__post__sender">
+		                    <div class="whats-new__post__sender__rating">
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description grey">
+		                                Плохо
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z" fill="#6C7185" />
+		                            </svg>
+		                        </a>
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description blue">
+		                                Не важно
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z" fill="#4880FF" />
+		                            </svg>
+		                        </a>
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description gren">
+		                                Понравилось
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z" fill="#33C093" />
+		                            </svg>
+		                        </a>
+		                    </div>
+		                    <form action="" class="whats-new__post__sender__form">
+		                        <input type="text" placeholder="Поделитись мнением">
+		                        <button>
+		                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white" />
+		                            </svg>
+		                        </button>
+		                    </form>
+		                </div>
+		            </div>
+		            <div class="whats-new__post">
+		                <div class="whats-new__post__body">
+		                    <div class="whats-new__post__top">
+		                        <div class="whats-new__post__status whats-new__post__status_stock">
+		                            Акция
+		                        </div>
+		                        <div class="whats-new__post__date">
+		                            29.06.2019
+		                        </div>
+		                    </div>
+		                    <div class="whats-new__post__title">
+		                        Новые стикеры для переписки!
+		                    </div>
+		                    <img src="img/post_photo.jpg" class="whats-new__post__img">
+		                    <div class="whats-new__post__text">
+		                        <p>
+		                            Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития.
+		                        </p>
+		                        <p>
+		                            Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.
+		                        </p>
+		                        <p>
+		                            С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+		                        </p>
+		                    </div>
+		                    <a href="#" class="whats-new__post__link">
+		                        Протестить новые стикеры
+		                    </a>
+		                    <div class="sender-title">
+		                        Пожалуйста, оцените важность обновления:
+		                    </div>
+		                    <div class="sender-title">
+		                        Спасибо большое! Ваша оценка очень важна для нас.
+		                    </div>
+		                </div>
+		                <div class="whats-new__post__sender">
+		                    <div class="whats-new__post__sender__rating">
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description grey">
+		                                Плохо
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z" fill="#6C7185" />
+		                            </svg>
+		                        </a>
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description blue">
+		                                Не важно
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z" fill="#4880FF" />
+		                            </svg>
+		                        </a>
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description gren">
+		                                Понравилось
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z" fill="#33C093" />
+		                            </svg>
+		                        </a>
+		                    </div>
+		                    <form action="" class="whats-new__post__sender__form">
+		                        <input type="text" placeholder="Поделитись мнением">
+		                        <button>
+		                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white" />
+		                            </svg>
+		                        </button>
+		                    </form>
+		                </div>
+		            </div>
+		            <div class="whats-new__post">
+		                <div class="whats-new__post__body">
+		                    <div class="whats-new__post__top">
+		                        <div class="whats-new__post__status whats-new__post__status_ad">
+		                            Обьявление
+		                        </div>
+		                        <div class="whats-new__post__date">
+		                            29.06.2019
+		                        </div>
+		                    </div>
+		                    <div class="whats-new__post__title">
+		                        Новые стикеры для переписки!
+		                    </div>
+		                    <img src="img/post_photo.jpg" class="whats-new__post__img">
+		                    <div class="whats-new__post__text">
+		                        <p>
+		                            Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития.
+		                        </p>
+		                        <p>
+		                            Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.
+		                        </p>
+		                        <p>
+		                            С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+		                        </p>
+		                    </div>
+		                    <a href="#" class="whats-new__post__link">
+		                        Протестить новые стикеры
+		                    </a>
+		                    <div class="sender-title">
+		                        Пожалуйста, оцените важность обновления:
+		                    </div>
+		                    <div class="sender-title">
+		                        Спасибо большое! Ваша оценка очень важна для нас.
+		                    </div>
+		                </div>
+		                <div class="whats-new__post__sender">
+		                    <div class="whats-new__post__sender__rating">
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description grey">
+		                                Плохо
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z" fill="#6C7185" />
+		                            </svg>
+		                        </a>
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description blue">
+		                                Не важно
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z" fill="#4880FF" />
+		                            </svg>
+		                        </a>
+		                        <a href="" class="whats-new__post__sender__rating__item">
+		                            <div class="whats-new__post__sender__rating__item__description gren">
+		                                Понравилось
+		                            </div>
+		                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z" fill="#33C093" />
+		                            </svg>
+		                        </a>
+		                    </div>
+		                    <form action="" class="whats-new__post__sender__form">
+		                        <input type="text" placeholder="Поделитись мнением">
+		                        <button>
+		                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white" />
+		                            </svg>
+		                        </button>
+		                    </form>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<!--USER PANEL MOBILE-->
+	<div class="header__user-panel-mobile">
+		<div class="header__user-panel-mobile__container">
+			<div class="header__user-panel-mobile__top">
+				<div class="header__user-panel-mobile__top__user-info">
+					<a href="" class="header__user-panel__user__avatar">
+						<img src="img/photo.png">
+					</a>
+					<a href="#" class="header__user-panel__user__nickname">
+						Сергей
+					</a>
+				</div>
+				<div class="header__user-panel-mobile__close">
+					<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="1.41406" y="0.686523" width="30" height="2" transform="rotate(45 1.41406 0.686523)" fill="#4880FF"/>
+						<rect x="22.9409" y="2.41406" width="30" height="2" transform="rotate(135 22.9409 2.41406)" fill="#4880FF"/>
+					</svg>
+				</div>
+			</div>
+			<div class="user-panel__drop">
+				<a href="#">
+					Анкета
+				</a>
+				<a href="#">
+					Настройки
+				</a>
+				<div class="user-panel__finance">
+					Финансы: <span>10 000 р.</span>
+				</div>
+				<div class="user-panel__finance user-panel__finance_zero">
+						Финансы: <span>0 р.</span> <a href="#">пополнить</a>
+				</div>
+				<a href="#">
+					Помощь
+				</a>
+				<div class="type-account type-account_customer">
+				<div class="type-account__title type-account__title__customer">
+						Я заказчик
+					</div>
+					<div class="type-account__switch">
+						<span></span>
+					</div>
+					<div class="type-account__title type-account__title__master">
+						Я мастер
+					</div>
+				</div>
+				<div class="user-panel__whats-new">
+					Что нового?
+					<span>3</span>
+				</div>
+				<a href="#" class="user-panel__exit">
+					Выход
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--NOTIFICATION SHADOW-->
+	<div class="notification-shadow"></div>
+	<!--END HEADER-->
+	
+
+
+
+	<!--PAGE BODY-->
+	<section class="page-body setings" id="page-body">
+		<div class="container">
+			<div class="row df fww">
+				<div class="col-lg-3 col-sm-3">
+					<div class="setings-tab-bar">
+						<a href="" class="setings-tab-bar__item active">
+							Основные
+						</a>
+						<a href="" class="setings-tab-bar__item">
+							Анкета
+						</a>
+						<a href="" class="setings-tab-bar__item">
+							Специализации
+						</a>	
+						<a href="" class="setings-tab-bar__item">
+							Уведомления
+						</a>
+						<a href="" class="setings-tab-bar__item">
+							Финансы
+						</a>
+						<a href="" class="setings-tab-bar__item">
+							Партнерская программа
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-sm-9">
+					<form action="" class="setings-box setings-form__basic-data">
+						<div class="setings-box__title">
+							Основные данные
+						</div>
+						<div class="setings-box__content">
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>Имя
+								</div>
+								<div class="setings-box__line__right">
+									Сергей
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>Фамилия
+								</div>
+								<div class="setings-box__line__right">
+									Антонюк
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>Город
+								</div>
+								<div class="setings-box__line__right">
+									<input type="text">
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>День рождения
+								</div>
+								<div class="setings-box__line__right">
+									03.12.1995
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>Телефон
+								</div>
+								<div class="setings-box__line__right">
+									<input type="text">
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>Email
+								</div>
+								<div class="setings-box__line__right">
+									<input type="text">
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									<span>*</span>Статус
+								</div>
+								<div class="setings-box__line__right setings-box__line__right_status">
+									<label for="status1">
+										<input type="radio" name="status" value="Свободен" id="status1" checked="">
+										<span>
+											Свободен
+										</span>
+									</label>
+									<label for="status2">
+										<input type="radio" name="status" value="Занят" id="status2">
+										<span>
+											Занят
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="setings-box__line ">
+								<label class="setings-box__line__left setings-box__line__left_confirmation">
+									<div class="checkbox-line__checkbox">
+										<input type="checkbox">
+										<span></span>
+									</div>
+									У меня есть юридическое лицо или ИП
+								</label>
+							</div>
+							<div class="setings-box__line setings-box__line__confirmation-drop">
+								<div class="setings-box__line__confirmation-drop__text">
+									Загрузите пожалуйста документы, подтверждающие Ваш статус в слеудющих допустимых форматах: JPG, PNG, TIF, BMP.  
+								</div>
+								<label class="setings-box__line__confirmation-drop__button">
+									Прикрепить файл
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.91699C0 1.64085 0.223858 1.41699 0.5 1.41699H7C7.27614 1.41699 7.5 1.64085 7.5 1.91699C7.5 2.19313 7.27614 2.41699 7 2.41699H1V13.417H12V8.41699C12 8.14085 12.2239 7.91699 12.5 7.91699C12.7761 7.91699 13 8.14085 13 8.41699V13.917C13 14.1931 12.7761 14.417 12.5 14.417H0.5C0.223858 14.417 0 14.1931 0 13.917V1.91699Z" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1199 9.03974L6.53055 9.31585C6.31029 9.33279 6.118 9.16797 6.10105 8.9477L5.82494 5.35831C5.808 5.13804 5.97282 4.94575 6.19309 4.92881C6.41335 4.91186 6.60564 5.07669 6.62259 5.29695L6.82463 7.9235L12.1962 1.65671L12.8036 2.17734L7.43204 8.44414L10.0586 8.24209C10.2789 8.22515 10.4711 8.38997 10.4881 8.61024C10.505 8.8305 10.3402 9.02279 10.1199 9.03974Z"/>
+									</svg>
+									<input type="file" multiple="">
+								</label>
+							</div>
+							<button class="setings-box__button">
+								Сохранить
+							</button>
+						</div>
+						<div class="setings-box__description">
+							<div class="setings-box__description__line">
+								<div class="setings-box__description__line__text">
+									Поля помеченые как “ <span>*</span> ” обязательны для заполнения
+								</div>								
+							</div>
+							<div class="setings-box__description__line">
+								<div class="setings-box__description__line__text">
+									Имя, фамилию, день рождения невозможно изменить после регистрации 
+								</div>								
+							</div>
+							<div class="setings-box__description__line">
+								<div class="setings-box__description__line__text">
+									Телефон и Email скрыт от для других польхователей	
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-4 col-sm-9 col-12 ml-sm-auto">
+					<form action="" class="setings-box setings-form__change-password">
+						<div class="setings-box__title">
+							Изменить пароль
+						</div>
+						<div class="setings-box__content">
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									Пароль
+								</div>
+								<div class="setings-box__line__right">
+									<input type="text">
+								</div>
+							</div>
+							<div class="setings-box__line">
+								<div class="setings-box__line__left">
+									Подтвердить
+								</div>
+								<div class="setings-box__line__right">
+									<input type="text">
+								</div>
+							</div>
+							<button class="setings-box__button">
+								Изменить пароль
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END PAGE BODY-->
+
+	<!--FOOTER-->
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-lg-3 col-sm-3">
+					<a href="#" class="footer__logo">
+						<img src="img/header-logo.png" alt="">
+						<span>оплата за результат</span>
+					</a>
+					<div class="footer__copyright">
+						Copyright © 2019.<br>
+						Все права защищены
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3">
+					<div class="footer__menu">
+						<a href="#">
+							Правила сервиса
+						</a>
+						<a href="#">
+							Помощь
+						</a>
+						<a href="#">
+							Служба поддержки
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3">
+					<div class="footer__menu">
+						<a href="#">
+							Контакты
+						</a>
+						<a href="#">
+							Конфиденциальность
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3">
+					<div class="footer__menu">
+						<a href="#">
+							Пользовательское соглашение
+						</a>
+						<a href="#">
+							Партнерская програма
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-bottom__content">
+							Предложите 
+							<a href="#" class="footer-bottom__content__button_idea">
+								Идею
+							</a>
+							или 
+							<a href="#" class="footer-bottom__content__button_eror">
+								Ошибку
+							</a>
+							за полезное вознаграждаем!
+						</div>
+						<div class="footer-bottom__content__mob">
+							Copyright © 2019. Все права защищены
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!--END FOOTER-->
+	
+</body>
+</html>

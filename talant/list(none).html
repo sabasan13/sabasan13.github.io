@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><link rel="stylesheet" href="static/css/fonts.css">
+<!--END FONTS-->
+<!--JQUERY-->
+<script src="static/libs/jquery/jquery-3.1.1.min.js"></script>
+<script src="static/libs/jquery/jquery-migrate-1.4.1.min.js"></script>
+<!--END JQUERY-->
+<!--BOOTSTRAP 3.3.7-->
+<link rel="stylesheet" href="static/libs/bootstrap-3.3.7/bootstrap.min.css">
+<script src="static/libs/bootstrap-3.3.7/bootstrap.min.js"></script>
+<!--END BOOTSTRAP 3.3.7-->
+<!--FANCYBOX-->
+<link rel="stylesheet" href="static/libs/fancybox/fancybox.css">
+<script src="static/libs/fancybox/fancybox.js"></script>
+<!--END FANCYBOX-->
+<!--STYLES-->
+    <!--<link rel="stylesheet" href="static/css/magnificPopup.css">	--><link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" href="static/css/media.css">
+<!--END STYLES-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<!--SCRIPTS-->
+<script src="static/libs/maskedinput/jquery.maskedinput.min.js"></script>
+    <!--<script src="static/js/magnificPopup.js"></script>--><script src="static/js/scrollbot.js" type="text/javascript"></script>
+<script src="static/js/main.js"></script>
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="row df aic">
+            <div class="col-xs-3 mob-menu">
+              <div class="animated-icon3"><span></span><span></span><span></span></div>
+              <div class="mob-menu__drop">
+                <div class="mob-menu__drop__content">
+                  <div class="mob-menu__drop__content__top"><a class="mob-menu__drop__content__logo" href="#"><img src="static/img/header-logo.png" alt=""><span>оплата за результат</span></a></div>
+                  <div class="mob-menu__drop__content__list"><a href="#">Задания</a><a href="#">Отклики</a><a href="#">Как работает Таланты Тут?</a><a href="#">Техническая поддержка</a><a href="#">Популярные вопросы</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-2 col-xs-3 header__logo"><a class="header__logo__link" href="#">
+                <div class="header__logo__link__image"><img src="static/img/header-logo.png"></div><span class="header__logo__link__text">оплата за результат</span></a></div>
+            <div class="col-lg-6 col-sm-5 header__menu">
+              <div class="header__menu__item active"><a class="header__menu__item__link" href="#">Задания</a></div>
+              <div class="header__menu__item"><a class="header__menu__item__link" href="#">Отклики</a></div>
+              <div class="header__menu__item header__menu__item__drop-box"><a class="header__menu__item__link" href="#">Помощь<span class="header__menu__item__link__arrow"><svg width="12" height="8" viewBox="0 0 12 8"  xmlns="http://www.w3.org/2000/svg">
+<path d="M5.40594 7.17412L0.246292 2.0143C-0.0820933 1.68607 -0.0820933 1.15391 0.246292 0.825843C0.574386 0.497749 1.10652 0.497749 1.43459 0.825843L6.00009 5.39149L10.5654 0.825976C10.8937 0.497882 11.4257 0.497882 11.7538 0.825976C12.0821 1.15407 12.0821 1.68621 11.7538 2.01443L6.5941 7.17425C6.42998 7.3383 6.2151 7.42023 6.00011 7.42023C5.78502 7.42023 5.56999 7.33814 5.40594 7.17412Z"/>
+</svg></span></a>
+                <div class="header__menu__item__drop"><a href="#">Как работает Таланты Тут?</a><a href="#">Техническая поддержка</a><a href="#">Популярные вопросы	</a></div>
+              </div>
+            </div><div class="col-lg-4 col-sm-5 col-xs-10 header__buttons">
+<a href="#" class="header__login"> Вход
+</a>
+<a href="#" class="header__signup"> Регистрация
+</a>
+</div>
+          </div>
+          <div class="header__user-panel__notification__drop__content"></div>
+        </div>
+      </header>
+      <!-- HEADER MESSAGES-->
+      <div class="messages">
+        <div class="messages-container">
+          <div class="messages__top">Чаты
+            <div class="messages__close">
+              <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.42678 5.95997L0.115276 11.2715C-0.0322861 11.419 -0.0322861 11.6581 0.115276 11.8057C0.188964 11.8795 0.285714 11.9163 0.382276 11.9163C0.479026 11.9163 0.575589 11.8795 0.649276 11.8057L6.00071 6.45422L11.3522 11.8057C11.426 11.8795 11.5226 11.9163 11.6192 11.9163C11.7157 11.9163 11.8125 11.8795 11.8862 11.8057C12.0337 11.6581 12.0337 11.419 11.8862 11.2715L6.57484 5.95997L11.8897 0.644719C12.0373 0.497156 12.0373 0.258094 11.8897 0.110531C11.7422 -0.0368438 11.5031 -0.0368438 11.3557 0.110531L6.0009 5.46572L0.645526 0.110719C0.497964 -0.0366563 0.259089 -0.0366563 0.111526 0.110719C-0.0360361 0.258281 -0.0360361 0.497344 0.111526 0.644906L5.42678 5.95997Z" fill="white" stroke="white" stroke-width="0.5"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="messages-content">
+            <div class="messages-content__chats">
+              <div class="messages-content__chats__list">
+                <div class="messages-content__chats__list__items">
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-row" href="#"><img src="static/img/chat-photo2.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-row" href="#"><img src="static/img/chat-photo2.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-row" href="#"><img src="static/img/chat-photo2.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                  <div class="messages-content__chats__item">
+                    <div class="messages-content__chats__item__left">
+                      <div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle" href="#"><img src="static/img/chat-photo.png" alt="/"></a>
+                    </div>
+                    <div class="messages-content__chats__item__right">
+                      <div class="messages-content__chats__item__right__top"><a class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                      <div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны? Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше текста больше текста</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="messages-content__chats__show-all"><span>Показать всё (15)</span></div>
+            </div>
+            <div class="messages-content__user-chat">
+              <div class="messages-content__user-chat__panel">
+                <div class="messages-content__user-chat__panel__back">
+                  <svg width="9" height="17" viewbox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1L1 8.37705L8 16" stroke="#6C7185"></path>
+                  </svg>
+                </div>
+                <div class="avatar-rectangle"><img src="static/img/chat-photo.png"></div>
+                <div class="messages-content__user-chat__panel__info"><a class="username" href="#">Ирина Д.</a><a class="messages-content__user-chat__panel__info__task" href="#">Сделать ремонт в ванной комнате для...</a></div>
+                <div class="messages-content__user-chat__panel__menu">
+                  <svg width="4" height="20" viewbox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2"></circle>
+                    <circle cx="2" cy="10" r="2"></circle>
+                    <circle cx="2" cy="18" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="messages-content__user-chat__panel__menu-drop"><a href="#">Посмотреть информацию о чате</a><a href="#">Выключить уведомления</a><a href="#">Заблокировать</a></div>
+              </div>
+              <!--обозначаем блок когда печатает собеседник классом messages-content__user-chat-bar__companion-typing
+              -->
+              <div class="messages-content__user-chat-bar messages-content__user-chat-bar__companion-typing">
+                <div class="messages-content__user-chat-bar-list">
+                  <div class="messages__message__more">Показать <a href="#">ещё 5</a> сообщений или <a href="#">все 29</a></div>
+                  <div class="messages__message messages__message_user unread"><span>Добрый день. Вы отозвались на заказ “Ремонт раковины за 2 копейки. Подскажите, вы точно сделает ремонт за 2 копейки?</span></div>
+                  <div class="messages__message messages__message_user read"><span>Добрый день. Вы отозвались на заказ “Ремонт раковины за 2 копейки. <a href="#">Подскажите, вы точно сделает ремонт за 2 копейки?</a></span></div>
+                  <div class="messages__message messages__message_user read"><span>Добрый день. Вы отозвались.</span></div>
+                  <div class="messages__message__info">17:46</div>
+                  <div class="messages__message__new"><span>У вас <a href="">3 новых сообщения</a></span></div>
+                  <div class="messages__message messages__message_companion unread"><span>Конечно, я ж не балабол</span></div>
+                  <div class="messages__message messages__message__photos modal-gallery">
+                    <!--здесь прописываем одно из фото которые прячем
+                    -->
+                    <!--используем класс messages__message__photos__photo что-бы спрятать ненужные фотографии(в галереи отображатся будут)
+                    --><a class="messages__message__photos__photo messages__message__photos__photo_hide modal-one" href="static/img/image.jpg" title="изображение"><img src="static/img/image.jpg" alt=""></a><a class="messages__message__photos__photo modal-one" href="img/image.jpg" title="изображение"><img src="static/img/image.jpg" alt=""></a><a class="messages__message__photos__photo modal-one" href="img/image2.jpg" title="изображение"><img src="static/img/image2.jpg" alt=""></a><a class="messages__message__photos__photo modal-one" href="img/image.jpg" title="изображение"><img src="static/img/image.jpg" alt=""></a><a class="messages__message__photos__more-photos modal-one" href="static/img/image2.jpg" title="изображение">+2</a>
+                  </div>
+                  <div class="messages__message messages__message_companion unread"><span><a href="#">Мне уже выезжать?</a></span></div>
+                  <div class="messages__message__info">Сергей Антонюк 17:48</div>
+                  <div class="messages-typing">
+                    <div class="messages-typing-bar">
+                      <div class="sk-three-bounce">
+                        <div class="sk-bounce-1 sk-child"></div>
+                        <div class="sk-bounce-2 sk-child"></div>
+                        <div class="sk-bounce-3 sk-child"></div>
+                      </div>
+                    </div>
+                    <div class="messages-typing-name">Сергей пишет...</div>
+                  </div>
+                </div>
+              </div>
+              <form class="messages-content__user-chat__sender" action="">
+                <div class="messages-content__user-chat__sender__input-bar">
+                  <input type="text" placeholder="Напишите сообщение...">
+                  <label>
+                    <input type="file" multiple="">
+                    <svg width="18" height="16" viewbox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.42213 15.9514C2.6026 15.9514 1.83254 15.632 1.25338 15.053C0.0577124 13.8572 0.0577124 11.9114 1.25338 10.7157L10.7346 1.23405C11.4984 0.469402 12.5151 0.0488281 13.596 0.0488281C14.677 0.0488281 15.6936 0.469402 16.4575 1.23405C17.2221 1.99849 17.6432 3.01454 17.6432 4.09538C17.6432 5.17644 17.2226 6.19245 16.4581 6.95643L8.99436 14.4195C8.77028 14.6435 8.40739 14.6435 8.18341 14.4195C7.95933 14.1955 7.95933 13.8326 8.18341 13.6084L15.647 6.14538C16.1949 5.59764 16.4961 4.86952 16.4961 4.09538C16.4961 3.32138 16.1942 2.5928 15.6465 2.045C15.0987 1.49727 14.3706 1.19584 13.596 1.19584C12.8215 1.19584 12.0934 1.49727 11.5455 2.045L2.06443 11.5267C1.3162 12.2755 1.3162 13.4932 2.06443 14.2419C2.79023 14.9667 4.05389 14.9667 4.77965 14.2419L11.1461 7.87496C11.3192 7.70185 11.4184 7.46222 11.4184 7.21796C11.4184 6.97028 11.3216 6.73681 11.1456 6.56092C10.7839 6.19913 10.1941 6.19804 9.83228 6.56092L5.48426 10.9094C5.26031 11.1336 4.89725 11.1336 4.67331 10.9094C4.44922 10.6855 4.44922 10.3224 4.67331 10.0985L9.02118 5.75001C9.82996 4.94128 11.1468 4.94128 11.9566 5.75001C12.3493 6.14256 12.5654 6.66407 12.5654 7.21799C12.5654 7.76457 12.3437 8.29947 11.9572 8.68591L5.59074 15.053C5.01158 15.632 4.24148 15.9514 3.42213 15.9514Z"></path>
+                    </svg>
+                  </label>
+                </div>
+                <button>
+                  <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER WHAT'S NEW-->
+      <div class="whats-new">
+        <div class="whats-new__container">
+          <div class="whats-new__top">
+            <div class="whats-new__title">Что нового?</div>
+            <div class="whats-new__close">
+              <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.23542 7.94638L0.153417 15.0284C-0.043333 15.2251 -0.043333 15.5439 0.153417 15.7406C0.251667 15.8391 0.380667 15.8881 0.509417 15.8881C0.638417 15.8881 0.767167 15.8391 0.865417 15.7406L8.00067 8.60538L15.1359 15.7406C15.2344 15.8391 15.3632 15.8881 15.4919 15.8881C15.6207 15.8881 15.7497 15.8391 15.8479 15.7406C16.0447 15.5439 16.0447 15.2251 15.8479 15.0284L8.76617 7.94638L15.8527 0.859381C16.0494 0.662631 16.0494 0.343881 15.8527 0.147131C15.6559 -0.0493691 15.3372 -0.0493691 15.1407 0.147131L8.00092 7.28738L0.860417 0.147381C0.663667 -0.0491191 0.345167 -0.0491191 0.148417 0.147381C-0.048333 0.344131 -0.048333 0.662881 0.148417 0.859631L7.23542 7.94638Z" fill="white" stroke="white"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="whats-new__content">
+            <div class="whats-new__list">
+              <div class="whats-new__post">
+                <div class="whats-new__post__body">
+                  <div class="whats-new__post__top">
+                    <div class="whats-new__post__status whats-new__post__status_update">Обновление</div>
+                    <div class="whats-new__post__date">29.06.2019</div>
+                  </div>
+                  <div class="whats-new__post__title">Новые стикеры для переписки!</div><img class="whats-new__post__img" src="static/img/post_photo.jpg">
+                  <div class="whats-new__post__text">
+                    <p>Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития.</p>
+                    <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.</p>
+                    <p>С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.</p>
+                  </div><a class="whats-new__post__link" href="#">Протестить новые стикеры</a>
+                  <div class="sender-title">Пожалуйста, оцените важность обновления:</div>
+                  <div class="sender-title">Спасибо большое! Ваша оценка очень важна для нас.</div>
+                </div>
+                <div class="whats-new__post__sender">
+                  <div class="whats-new__post__sender__rating"><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description grey">Плохо</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z" fill="#6C7185"></path>
+                      </svg></a><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description blue">Не важно</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z" fill="#4880FF"></path>
+                      </svg></a><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description gren">Понравилось</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z" fill="#33C093"></path>
+                      </svg></a></div>
+                  <form class="whats-new__post__sender__form" action="">
+                    <input type="text" placeholder="Поделитись мнением">
+                    <button>
+                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="whats-new__post">
+                <div class="whats-new__post__body">
+                  <div class="whats-new__post__top">
+                    <div class="whats-new__post__status whats-new__post__status_stock">Акция</div>
+                    <div class="whats-new__post__date">29.06.2019</div>
+                  </div>
+                  <div class="whats-new__post__title">Новые стикеры для переписки!</div><img class="whats-new__post__img" src="static/img/post_photo.jpg">
+                  <div class="whats-new__post__text">
+                    <p>Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития.</p>
+                    <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.</p>
+                    <p>С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.</p>
+                  </div><a class="whats-new__post__link" href="#">Протестить новые стикеры</a>
+                  <div class="sender-title">Пожалуйста, оцените важность обновления:</div>
+                  <div class="sender-title">Спасибо большое! Ваша оценка очень важна для нас.</div>
+                </div>
+                <div class="whats-new__post__sender">
+                  <div class="whats-new__post__sender__rating"><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description grey">Плохо</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z" fill="#6C7185"></path>
+                      </svg></a><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description blue">Не важно</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z" fill="#4880FF"></path>
+                      </svg></a><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description gren">Понравилось</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z" fill="#33C093"></path>
+                      </svg></a></div>
+                  <form class="whats-new__post__sender__form" action="">
+                    <input type="text" placeholder="Поделитись мнением">
+                    <button>
+                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="whats-new__post">
+                <div class="whats-new__post__body">
+                  <div class="whats-new__post__top">
+                    <div class="whats-new__post__status whats-new__post__status_ad">Обьявление</div>
+                    <div class="whats-new__post__date">29.06.2019</div>
+                  </div>
+                  <div class="whats-new__post__title">Новые стикеры для переписки!</div><img class="whats-new__post__img" src="static/img/post_photo.jpg">
+                  <div class="whats-new__post__text">
+                    <p>Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития.</p>
+                    <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.</p>
+                    <p>С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.</p>
+                  </div><a class="whats-new__post__link" href="#">Протестить новые стикеры</a>
+                  <div class="sender-title">Пожалуйста, оцените важность обновления:</div>
+                  <div class="sender-title">Спасибо большое! Ваша оценка очень важна для нас.</div>
+                </div>
+                <div class="whats-new__post__sender">
+                  <div class="whats-new__post__sender__rating"><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description grey">Плохо</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z" fill="#6C7185"></path>
+                      </svg></a><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description blue">Не важно</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z" fill="#4880FF"></path>
+                      </svg></a><a class="whats-new__post__sender__rating__item" href="">
+                      <div class="whats-new__post__sender__rating__item__description gren">Понравилось</div>
+                      <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z" fill="#33C093"></path>
+                      </svg></a></div>
+                  <form class="whats-new__post__sender__form" action="">
+                    <input type="text" placeholder="Поделитись мнением">
+                    <button>
+                      <svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- USER PANEL MOBILE-->
+      <div class="header__user-panel-mobile">
+        <div class="header__user-panel-mobile__container">
+          <div class="header__user-panel-mobile__top">
+            <div class="header__user-panel-mobile__top__user-info"><a class="header__user-panel__user__avatar" href=""><img src="img/photo.png"></a><a class="header__user-panel__user__nickname" href="#">Сергей</a></div>
+            <div class="header__user-panel-mobile__close">
+              <svg width="23" height="24" viewbox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.41406" y="0.686523" width="30" height="2" transform="rotate(45 1.41406 0.686523)" fill="#4880FF"></rect>
+                <rect x="22.9409" y="2.41406" width="30" height="2" transform="rotate(135 22.9409 2.41406)" fill="#4880FF"></rect>
+              </svg>
+            </div>
+          </div>
+          <div class="user-panel__drop"><a href="#">Анкета</a><a href="#">Настройки</a>
+            <div class="user-panel__finance">Финансы: <span>10 000 р.</span></div>
+            <div class="user-panel__finance user-panel__finance_zero">Финансы: <span>0 р. </span><a href="#">пополнить</a></div><a href="#">Помощь</a>
+            <div class="type-account type-account_customer">
+              <div class="type-account__title type-account__title__customer">Я заказчик</div>
+              <div class="type-account__switch"><span></span></div>
+              <div class="type-account__title type-account__title__master">Я мастер</div>
+            </div>
+            <div class="user-panel__whats-new">Что нового?<span>3</span></div><a class="user-panel__exit" href="#">Выход</a>
+          </div>
+        </div>
+      </div>
+      <!-- NOTIFICATION SHADOW-->
+      <div class="notification-shadow"></div>
+      <!-- END HEADER-->
+      <!-- PAGE BODY--><a class="scroll-top" href="#"><svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.3027 34C13.9405 34 10.6537 33.003 7.85804 31.135C5.06241 29.267 2.88348 26.612 1.59679 23.5056C0.310099 20.3993 -0.0265568 16.9811 0.629391 13.6835C1.28534 10.3858 2.90444 7.35669 5.28193 4.9792C7.65942 2.60171 10.6885 0.982608 13.9862 0.32666C17.2839 -0.329289 20.702 0.00736529 23.8083 1.29405C26.9147 2.58074 29.5697 4.75969 31.4377 7.55532C33.3057 10.351 34.3027 13.6377 34.3027 17C34.3027 21.5087 32.5117 25.8327 29.3235 29.0208C26.1354 32.2089 21.8114 34 17.3027 34Z" fill="white"/>
+<path d="M8.71774 17.2181C8.94488 17.2175 9.16707 17.2955 9.35618 17.4423C9.5453 17.5891 9.69283 17.798 9.78012 18.0427C9.8674 18.2873 9.89051 18.5567 9.84652 18.8167C9.80253 19.0767 9.69341 19.3156 9.53298 19.5032C9.37256 19.6908 9.16803 19.8186 8.94529 19.8705C8.72256 19.9224 8.49162 19.8961 8.28172 19.7948C8.07182 19.6936 7.89239 19.5219 7.76614 19.3016C7.6399 19.0813 7.57251 18.8223 7.57251 18.5573C7.57251 18.2027 7.69308 17.8625 7.90778 17.6114C8.12248 17.3604 8.41377 17.2189 8.71774 17.2181Z" fill="#4880FF"/>
+<path d="M11.7814 17.2181C12.0084 17.2181 12.2304 17.2967 12.4191 17.4438C12.6079 17.591 12.755 17.8001 12.8419 18.0448C12.9288 18.2895 12.9515 18.5588 12.9072 18.8186C12.8629 19.0783 12.7536 19.317 12.5931 19.5042C12.4326 19.6915 12.228 19.8191 12.0054 19.8708C11.7827 19.9224 11.5519 19.8959 11.3421 19.7945C11.1324 19.6932 10.9531 19.5215 10.827 19.3013C10.7009 19.0811 10.6335 18.8222 10.6335 18.5573C10.6332 18.3813 10.6627 18.207 10.7202 18.0443C10.7778 17.8817 10.8623 17.7339 10.969 17.6095C11.0756 17.485 11.2023 17.3864 11.3417 17.3192C11.4812 17.2521 11.6306 17.2177 11.7814 17.2181Z" fill="#4880FF"/>
+<path d="M11.7814 14.1574C12.0086 14.1574 12.2306 14.2248 12.4194 14.351C12.6082 14.4773 12.7554 14.6567 12.8422 14.8666C12.929 15.0765 12.9515 15.3074 12.907 15.5302C12.8625 15.7529 12.753 15.9574 12.5922 16.1179C12.4314 16.2783 12.2266 16.3874 12.0037 16.4314C11.7809 16.4754 11.55 16.4523 11.3403 16.365C11.1306 16.2777 10.9515 16.1302 10.8257 15.9411C10.6999 15.7519 10.633 15.5298 10.6335 15.3026C10.6335 15.152 10.6633 15.0029 10.721 14.8637C10.7787 14.7246 10.8633 14.5983 10.9699 14.4919C11.0765 14.3855 11.2031 14.3012 11.3423 14.2438C11.4816 14.1864 11.6308 14.157 11.7814 14.1574Z" fill="#4880FF"/>
+<path d="M15.9903 25.0612C15.9903 24.3216 15.4764 23.722 14.8425 23.722C14.2085 23.722 13.6946 24.3216 13.6946 25.0612C13.6946 25.8008 14.2085 26.4004 14.8425 26.4004C15.4764 26.4004 15.9903 25.8008 15.9903 25.0612Z" fill="#4880FF"/>
+<path d="M14.8398 20.6613C15.0671 20.6608 15.2894 20.7277 15.4785 20.8536C15.6677 20.9796 15.8152 21.1588 15.9024 21.3687C15.9896 21.5785 16.0126 21.8095 15.9684 22.0325C15.9242 22.2554 15.8148 22.4601 15.6541 22.6208C15.4934 22.7815 15.2887 22.8909 15.0657 22.9351C14.8428 22.9793 14.6118 22.9564 14.402 22.8691C14.1921 22.7819 14.0129 22.6344 13.8869 22.4452C13.761 22.2561 13.6941 22.0338 13.6946 21.8065C13.6946 21.5028 13.8152 21.2115 14.03 20.9967C14.2448 20.7819 14.5361 20.6613 14.8398 20.6613Z" fill="#4880FF"/>
+<path d="M14.8398 17.2181C15.067 17.2175 15.2891 17.2955 15.4783 17.4423C15.6674 17.5891 15.8149 17.798 15.9022 18.0427C15.9895 18.2873 16.0126 18.5567 15.9686 18.8167C15.9246 19.0767 15.8155 19.3156 15.6551 19.5032C15.4946 19.6908 15.2901 19.8186 15.0674 19.8705C14.8446 19.9224 14.6137 19.8961 14.4038 19.7948C14.1939 19.6936 14.0145 19.5219 13.8882 19.3016C13.762 19.0813 13.6946 18.8223 13.6946 18.5573C13.6946 18.2027 13.8152 17.8625 14.0299 17.6114C14.2445 17.3604 14.5358 17.2189 14.8398 17.2181Z" fill="#4880FF"/>
+<path d="M15.9903 15.3053C15.9903 14.6713 15.4764 14.1574 14.8425 14.1574C14.2085 14.1574 13.6946 14.6713 13.6946 15.3053C13.6946 15.9392 14.2085 16.4531 14.8425 16.4531C15.4764 16.4531 15.9903 15.9392 15.9903 15.3053Z" fill="#4880FF"/>
+<path d="M14.8398 10.7132C15.067 10.7126 15.2891 10.7907 15.4783 10.9374C15.6674 11.0842 15.8149 11.2931 15.9022 11.5378C15.9895 11.7824 16.0126 12.0518 15.9686 12.3118C15.9246 12.5718 15.8155 12.8107 15.6551 12.9983C15.4946 13.1859 15.2901 13.3137 15.0674 13.3656C14.8446 13.4176 14.6137 13.3912 14.4038 13.29C14.1939 13.1887 14.0145 13.017 13.8882 12.7968C13.762 12.5765 13.6946 12.3174 13.6946 12.0524C13.6946 11.6978 13.8152 11.3576 14.0299 11.1066C14.2445 10.8555 14.5358 10.7141 14.8398 10.7132Z" fill="#4880FF"/>
+<path d="M17.9035 23.722C18.1305 23.722 18.3524 23.8006 18.5412 23.9477C18.73 24.0949 18.8771 24.304 18.964 24.5487C19.0509 24.7934 19.0736 25.0627 19.0293 25.3225C18.985 25.5822 18.8757 25.8209 18.7152 26.0082C18.5546 26.1954 18.3501 26.323 18.1274 26.3747C17.9048 26.4263 17.674 26.3998 17.4642 26.2984C17.2545 26.1971 17.0752 26.0254 16.9491 25.8052C16.8229 25.585 16.7556 25.3261 16.7556 25.0612C16.7553 24.8852 16.7847 24.7109 16.8423 24.5482C16.8998 24.3856 16.9844 24.2378 17.091 24.1134C17.1977 23.9889 17.3244 23.8903 17.4638 23.8231C17.6032 23.756 17.7526 23.7216 17.9035 23.722Z" fill="#4880FF"/>
+<path d="M17.9035 20.6613C18.1306 20.6613 18.3527 20.7287 18.5415 20.8549C18.7303 20.9812 18.8774 21.1606 18.9642 21.3705C19.051 21.5804 19.0736 21.8113 19.0291 22.0341C18.9846 22.2568 18.875 22.4613 18.7142 22.6218C18.5534 22.7822 18.3486 22.8913 18.1258 22.9353C17.903 22.9793 17.6721 22.9562 17.4624 22.8689C17.2527 22.7816 17.0736 22.6341 16.9478 22.445C16.822 22.2558 16.7551 22.0337 16.7556 21.8065C16.7556 21.6559 16.7853 21.5068 16.843 21.3676C16.9008 21.2285 16.9854 21.1022 17.092 20.9958C17.1986 20.8894 17.3252 20.8051 17.4644 20.7477C17.6037 20.6903 17.7529 20.6609 17.9035 20.6613Z" fill="#4880FF"/>
+<path d="M17.9035 17.2181C18.1305 17.2181 18.3524 17.2967 18.5412 17.4438C18.73 17.591 18.8771 17.8001 18.964 18.0448C19.0509 18.2895 19.0736 18.5588 19.0293 18.8186C18.985 19.0783 18.8757 19.317 18.7152 19.5042C18.5546 19.6915 18.3501 19.8191 18.1274 19.8708C17.9048 19.9224 17.674 19.8959 17.4642 19.7945C17.2545 19.6932 17.0752 19.5215 16.9491 19.3013C16.8229 19.0811 16.7556 18.8222 16.7556 18.5573C16.7553 18.3813 16.7847 18.207 16.8423 18.0443C16.8998 17.8817 16.9844 17.7339 17.091 17.6095C17.1977 17.485 17.3244 17.3864 17.4638 17.3192C17.6032 17.2521 17.7526 17.2177 17.9035 17.2181Z" fill="#4880FF"/>
+<path d="M17.9035 14.1574C18.1306 14.1574 18.3527 14.2248 18.5415 14.351C18.7303 14.4773 18.8774 14.6567 18.9642 14.8666C19.051 15.0765 19.0736 15.3074 19.0291 15.5302C18.9846 15.7529 18.875 15.9574 18.7142 16.1179C18.5534 16.2783 18.3486 16.3874 18.1258 16.4314C17.903 16.4754 17.6721 16.4523 17.4624 16.365C17.2527 16.2777 17.0736 16.1302 16.9478 15.9411C16.822 15.7519 16.7551 15.5298 16.7556 15.3026C16.7556 15.152 16.7853 15.0029 16.843 14.8637C16.9008 14.7246 16.9854 14.5983 17.092 14.4919C17.1986 14.3855 17.3252 14.3012 17.4644 14.2438C17.6037 14.1864 17.7529 14.157 17.9035 14.1574Z" fill="#4880FF"/>
+<path d="M17.9035 10.7132C18.1305 10.7132 18.3524 10.7918 18.5412 10.9389C18.73 11.0861 18.8771 11.2952 18.964 11.5399C19.0509 11.7846 19.0736 12.0539 19.0293 12.3137C18.985 12.5735 18.8757 12.8121 18.7152 12.9994C18.5546 13.1867 18.3501 13.3142 18.1274 13.3659C17.9048 13.4175 17.674 13.391 17.4642 13.2897C17.2545 13.1883 17.0752 13.0167 16.9491 12.7964C16.8229 12.5762 16.7556 12.3173 16.7556 12.0524C16.7553 11.8764 16.7847 11.7021 16.8423 11.5395C16.8998 11.3768 16.9844 11.229 17.091 11.1046C17.1977 10.9801 17.3244 10.8815 17.4638 10.8143C17.6032 10.7472 17.7526 10.7128 17.9035 10.7132Z" fill="#4880FF"/>
+<path d="M17.9035 7.65269C18.1306 7.65269 18.3527 7.73131 18.5415 7.8786C18.7303 8.02589 18.8774 8.23522 18.9642 8.48011C19.051 8.72499 19.0736 8.99441 19.0291 9.25427C18.9846 9.51413 18.875 9.75274 18.7142 9.93991C18.5534 10.1271 18.3486 10.2544 18.1258 10.3057C17.903 10.357 17.6721 10.3301 17.4624 10.2282C17.2527 10.1264 17.0736 9.95427 16.9478 9.73364C16.822 9.51301 16.7551 9.25379 16.7556 8.98879C16.7556 8.81307 16.7853 8.63908 16.843 8.47677C16.9008 8.31447 16.9854 8.16704 17.092 8.04293C17.1986 7.91882 17.3252 7.82047 17.4644 7.75351C17.6037 7.68654 17.7529 7.65228 17.9035 7.65269Z" fill="#4880FF"/>
+<path d="M20.9645 23.722C21.1916 23.722 21.4135 23.8006 21.6022 23.9477C21.791 24.0949 21.9381 24.304 22.025 24.5487C22.1119 24.7934 22.1346 25.0627 22.0903 25.3225C22.046 25.5822 21.9367 25.8209 21.7762 26.0082C21.6157 26.1954 21.4111 26.323 21.1885 26.3747C20.9658 26.4263 20.735 26.3998 20.5253 26.2984C20.3155 26.1971 20.1362 26.0254 20.0101 25.8052C19.884 25.585 19.8167 25.3261 19.8167 25.0612C19.8167 24.706 19.9376 24.3654 20.1529 24.1143C20.3681 23.8631 20.6601 23.722 20.9645 23.722Z" fill="#4880FF"/>
+<path d="M20.9645 20.6613C21.1917 20.6613 21.4137 20.7287 21.6025 20.8549C21.7913 20.9812 21.9385 21.1606 22.0253 21.3705C22.1121 21.5804 22.1347 21.8113 22.0901 22.0341C22.0456 22.2568 21.9361 22.4613 21.7753 22.6218C21.6145 22.7822 21.4097 22.8913 21.1868 22.9353C20.964 22.9793 20.7331 22.9562 20.5234 22.8689C20.3137 22.7816 20.1346 22.6341 20.0088 22.445C19.883 22.2558 19.8161 22.0337 19.8167 21.8065C19.8167 21.6559 19.8464 21.5068 19.9041 21.3676C19.9618 21.2285 20.0464 21.1022 20.153 20.9958C20.2596 20.8894 20.3862 20.8051 20.5255 20.7477C20.6647 20.6903 20.8139 20.6609 20.9645 20.6613Z" fill="#4880FF"/>
+<path d="M20.9645 17.2181C21.1916 17.2181 21.4135 17.2967 21.6022 17.4438C21.791 17.591 21.9381 17.8001 22.025 18.0448C22.1119 18.2895 22.1346 18.5588 22.0903 18.8186C22.046 19.0783 21.9367 19.317 21.7762 19.5042C21.6157 19.6915 21.4111 19.8191 21.1885 19.8708C20.9658 19.9224 20.735 19.8959 20.5253 19.7945C20.3155 19.6932 20.1362 19.5215 20.0101 19.3013C19.884 19.0811 19.8167 18.8222 19.8167 18.5573C19.8167 18.2021 19.9376 17.8615 20.1529 17.6104C20.3681 17.3592 20.6601 17.2181 20.9645 17.2181Z" fill="#4880FF"/>
+<path d="M20.9645 14.1574C21.1917 14.1574 21.4137 14.2248 21.6025 14.351C21.7913 14.4773 21.9385 14.6567 22.0253 14.8666C22.1121 15.0765 22.1347 15.3074 22.0901 15.5302C22.0456 15.7529 21.9361 15.9574 21.7753 16.1179C21.6145 16.2783 21.4097 16.3874 21.1868 16.4314C20.964 16.4754 20.7331 16.4523 20.5234 16.365C20.3137 16.2777 20.1346 16.1302 20.0088 15.9411C19.883 15.7519 19.8161 15.5298 19.8167 15.3026C19.8167 15.152 19.8464 15.0029 19.9041 14.8637C19.9618 14.7246 20.0464 14.5983 20.153 14.4919C20.2596 14.3855 20.3862 14.3012 20.5255 14.2438C20.6647 14.1864 20.8139 14.157 20.9645 14.1574Z" fill="#4880FF"/>
+<path d="M20.9645 10.7132C21.1916 10.7132 21.4135 10.7918 21.6022 10.9389C21.791 11.0861 21.9381 11.2952 22.025 11.5399C22.1119 11.7846 22.1346 12.0539 22.0903 12.3137C22.046 12.5735 21.9367 12.8121 21.7762 12.9994C21.6157 13.1866 21.4111 13.3142 21.1885 13.3659C20.9658 13.4175 20.735 13.391 20.5253 13.2897C20.3155 13.1883 20.1362 13.0167 20.0101 12.7964C19.884 12.5762 19.8167 12.3173 19.8167 12.0524C19.8167 11.6972 19.9376 11.3566 20.1529 11.1055C20.3681 10.8543 20.6601 10.7132 20.9645 10.7132Z" fill="#4880FF"/>
+<path d="M24.0227 17.2181C24.2498 17.2175 24.472 17.2955 24.6611 17.4423C24.8502 17.5891 24.9978 17.798 25.085 18.0427C25.1723 18.2873 25.1954 18.5567 25.1515 18.8167C25.1075 19.0767 24.9983 19.3156 24.8379 19.5032C24.6775 19.6908 24.473 19.8186 24.2502 19.8705C24.0275 19.9224 23.7966 19.8961 23.5867 19.7948C23.3768 19.6936 23.1973 19.5219 23.0711 19.3016C22.9448 19.0813 22.8774 18.8223 22.8774 18.5573C22.8774 18.2027 22.998 17.8625 23.2127 17.6114C23.4274 17.3604 23.7187 17.2189 24.0227 17.2181Z" fill="#4880FF"/>
+<path d="M24.0227 14.1574C24.2499 14.1569 24.4722 14.2238 24.6614 14.3497C24.8506 14.4757 24.9981 14.6549 25.0853 14.8648C25.1725 15.0746 25.1955 15.3056 25.1513 15.5285C25.1071 15.7515 24.9977 15.9562 24.837 16.1169C24.6763 16.2776 24.4715 16.387 24.2486 16.4312C24.0257 16.4754 23.7947 16.4524 23.5848 16.3652C23.375 16.278 23.1957 16.1305 23.0698 15.9413C22.9439 15.7522 22.8769 15.5299 22.8774 15.3026C22.8774 14.9989 22.9981 14.7076 23.2129 14.4928C23.4276 14.278 23.7189 14.1574 24.0227 14.1574Z" fill="#4880FF"/>
+<path d="M27.0864 17.2181C27.3134 17.2181 27.5353 17.2967 27.7241 17.4438C27.9128 17.591 28.06 17.8001 28.1468 18.0448C28.2337 18.2895 28.2565 18.5588 28.2122 18.8186C28.1679 19.0783 28.0585 19.317 27.898 19.5042C27.7375 19.6915 27.533 19.8191 27.3103 19.8708C27.0876 19.9224 26.8568 19.8959 26.6471 19.7945C26.4373 19.6932 26.2581 19.5215 26.1319 19.3013C26.0058 19.0811 25.9385 18.8222 25.9385 18.5573C25.9381 18.3813 25.9676 18.207 26.0251 18.0443C26.0827 17.8817 26.1672 17.7339 26.2739 17.6095C26.3806 17.485 26.5072 17.3864 26.6467 17.3192C26.7861 17.2521 26.9355 17.2177 27.0864 17.2181Z" fill="#4880FF"/>
+</svg></a>
+      <section class="page-body setings list" id="page-body"> 
+        <div class="container">
+          <div class="row df fww">
+            <div class="col-lg-4 col-sm-4 tab">
+              <div class="find-master find-master--mobile box">
+                <div class="find-master__head">Найдите мастера для выполнения ваших задач!</div>
+                <div class="find-master-items">
+                  <div class="find-master-item"> 
+                    <input type="radio" name="master1" id="master4" checked>
+                    <label class="flicker-1" for="master4">
+                      <div class="find-master-item__icon"><svg width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.3255 5.67283C17.9035 4.63611 14.4614 3.02183 11.3713 1.00456C11.2072 0.897406 11.0035 0.897406 10.8394 1.00456C7.66015 3.07978 4.40406 4.60673 0.884922 5.67283C0.657583 5.74164 0.5 5.97012 0.5 6.23078V12.1414C0.5 18.2281 3.03954 22.2571 5.17002 24.5651C7.46361 27.05 10.1353 28.4242 11.1054 28.4242C12.0753 28.4242 14.747 27.05 17.0406 24.5651C19.171 22.2571 21.7104 18.2282 21.7104 12.1414V6.23073C21.7104 5.97012 21.5528 5.74164 21.3255 5.67283ZM20.6641 12.1414C20.6641 17.8263 18.2954 21.5858 16.3083 23.7386C14.0528 26.1822 11.6413 27.2672 11.1054 27.2672C10.5694 27.2672 8.15777 26.1822 5.90226 23.7386C3.91513 21.5857 1.54639 17.8263 1.54639 12.1414V6.66987C4.91169 5.61338 8.04576 4.13896 11.1055 2.17298C14.0887 4.08681 17.3792 5.63454 20.6641 6.66965V12.1414Z" fill="#4880FF"/>
+<path d="M6.46816 6.60515C6.36226 6.30786 6.05851 6.16182 5.78959 6.27896C4.85498 6.68614 3.89569 7.06094 2.93839 7.39298C2.72023 7.46871 2.57178 7.69215 2.57178 7.94491V10.1788C2.57178 10.4983 2.80606 10.7573 3.09495 10.7573C3.38383 10.7573 3.61812 10.4983 3.61812 10.1788V8.36767C4.47691 8.06044 5.33477 7.72061 6.17316 7.35533C6.44203 7.23829 6.57411 6.90244 6.46816 6.60515Z" fill="#4880FF"/>
+<path d="M7.46235 6.71486C7.53255 6.71486 7.60381 6.69923 7.67216 6.66625L7.68178 6.66163C7.94647 6.53337 8.06568 6.19268 7.94968 5.90012C7.83358 5.60745 7.52371 5.47505 7.2593 5.60321L7.25085 5.60723C6.98601 5.73512 6.86642 6.07554 6.98208 6.36826C7.06791 6.58558 7.26052 6.71486 7.46235 6.71486Z" fill="#4880FF"/>
+<path d="M17.3388 19.577C17.0971 19.4023 16.7729 19.4775 16.6146 19.7449C16.1835 20.4745 15.6777 21.1732 15.1112 21.8213C14.6452 22.3542 14.1403 22.8509 13.6105 23.2975C13.3808 23.4912 13.3365 23.8542 13.5117 24.1083C13.6147 24.2576 13.7705 24.3361 13.9281 24.3361C14.0387 24.3361 14.1502 24.2975 14.2449 24.2176C14.8164 23.7357 15.361 23.2001 15.8634 22.6255C16.476 21.9249 17.0234 21.1686 17.4906 20.3777C17.6487 20.1102 17.5807 19.7518 17.3388 19.577Z" fill="#4880FF"/>
+<path d="M12.3952 24.2047L12.3652 24.2242C12.1152 24.3844 12.0297 24.7382 12.1745 25.0147C12.2715 25.2 12.4471 25.3034 12.6277 25.3034C12.7166 25.3034 12.8069 25.2783 12.8893 25.2254L12.924 25.2029C13.1733 25.0415 13.257 24.6871 13.111 24.4114C12.9649 24.1358 12.6444 24.0434 12.3952 24.2047Z" fill="#4880FF"/>
+<path d="M7.53906 13.4936C7.21782 13.1384 6.79059 12.9429 6.33621 12.9429C5.88182 12.9429 5.45454 13.1384 5.13316 13.4936C4.46994 14.2271 4.46994 15.4205 5.13316 16.154L8.22244 19.5697C8.54372 19.9248 8.97096 20.1204 9.42539 20.1204C9.87983 20.1204 10.3071 19.9248 10.6284 19.5695L17.0775 12.4388C17.7407 11.7052 17.7407 10.5119 17.0774 9.77866C16.7561 9.42341 16.3289 9.22791 15.8744 9.22791C15.4199 9.22791 14.9927 9.42347 14.6714 9.77866L9.42534 15.5792L7.53906 13.4936ZM15.4113 10.5968C15.5349 10.4601 15.6995 10.3848 15.8744 10.3848C16.0495 10.3848 16.2139 10.4601 16.3376 10.5968C16.5929 10.879 16.5929 11.3385 16.3375 11.6208L9.88852 18.7515C9.76489 18.8882 9.60036 18.9634 9.42539 18.9634C9.25042 18.9634 9.08589 18.8882 8.96221 18.7515L5.87303 15.3359C5.61766 15.0535 5.61766 14.5941 5.87293 14.3118C5.99661 14.1752 6.16114 14.0998 6.33616 14.0998C6.51118 14.0998 6.67561 14.175 6.79924 14.3117L9.05538 16.8064C9.15356 16.9148 9.28656 16.9758 9.42534 16.9758C9.56413 16.9758 9.69713 16.9149 9.79521 16.8064L15.4113 10.5968Z" fill="#4880FF"/>
+</svg>
+                      </div>
+                    </label>
+                    <div class="find-master-item__name">
+                      Безопасная сделка<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.43867 0.424194C3.57319 0.424194 0.438965 3.55842 0.438965 7.4239C0.438965 11.2894 3.57319 14.4242 7.43867 14.4242C11.3042 14.4242 14.439 11.2894 14.439 7.4239C14.439 3.55842 11.3042 0.424194 7.43867 0.424194ZM8.89585 11.2728C8.53556 11.415 8.24874 11.5229 8.03363 11.5975C7.81911 11.6722 7.56963 11.7095 7.28578 11.7095C6.84963 11.7095 6.51008 11.6029 6.2683 11.3901C6.02652 11.1774 5.90622 10.9078 5.90622 10.58C5.90622 10.4526 5.91511 10.3223 5.93289 10.1895C5.95126 10.0568 5.9803 9.90745 6.02 9.73975L6.47096 8.14686C6.51067 7.99397 6.54504 7.84879 6.5723 7.71368C6.59956 7.57738 6.61259 7.45234 6.61259 7.33856C6.61259 7.1359 6.57052 6.99368 6.48697 6.91368C6.40222 6.83368 6.24282 6.79456 6.00519 6.79456C5.88904 6.79456 5.76934 6.81175 5.64667 6.8479C5.52519 6.88523 5.41971 6.91901 5.33319 6.95219L5.4523 6.46153C5.74741 6.34123 6.03008 6.23812 6.29971 6.15279C6.56934 6.06627 6.82415 6.0236 7.06415 6.0236C7.49734 6.0236 7.83156 6.12908 8.06682 6.33768C8.30089 6.54686 8.41882 6.81886 8.41882 7.15308C8.41882 7.22242 8.41052 7.34449 8.39452 7.51871C8.37852 7.69353 8.3483 7.85294 8.30445 7.99931L7.85585 9.58745C7.81911 9.71486 7.78652 9.86064 7.75689 10.0236C7.72785 10.1866 7.71363 10.311 7.71363 10.3946C7.71363 10.6055 7.76045 10.7495 7.85526 10.826C7.94889 10.9024 8.11304 10.9409 8.34534 10.9409C8.45496 10.9409 8.57763 10.9214 8.7163 10.8835C8.85378 10.8455 8.95333 10.8117 9.01615 10.7827L8.89585 11.2728ZM8.81645 4.82656C8.60726 5.02094 8.35541 5.11812 8.06089 5.11812C7.76697 5.11812 7.51334 5.02094 7.30237 4.82656C7.09259 4.63219 6.98652 4.39575 6.98652 4.1196C6.98652 3.84405 7.09319 3.60701 7.30237 3.41086C7.51334 3.21412 7.76697 3.11634 8.06089 3.11634C8.35541 3.11634 8.60785 3.21412 8.81645 3.41086C9.02563 3.60701 9.13052 3.84405 9.13052 4.1196C9.13052 4.39634 9.02563 4.63219 8.81645 4.82656Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14" height="14" fill="white" transform="translate(0.438965 0.424194)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="find-master-item__text">Не устроит результат, деньги вернутся</div>
+                  </div>
+                  <div class="find-master-item">
+                    <input type="radio" name="master1" id="master5">
+                    <label class="flicker-2" for="master5">
+                      <div class="find-master-item__icon">
+                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8842 4.61699C13.4847 3.21745 11.6239 2.44666 9.64459 2.44666C7.66529 2.44666 5.8045 3.21745 4.40496 4.61699C3.00541 6.01653 2.23462 7.87739 2.23462 9.85669C2.23462 11.836 3.00541 13.6968 4.40496 15.0963C5.8045 16.4959 7.66536 17.2667 9.64459 17.2667C11.6239 17.2667 13.4847 16.4959 14.8842 15.0963C16.2838 13.6968 17.0546 11.8359 17.0546 9.85669C17.0546 7.87733 16.2838 6.01653 14.8842 4.61699ZM14.1868 14.3988C12.9735 15.612 11.3604 16.2802 9.64459 16.2802C7.9288 16.2802 6.31566 15.6121 5.10243 14.3988C2.59789 11.8943 2.59789 7.819 5.10243 5.31446C6.31566 4.10122 7.9288 3.43308 9.64459 3.43308C11.3604 3.43308 12.9735 4.10122 14.1868 5.31446C16.6913 7.819 16.6913 11.8943 14.1868 14.3988Z" fill="#6C7185"/>
+<path d="M12.6438 4.91611C12.4111 4.77459 12.1077 4.84851 11.9662 5.08124C11.8246 5.31397 11.8986 5.61739 12.1313 5.75891C12.4571 5.95705 12.7604 6.19564 13.0329 6.46809C13.1292 6.56443 13.2554 6.61257 13.3816 6.61257C13.5078 6.61257 13.6341 6.56443 13.7304 6.46809C13.923 6.27547 13.923 5.96324 13.7304 5.77062C13.4024 5.4426 13.0368 5.15509 12.6438 4.91611Z" fill="#6C7185"/>
+<path d="M5.90726 6.61256C6.03346 6.61256 6.15972 6.56442 6.25599 6.46808C7.33383 5.39024 8.87792 4.88704 10.3861 5.12194C10.6554 5.16389 10.9074 4.97963 10.9493 4.71047C10.9912 4.4413 10.807 4.18917 10.5379 4.14722C8.71956 3.86411 6.85818 4.47096 5.55852 5.77061C5.36591 5.96323 5.36591 6.27546 5.55852 6.46808C5.6548 6.56442 5.78106 6.61256 5.90726 6.61256Z" fill="#6C7185"/>
+<path d="M7.11261 13.9265C6.80399 13.7341 6.51582 13.5049 6.25599 13.245C6.06338 13.0524 5.75108 13.0524 5.55852 13.245C5.36591 13.4377 5.36591 13.7499 5.55852 13.9425C5.87129 14.2553 6.21858 14.5315 6.59079 14.7636C6.67194 14.8142 6.76216 14.8383 6.8512 14.8383C7.01581 14.8383 7.17673 14.7559 7.27024 14.6059C7.41432 14.3749 7.34376 14.0707 7.11261 13.9265Z" fill="#6C7185"/>
+<path d="M13.0333 13.245C11.9883 14.29 10.5463 14.7893 9.07673 14.615C8.80626 14.5828 8.5609 14.7762 8.52887 15.0467C8.49678 15.3171 8.69006 15.5624 8.96053 15.5945C9.19267 15.6221 9.42396 15.6356 9.65393 15.6356C11.1791 15.6356 12.6358 15.0374 13.7308 13.9425C13.9234 13.7499 13.9234 13.4376 13.7308 13.2449C13.5382 13.0525 13.2259 13.0525 13.0333 13.245Z" fill="#6C7185"/>
+<path d="M24.6143 21.9296L18.6453 15.9606C18.4526 15.768 18.1403 15.768 17.9478 15.9606L17.709 16.1994L17.1233 15.6136C19.9745 11.9157 19.7063 6.57151 16.3183 3.18353C12.639 -0.495909 6.65208 -0.495909 2.97271 3.18353C-0.706725 6.8629 -0.706725 12.8498 2.97271 16.5292C4.8124 18.3688 7.22901 19.2887 9.64556 19.2887C11.6792 19.2887 13.7129 18.6371 15.4028 17.3341L15.9885 17.9198L15.7498 18.1586C15.6572 18.2511 15.6053 18.3765 15.6053 18.5073C15.6053 18.6381 15.6572 18.7636 15.7498 18.8561L21.7188 24.8251C22.118 25.2243 22.6423 25.4238 23.1666 25.4238C23.6909 25.4238 24.2153 25.2242 24.6145 24.8251C25.4127 24.0269 25.4127 22.728 24.6143 21.9296ZM3.67012 15.8317C2.07401 14.2356 1.19504 12.1135 1.19504 9.85638C1.19504 7.59923 2.07408 5.4771 3.67012 3.88106C5.26622 2.28502 7.38829 1.40599 9.64543 1.40599C11.9026 1.40599 14.0248 2.28502 15.6208 3.88106C17.2169 5.47717 18.0959 7.59923 18.0959 9.85638C18.0959 12.1135 17.2169 14.2357 15.6208 15.8317C14.0247 17.4277 11.9026 18.3068 9.6455 18.3068C7.38835 18.3068 5.26622 17.4278 3.67012 15.8317ZM16.1535 16.6899C16.2089 16.6371 16.2639 16.5836 16.3183 16.5292C16.3727 16.4747 16.4262 16.4197 16.479 16.3644L17.0115 16.8968L16.686 17.2224L16.1535 16.6899ZM23.9169 24.1277C23.5031 24.5414 22.83 24.5414 22.4163 24.1277L16.796 18.5074L18.2965 17.0069L23.9169 22.6272C24.3306 23.0409 24.3306 23.714 23.9169 24.1277Z" fill="#6C7185"/>
+</svg>
+                      </div>
+                    </label>
+                    <div class="find-master-item__name">
+                       Быстро найти<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.43867 0.424194C3.57319 0.424194 0.438965 3.55842 0.438965 7.4239C0.438965 11.2894 3.57319 14.4242 7.43867 14.4242C11.3042 14.4242 14.439 11.2894 14.439 7.4239C14.439 3.55842 11.3042 0.424194 7.43867 0.424194ZM8.89585 11.2728C8.53556 11.415 8.24874 11.5229 8.03363 11.5975C7.81911 11.6722 7.56963 11.7095 7.28578 11.7095C6.84963 11.7095 6.51008 11.6029 6.2683 11.3901C6.02652 11.1774 5.90622 10.9078 5.90622 10.58C5.90622 10.4526 5.91511 10.3223 5.93289 10.1895C5.95126 10.0568 5.9803 9.90745 6.02 9.73975L6.47096 8.14686C6.51067 7.99397 6.54504 7.84879 6.5723 7.71368C6.59956 7.57738 6.61259 7.45234 6.61259 7.33856C6.61259 7.1359 6.57052 6.99368 6.48697 6.91368C6.40222 6.83368 6.24282 6.79456 6.00519 6.79456C5.88904 6.79456 5.76934 6.81175 5.64667 6.8479C5.52519 6.88523 5.41971 6.91901 5.33319 6.95219L5.4523 6.46153C5.74741 6.34123 6.03008 6.23812 6.29971 6.15279C6.56934 6.06627 6.82415 6.0236 7.06415 6.0236C7.49734 6.0236 7.83156 6.12908 8.06682 6.33768C8.30089 6.54686 8.41882 6.81886 8.41882 7.15308C8.41882 7.22242 8.41052 7.34449 8.39452 7.51871C8.37852 7.69353 8.3483 7.85294 8.30445 7.99931L7.85585 9.58745C7.81911 9.71486 7.78652 9.86064 7.75689 10.0236C7.72785 10.1866 7.71363 10.311 7.71363 10.3946C7.71363 10.6055 7.76045 10.7495 7.85526 10.826C7.94889 10.9024 8.11304 10.9409 8.34534 10.9409C8.45496 10.9409 8.57763 10.9214 8.7163 10.8835C8.85378 10.8455 8.95333 10.8117 9.01615 10.7827L8.89585 11.2728ZM8.81645 4.82656C8.60726 5.02094 8.35541 5.11812 8.06089 5.11812C7.76697 5.11812 7.51334 5.02094 7.30237 4.82656C7.09259 4.63219 6.98652 4.39575 6.98652 4.1196C6.98652 3.84405 7.09319 3.60701 7.30237 3.41086C7.51334 3.21412 7.76697 3.11634 8.06089 3.11634C8.35541 3.11634 8.60785 3.21412 8.81645 3.41086C9.02563 3.60701 9.13052 3.84405 9.13052 4.1196C9.13052 4.39634 9.02563 4.63219 8.81645 4.82656Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14" height="14" fill="white" transform="translate(0.438965 0.424194)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="find-master-item__text">Создайте задание, сравните условия и выберите лучшего</div>
+                  </div>
+                  <div class="find-master-item">
+                    <input type="radio" name="master1" id="master6">
+                    <label class="flicker-3" for="master6">
+                      <div class="find-master-item__icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.50326 5.42419C7.04326 5.42419 6.66992 5.79753 6.66992 6.25753C6.66992 6.71753 7.04326 7.09086 7.50326 7.09086C7.96326 7.09086 8.33659 6.71753 8.33659 6.25753C8.33659 5.79753 7.96326 5.42419 7.50326 5.42419Z" fill="#6C7185"/>
+<path d="M12.5032 12.0908C12.0437 12.0908 11.6699 11.717 11.6699 11.2575C11.6699 10.798 12.0437 10.4242 12.5032 10.4242C12.7984 10.4242 13.1101 10.5747 13.4045 10.8597C13.7354 11.1798 14.2628 11.1711 14.5829 10.8404C14.9029 10.5097 14.8942 9.98207 14.5636 9.66199C14.1406 9.25274 13.7175 9.02124 13.3366 8.8949V7.92415C13.3366 7.4639 12.9634 7.09082 12.5032 7.09082C12.0431 7.09082 11.6699 7.4639 11.6699 7.92415V8.90082C10.7 9.24482 10.0032 10.1711 10.0032 11.2575C10.0032 12.636 11.1247 13.7575 12.5032 13.7575C12.9627 13.7575 13.3366 14.1313 13.3366 14.5908C13.3366 15.0503 12.9627 15.4242 12.5032 15.4242C12.1472 15.4242 11.7629 15.2002 11.4211 14.7937C11.1251 14.4414 10.5993 14.396 10.2471 14.6922C9.89473 14.9883 9.84931 15.514 10.1454 15.8662C10.5909 16.3962 11.1147 16.7654 11.6699 16.9516V17.9242C11.6699 18.3844 12.0431 18.7575 12.5032 18.7575C12.9634 18.7575 13.3366 18.3844 13.3366 17.9242V16.9475C14.3065 16.6035 15.0032 15.6772 15.0032 14.5908C15.0032 13.2123 13.8817 12.0908 12.5032 12.0908Z" fill="#6C7185"/>
+<path d="M12.5034 0.424194C5.61092 0.424194 0.00341797 6.03169 0.00341797 12.9242C0.00341797 19.8167 5.61092 25.4242 12.5034 25.4242C19.3959 25.4242 25.0034 19.8167 25.0034 12.9242C25.0034 6.03169 19.3959 0.424194 12.5034 0.424194ZM12.5034 23.7575C6.52983 23.7575 1.67008 18.8977 1.67008 12.9242C1.67008 6.95069 6.52983 2.09086 12.5034 2.09086C18.477 2.09086 23.3368 6.95069 23.3368 12.9242C23.3368 18.8977 18.477 23.7575 12.5034 23.7575Z" fill="#6C7185"/>
+<path d="M18.2581 5.78815C16.0897 4.03732 13.2517 3.37699 10.473 3.97607C10.0231 4.07307 9.737 4.5164 9.834 4.96632C9.931 5.41615 10.3744 5.70199 10.8242 5.60524C13.1083 5.11274 15.4363 5.65199 17.2112 7.08482C18.9857 8.51774 20.0036 10.646 20.0036 12.9241C20.0036 17.0596 16.6391 20.4241 12.5036 20.4241C8.36808 20.4241 5.00358 17.0596 5.00358 12.9241C5.00358 11.6887 5.31025 10.4642 5.89041 9.38307C6.108 8.97757 5.95566 8.4724 5.55016 8.25474C5.14458 8.03707 4.63933 8.18949 4.42183 8.59499C3.71208 9.91774 3.33691 11.4147 3.33691 12.9241C3.33691 17.9786 7.44908 22.0907 12.5036 22.0907C17.5581 22.0907 21.6702 17.9786 21.6702 12.9241C21.6702 10.1398 20.4266 7.5389 18.2581 5.78815Z" fill="#6C7185"/>
+</svg>
+                      </div>
+                    </label>
+                    <div class="find-master-item__name">
+                      Экономия<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.43867 0.424194C3.57319 0.424194 0.438965 3.55842 0.438965 7.4239C0.438965 11.2894 3.57319 14.4242 7.43867 14.4242C11.3042 14.4242 14.439 11.2894 14.439 7.4239C14.439 3.55842 11.3042 0.424194 7.43867 0.424194ZM8.89585 11.2728C8.53556 11.415 8.24874 11.5229 8.03363 11.5975C7.81911 11.6722 7.56963 11.7095 7.28578 11.7095C6.84963 11.7095 6.51008 11.6029 6.2683 11.3901C6.02652 11.1774 5.90622 10.9078 5.90622 10.58C5.90622 10.4526 5.91511 10.3223 5.93289 10.1895C5.95126 10.0568 5.9803 9.90745 6.02 9.73975L6.47096 8.14686C6.51067 7.99397 6.54504 7.84879 6.5723 7.71368C6.59956 7.57738 6.61259 7.45234 6.61259 7.33856C6.61259 7.1359 6.57052 6.99368 6.48697 6.91368C6.40222 6.83368 6.24282 6.79456 6.00519 6.79456C5.88904 6.79456 5.76934 6.81175 5.64667 6.8479C5.52519 6.88523 5.41971 6.91901 5.33319 6.95219L5.4523 6.46153C5.74741 6.34123 6.03008 6.23812 6.29971 6.15279C6.56934 6.06627 6.82415 6.0236 7.06415 6.0236C7.49734 6.0236 7.83156 6.12908 8.06682 6.33768C8.30089 6.54686 8.41882 6.81886 8.41882 7.15308C8.41882 7.22242 8.41052 7.34449 8.39452 7.51871C8.37852 7.69353 8.3483 7.85294 8.30445 7.99931L7.85585 9.58745C7.81911 9.71486 7.78652 9.86064 7.75689 10.0236C7.72785 10.1866 7.71363 10.311 7.71363 10.3946C7.71363 10.6055 7.76045 10.7495 7.85526 10.826C7.94889 10.9024 8.11304 10.9409 8.34534 10.9409C8.45496 10.9409 8.57763 10.9214 8.7163 10.8835C8.85378 10.8455 8.95333 10.8117 9.01615 10.7827L8.89585 11.2728ZM8.81645 4.82656C8.60726 5.02094 8.35541 5.11812 8.06089 5.11812C7.76697 5.11812 7.51334 5.02094 7.30237 4.82656C7.09259 4.63219 6.98652 4.39575 6.98652 4.1196C6.98652 3.84405 7.09319 3.60701 7.30237 3.41086C7.51334 3.21412 7.76697 3.11634 8.06089 3.11634C8.35541 3.11634 8.60785 3.21412 8.81645 3.41086C9.02563 3.60701 9.13052 3.84405 9.13052 4.1196C9.13052 4.39634 9.02563 4.63219 8.81645 4.82656Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14" height="14" fill="white" transform="translate(0.438965 0.424194)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="find-master-item__text">Частные мастера выгоднее до 40%.</div>
+                  </div>
+                </div>
+                <div class="find-master__btn btn-yellow">Найти мастера</div>
+              </div>
+              <div class="list-question box">
+                <div class="list-question__title">Популярные вопросы</div><a class="list-question-item" href="#">Как работает сервис?</a><a class="list-question-item" href="#">За что платит Мастер?</a><a class="list-question-item" href="#">Сделка без риска</a><a class="list-question-item" href="#">Как получить заказ?</a>
+                <div class="list-question-close">
+                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99964 7.06127L10.7185 11.7801C11.0114 12.0733 11.4867 12.0733 11.7796 11.7801C12.0728 11.4869 12.0728 11.0122 11.7796 10.719L7.06078 6.00012L11.7796 1.28102C12.0728 0.987847 12.0728 0.51306 11.7796 0.219883C11.4867 -0.0732943 11.0114 -0.0732943 10.7185 0.219883L5.99964 4.93898L1.28079 0.219882C0.987861 -0.0732948 0.512573 -0.0732948 0.219646 0.219882C0.073308 0.366471 1.3327e-05 0.558587 1.33186e-05 0.750453C1.33103e-05 0.942319 0.0733079 1.13443 0.219896 1.28102L4.93875 6.00012L0.219896 10.719C0.0733075 10.8656 1.28681e-05 11.0577 1.28597e-05 11.2495C1.28513e-05 11.4414 0.0733075 11.6335 0.219896 11.7801C0.512823 12.0733 0.98811 12.0733 1.28104 11.7801L5.99964 7.06127Z" fill="#6C7185"/>
+</svg>
+                </div>
+              </div>
+              <div class="list-video"><img src="static/img/list-video.png" alt="">
+                <div class="list-video__title">Как разместить задание?</div>
+                <div class="list-video__play">
+                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="14.9994" cy="15" r="10.3271" fill="#4880FF"/>
+<path d="M15 0C6.71511 0 0 6.71511 0 15C0 23.2848 6.71511 30 15 30C23.2848 30 30 23.2848 30 15C30 6.71511 23.2848 0 15 0ZM22.1775 16.2043L13.2302 22.3596C12.9813 22.5301 12.6915 22.6173 12.4011 22.6173C12.1672 22.6173 11.9351 22.5617 11.7213 22.45C11.2409 22.1959 10.9392 21.6977 10.9392 21.1555V8.84469C10.9392 8.30246 11.2409 7.8042 11.7213 7.55006C12.2018 7.29806 12.7822 7.33277 13.2302 7.64049L22.1775 13.7957C22.5735 14.0683 22.8107 14.5192 22.8107 15C22.8107 15.4808 22.5735 15.9317 22.1775 16.2043Z" fill="white"/>
+</svg>
+                </div>
+                <div class="list-video__text">Узнайте как получить выгодные предложения от мастеров</div>
+              </div>
+              <div class="list-reg box">
+                <div class="list-reg__title">Хотите  <span>зарабатывать </span>выполняя заказы?</div>
+                <div class="list-reg__text">Пройдите регистрацию за 5 минут и сразу можете приступать.</div>
+                <div class="list-reg__btn"> 
+                  <div class="btn-yellow">Регистраиця</div>
+                </div>
+                <div class="list-reg__bottom"></div>
+              </div>
+              <div class="order-map-open">
+                Развернуть карту<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9622 6.75847C10.9622 6.83398 10.9913 6.90068 11.0493 6.95883L12.0425 7.95192C12.1005 8.01008 12.1672 8.03906 12.2427 8.03906C12.3183 8.03906 12.385 8.00999 12.443 7.95192L15.3354 5.05985L16.5895 6.3142C16.6997 6.42456 16.8307 6.47975 16.9817 6.47975C17.1325 6.47975 17.2632 6.42456 17.3736 6.3142C17.4839 6.20387 17.5391 6.07323 17.5391 5.92223L17.5391 2.01973C17.5391 1.86864 17.4839 1.73802 17.3736 1.62764C17.2632 1.51734 17.1326 1.46215 16.9817 1.46215L13.0792 1.46215C12.9282 1.46215 12.7972 1.51734 12.687 1.62764C12.5767 1.73799 12.5214 1.86861 12.5214 2.01973C12.5214 2.1707 12.5767 2.30137 12.687 2.4117L13.9414 3.66612L11.0492 6.55813C10.9913 6.61617 10.9622 6.68298 10.9622 6.75847Z" fill="white"/>
+<path d="M2.01974 17.5391L5.92226 17.5391C6.07323 17.5391 6.20391 17.4839 6.31423 17.3735C6.42459 17.2633 6.47978 17.1324 6.47978 16.9815C6.47978 16.8306 6.42459 16.6999 6.31423 16.5896L5.05988 15.3352L7.95189 12.4432C8.01011 12.3851 8.03906 12.3183 8.03906 12.2429C8.03906 12.1673 8.01011 12.1005 7.95189 12.0424L6.95899 11.0494C6.90083 10.9914 6.83411 10.9626 6.75862 10.9626C6.68314 10.9626 6.61629 10.9914 6.55826 11.0494L3.66618 13.9416L2.41183 12.6873C2.30153 12.577 2.17086 12.5217 2.01986 12.5217C1.86877 12.5217 1.73815 12.577 1.6278 12.6873C1.51747 12.7974 1.46231 12.9283 1.46231 13.0793L1.46231 16.9818C1.46231 17.1328 1.5175 17.2635 1.62771 17.3735C1.73803 17.4839 1.86868 17.5391 2.01974 17.5391Z" fill="white"/>
+</svg>
+              </div>
+              <div class="order-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7bffd6a0771c3ac4985a0770d029e9d2c0cbe65219d53dbfef3e4e36bbdfe24a&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script></div>
+            </div>
+            <div class="col-lg-8 col-sm-8">
+              <div class="find-master box">
+                <div class="find-master__head">Найдите мастера для выполнения ваших задач!</div>
+                <div class="find-master-items">
+                  <div class="find-master-item"> 
+                    <input type="radio" name="master" id="master1" checked>
+                    <label class="flicker-1" for="master1">
+                      <div class="find-master-item__icon"><svg width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.3255 5.67283C17.9035 4.63611 14.4614 3.02183 11.3713 1.00456C11.2072 0.897406 11.0035 0.897406 10.8394 1.00456C7.66015 3.07978 4.40406 4.60673 0.884922 5.67283C0.657583 5.74164 0.5 5.97012 0.5 6.23078V12.1414C0.5 18.2281 3.03954 22.2571 5.17002 24.5651C7.46361 27.05 10.1353 28.4242 11.1054 28.4242C12.0753 28.4242 14.747 27.05 17.0406 24.5651C19.171 22.2571 21.7104 18.2282 21.7104 12.1414V6.23073C21.7104 5.97012 21.5528 5.74164 21.3255 5.67283ZM20.6641 12.1414C20.6641 17.8263 18.2954 21.5858 16.3083 23.7386C14.0528 26.1822 11.6413 27.2672 11.1054 27.2672C10.5694 27.2672 8.15777 26.1822 5.90226 23.7386C3.91513 21.5857 1.54639 17.8263 1.54639 12.1414V6.66987C4.91169 5.61338 8.04576 4.13896 11.1055 2.17298C14.0887 4.08681 17.3792 5.63454 20.6641 6.66965V12.1414Z" fill="#4880FF"/>
+<path d="M6.46816 6.60515C6.36226 6.30786 6.05851 6.16182 5.78959 6.27896C4.85498 6.68614 3.89569 7.06094 2.93839 7.39298C2.72023 7.46871 2.57178 7.69215 2.57178 7.94491V10.1788C2.57178 10.4983 2.80606 10.7573 3.09495 10.7573C3.38383 10.7573 3.61812 10.4983 3.61812 10.1788V8.36767C4.47691 8.06044 5.33477 7.72061 6.17316 7.35533C6.44203 7.23829 6.57411 6.90244 6.46816 6.60515Z" fill="#4880FF"/>
+<path d="M7.46235 6.71486C7.53255 6.71486 7.60381 6.69923 7.67216 6.66625L7.68178 6.66163C7.94647 6.53337 8.06568 6.19268 7.94968 5.90012C7.83358 5.60745 7.52371 5.47505 7.2593 5.60321L7.25085 5.60723C6.98601 5.73512 6.86642 6.07554 6.98208 6.36826C7.06791 6.58558 7.26052 6.71486 7.46235 6.71486Z" fill="#4880FF"/>
+<path d="M17.3388 19.577C17.0971 19.4023 16.7729 19.4775 16.6146 19.7449C16.1835 20.4745 15.6777 21.1732 15.1112 21.8213C14.6452 22.3542 14.1403 22.8509 13.6105 23.2975C13.3808 23.4912 13.3365 23.8542 13.5117 24.1083C13.6147 24.2576 13.7705 24.3361 13.9281 24.3361C14.0387 24.3361 14.1502 24.2975 14.2449 24.2176C14.8164 23.7357 15.361 23.2001 15.8634 22.6255C16.476 21.9249 17.0234 21.1686 17.4906 20.3777C17.6487 20.1102 17.5807 19.7518 17.3388 19.577Z" fill="#4880FF"/>
+<path d="M12.3952 24.2047L12.3652 24.2242C12.1152 24.3844 12.0297 24.7382 12.1745 25.0147C12.2715 25.2 12.4471 25.3034 12.6277 25.3034C12.7166 25.3034 12.8069 25.2783 12.8893 25.2254L12.924 25.2029C13.1733 25.0415 13.257 24.6871 13.111 24.4114C12.9649 24.1358 12.6444 24.0434 12.3952 24.2047Z" fill="#4880FF"/>
+<path d="M7.53906 13.4936C7.21782 13.1384 6.79059 12.9429 6.33621 12.9429C5.88182 12.9429 5.45454 13.1384 5.13316 13.4936C4.46994 14.2271 4.46994 15.4205 5.13316 16.154L8.22244 19.5697C8.54372 19.9248 8.97096 20.1204 9.42539 20.1204C9.87983 20.1204 10.3071 19.9248 10.6284 19.5695L17.0775 12.4388C17.7407 11.7052 17.7407 10.5119 17.0774 9.77866C16.7561 9.42341 16.3289 9.22791 15.8744 9.22791C15.4199 9.22791 14.9927 9.42347 14.6714 9.77866L9.42534 15.5792L7.53906 13.4936ZM15.4113 10.5968C15.5349 10.4601 15.6995 10.3848 15.8744 10.3848C16.0495 10.3848 16.2139 10.4601 16.3376 10.5968C16.5929 10.879 16.5929 11.3385 16.3375 11.6208L9.88852 18.7515C9.76489 18.8882 9.60036 18.9634 9.42539 18.9634C9.25042 18.9634 9.08589 18.8882 8.96221 18.7515L5.87303 15.3359C5.61766 15.0535 5.61766 14.5941 5.87293 14.3118C5.99661 14.1752 6.16114 14.0998 6.33616 14.0998C6.51118 14.0998 6.67561 14.175 6.79924 14.3117L9.05538 16.8064C9.15356 16.9148 9.28656 16.9758 9.42534 16.9758C9.56413 16.9758 9.69713 16.9149 9.79521 16.8064L15.4113 10.5968Z" fill="#4880FF"/>
+</svg>
+                      </div>
+                    </label>
+                    <div class="find-master-item__name">
+                      Безопасная сделка<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.43867 0.424194C3.57319 0.424194 0.438965 3.55842 0.438965 7.4239C0.438965 11.2894 3.57319 14.4242 7.43867 14.4242C11.3042 14.4242 14.439 11.2894 14.439 7.4239C14.439 3.55842 11.3042 0.424194 7.43867 0.424194ZM8.89585 11.2728C8.53556 11.415 8.24874 11.5229 8.03363 11.5975C7.81911 11.6722 7.56963 11.7095 7.28578 11.7095C6.84963 11.7095 6.51008 11.6029 6.2683 11.3901C6.02652 11.1774 5.90622 10.9078 5.90622 10.58C5.90622 10.4526 5.91511 10.3223 5.93289 10.1895C5.95126 10.0568 5.9803 9.90745 6.02 9.73975L6.47096 8.14686C6.51067 7.99397 6.54504 7.84879 6.5723 7.71368C6.59956 7.57738 6.61259 7.45234 6.61259 7.33856C6.61259 7.1359 6.57052 6.99368 6.48697 6.91368C6.40222 6.83368 6.24282 6.79456 6.00519 6.79456C5.88904 6.79456 5.76934 6.81175 5.64667 6.8479C5.52519 6.88523 5.41971 6.91901 5.33319 6.95219L5.4523 6.46153C5.74741 6.34123 6.03008 6.23812 6.29971 6.15279C6.56934 6.06627 6.82415 6.0236 7.06415 6.0236C7.49734 6.0236 7.83156 6.12908 8.06682 6.33768C8.30089 6.54686 8.41882 6.81886 8.41882 7.15308C8.41882 7.22242 8.41052 7.34449 8.39452 7.51871C8.37852 7.69353 8.3483 7.85294 8.30445 7.99931L7.85585 9.58745C7.81911 9.71486 7.78652 9.86064 7.75689 10.0236C7.72785 10.1866 7.71363 10.311 7.71363 10.3946C7.71363 10.6055 7.76045 10.7495 7.85526 10.826C7.94889 10.9024 8.11304 10.9409 8.34534 10.9409C8.45496 10.9409 8.57763 10.9214 8.7163 10.8835C8.85378 10.8455 8.95333 10.8117 9.01615 10.7827L8.89585 11.2728ZM8.81645 4.82656C8.60726 5.02094 8.35541 5.11812 8.06089 5.11812C7.76697 5.11812 7.51334 5.02094 7.30237 4.82656C7.09259 4.63219 6.98652 4.39575 6.98652 4.1196C6.98652 3.84405 7.09319 3.60701 7.30237 3.41086C7.51334 3.21412 7.76697 3.11634 8.06089 3.11634C8.35541 3.11634 8.60785 3.21412 8.81645 3.41086C9.02563 3.60701 9.13052 3.84405 9.13052 4.1196C9.13052 4.39634 9.02563 4.63219 8.81645 4.82656Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14" height="14" fill="white" transform="translate(0.438965 0.424194)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="find-master-item__text">Не устроит результат, деньги вернутся</div>
+                  </div>
+                  <div class="find-master-item">
+                    <input type="radio" name="master" id="master2">
+                    <label class="flicker-2" for="master2">
+                      <div class="find-master-item__icon">
+                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8842 4.61699C13.4847 3.21745 11.6239 2.44666 9.64459 2.44666C7.66529 2.44666 5.8045 3.21745 4.40496 4.61699C3.00541 6.01653 2.23462 7.87739 2.23462 9.85669C2.23462 11.836 3.00541 13.6968 4.40496 15.0963C5.8045 16.4959 7.66536 17.2667 9.64459 17.2667C11.6239 17.2667 13.4847 16.4959 14.8842 15.0963C16.2838 13.6968 17.0546 11.8359 17.0546 9.85669C17.0546 7.87733 16.2838 6.01653 14.8842 4.61699ZM14.1868 14.3988C12.9735 15.612 11.3604 16.2802 9.64459 16.2802C7.9288 16.2802 6.31566 15.6121 5.10243 14.3988C2.59789 11.8943 2.59789 7.819 5.10243 5.31446C6.31566 4.10122 7.9288 3.43308 9.64459 3.43308C11.3604 3.43308 12.9735 4.10122 14.1868 5.31446C16.6913 7.819 16.6913 11.8943 14.1868 14.3988Z" fill="#6C7185"/>
+<path d="M12.6438 4.91611C12.4111 4.77459 12.1077 4.84851 11.9662 5.08124C11.8246 5.31397 11.8986 5.61739 12.1313 5.75891C12.4571 5.95705 12.7604 6.19564 13.0329 6.46809C13.1292 6.56443 13.2554 6.61257 13.3816 6.61257C13.5078 6.61257 13.6341 6.56443 13.7304 6.46809C13.923 6.27547 13.923 5.96324 13.7304 5.77062C13.4024 5.4426 13.0368 5.15509 12.6438 4.91611Z" fill="#6C7185"/>
+<path d="M5.90726 6.61256C6.03346 6.61256 6.15972 6.56442 6.25599 6.46808C7.33383 5.39024 8.87792 4.88704 10.3861 5.12194C10.6554 5.16389 10.9074 4.97963 10.9493 4.71047C10.9912 4.4413 10.807 4.18917 10.5379 4.14722C8.71956 3.86411 6.85818 4.47096 5.55852 5.77061C5.36591 5.96323 5.36591 6.27546 5.55852 6.46808C5.6548 6.56442 5.78106 6.61256 5.90726 6.61256Z" fill="#6C7185"/>
+<path d="M7.11261 13.9265C6.80399 13.7341 6.51582 13.5049 6.25599 13.245C6.06338 13.0524 5.75108 13.0524 5.55852 13.245C5.36591 13.4377 5.36591 13.7499 5.55852 13.9425C5.87129 14.2553 6.21858 14.5315 6.59079 14.7636C6.67194 14.8142 6.76216 14.8383 6.8512 14.8383C7.01581 14.8383 7.17673 14.7559 7.27024 14.6059C7.41432 14.3749 7.34376 14.0707 7.11261 13.9265Z" fill="#6C7185"/>
+<path d="M13.0333 13.245C11.9883 14.29 10.5463 14.7893 9.07673 14.615C8.80626 14.5828 8.5609 14.7762 8.52887 15.0467C8.49678 15.3171 8.69006 15.5624 8.96053 15.5945C9.19267 15.6221 9.42396 15.6356 9.65393 15.6356C11.1791 15.6356 12.6358 15.0374 13.7308 13.9425C13.9234 13.7499 13.9234 13.4376 13.7308 13.2449C13.5382 13.0525 13.2259 13.0525 13.0333 13.245Z" fill="#6C7185"/>
+<path d="M24.6143 21.9296L18.6453 15.9606C18.4526 15.768 18.1403 15.768 17.9478 15.9606L17.709 16.1994L17.1233 15.6136C19.9745 11.9157 19.7063 6.57151 16.3183 3.18353C12.639 -0.495909 6.65208 -0.495909 2.97271 3.18353C-0.706725 6.8629 -0.706725 12.8498 2.97271 16.5292C4.8124 18.3688 7.22901 19.2887 9.64556 19.2887C11.6792 19.2887 13.7129 18.6371 15.4028 17.3341L15.9885 17.9198L15.7498 18.1586C15.6572 18.2511 15.6053 18.3765 15.6053 18.5073C15.6053 18.6381 15.6572 18.7636 15.7498 18.8561L21.7188 24.8251C22.118 25.2243 22.6423 25.4238 23.1666 25.4238C23.6909 25.4238 24.2153 25.2242 24.6145 24.8251C25.4127 24.0269 25.4127 22.728 24.6143 21.9296ZM3.67012 15.8317C2.07401 14.2356 1.19504 12.1135 1.19504 9.85638C1.19504 7.59923 2.07408 5.4771 3.67012 3.88106C5.26622 2.28502 7.38829 1.40599 9.64543 1.40599C11.9026 1.40599 14.0248 2.28502 15.6208 3.88106C17.2169 5.47717 18.0959 7.59923 18.0959 9.85638C18.0959 12.1135 17.2169 14.2357 15.6208 15.8317C14.0247 17.4277 11.9026 18.3068 9.6455 18.3068C7.38835 18.3068 5.26622 17.4278 3.67012 15.8317ZM16.1535 16.6899C16.2089 16.6371 16.2639 16.5836 16.3183 16.5292C16.3727 16.4747 16.4262 16.4197 16.479 16.3644L17.0115 16.8968L16.686 17.2224L16.1535 16.6899ZM23.9169 24.1277C23.5031 24.5414 22.83 24.5414 22.4163 24.1277L16.796 18.5074L18.2965 17.0069L23.9169 22.6272C24.3306 23.0409 24.3306 23.714 23.9169 24.1277Z" fill="#6C7185"/>
+</svg>
+                      </div>
+                    </label>
+                    <div class="find-master-item__name">
+                       Быстро найти<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.43867 0.424194C3.57319 0.424194 0.438965 3.55842 0.438965 7.4239C0.438965 11.2894 3.57319 14.4242 7.43867 14.4242C11.3042 14.4242 14.439 11.2894 14.439 7.4239C14.439 3.55842 11.3042 0.424194 7.43867 0.424194ZM8.89585 11.2728C8.53556 11.415 8.24874 11.5229 8.03363 11.5975C7.81911 11.6722 7.56963 11.7095 7.28578 11.7095C6.84963 11.7095 6.51008 11.6029 6.2683 11.3901C6.02652 11.1774 5.90622 10.9078 5.90622 10.58C5.90622 10.4526 5.91511 10.3223 5.93289 10.1895C5.95126 10.0568 5.9803 9.90745 6.02 9.73975L6.47096 8.14686C6.51067 7.99397 6.54504 7.84879 6.5723 7.71368C6.59956 7.57738 6.61259 7.45234 6.61259 7.33856C6.61259 7.1359 6.57052 6.99368 6.48697 6.91368C6.40222 6.83368 6.24282 6.79456 6.00519 6.79456C5.88904 6.79456 5.76934 6.81175 5.64667 6.8479C5.52519 6.88523 5.41971 6.91901 5.33319 6.95219L5.4523 6.46153C5.74741 6.34123 6.03008 6.23812 6.29971 6.15279C6.56934 6.06627 6.82415 6.0236 7.06415 6.0236C7.49734 6.0236 7.83156 6.12908 8.06682 6.33768C8.30089 6.54686 8.41882 6.81886 8.41882 7.15308C8.41882 7.22242 8.41052 7.34449 8.39452 7.51871C8.37852 7.69353 8.3483 7.85294 8.30445 7.99931L7.85585 9.58745C7.81911 9.71486 7.78652 9.86064 7.75689 10.0236C7.72785 10.1866 7.71363 10.311 7.71363 10.3946C7.71363 10.6055 7.76045 10.7495 7.85526 10.826C7.94889 10.9024 8.11304 10.9409 8.34534 10.9409C8.45496 10.9409 8.57763 10.9214 8.7163 10.8835C8.85378 10.8455 8.95333 10.8117 9.01615 10.7827L8.89585 11.2728ZM8.81645 4.82656C8.60726 5.02094 8.35541 5.11812 8.06089 5.11812C7.76697 5.11812 7.51334 5.02094 7.30237 4.82656C7.09259 4.63219 6.98652 4.39575 6.98652 4.1196C6.98652 3.84405 7.09319 3.60701 7.30237 3.41086C7.51334 3.21412 7.76697 3.11634 8.06089 3.11634C8.35541 3.11634 8.60785 3.21412 8.81645 3.41086C9.02563 3.60701 9.13052 3.84405 9.13052 4.1196C9.13052 4.39634 9.02563 4.63219 8.81645 4.82656Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14" height="14" fill="white" transform="translate(0.438965 0.424194)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="find-master-item__text">Создайте задание, сравните условия и выберите лучшего</div>
+                  </div>
+                  <div class="find-master-item">
+                    <input type="radio" name="master" id="master3">
+                    <label class="flicker-3" for="master3">
+                      <div class="find-master-item__icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.50326 5.42419C7.04326 5.42419 6.66992 5.79753 6.66992 6.25753C6.66992 6.71753 7.04326 7.09086 7.50326 7.09086C7.96326 7.09086 8.33659 6.71753 8.33659 6.25753C8.33659 5.79753 7.96326 5.42419 7.50326 5.42419Z" fill="#6C7185"/>
+<path d="M12.5032 12.0908C12.0437 12.0908 11.6699 11.717 11.6699 11.2575C11.6699 10.798 12.0437 10.4242 12.5032 10.4242C12.7984 10.4242 13.1101 10.5747 13.4045 10.8597C13.7354 11.1798 14.2628 11.1711 14.5829 10.8404C14.9029 10.5097 14.8942 9.98207 14.5636 9.66199C14.1406 9.25274 13.7175 9.02124 13.3366 8.8949V7.92415C13.3366 7.4639 12.9634 7.09082 12.5032 7.09082C12.0431 7.09082 11.6699 7.4639 11.6699 7.92415V8.90082C10.7 9.24482 10.0032 10.1711 10.0032 11.2575C10.0032 12.636 11.1247 13.7575 12.5032 13.7575C12.9627 13.7575 13.3366 14.1313 13.3366 14.5908C13.3366 15.0503 12.9627 15.4242 12.5032 15.4242C12.1472 15.4242 11.7629 15.2002 11.4211 14.7937C11.1251 14.4414 10.5993 14.396 10.2471 14.6922C9.89473 14.9883 9.84931 15.514 10.1454 15.8662C10.5909 16.3962 11.1147 16.7654 11.6699 16.9516V17.9242C11.6699 18.3844 12.0431 18.7575 12.5032 18.7575C12.9634 18.7575 13.3366 18.3844 13.3366 17.9242V16.9475C14.3065 16.6035 15.0032 15.6772 15.0032 14.5908C15.0032 13.2123 13.8817 12.0908 12.5032 12.0908Z" fill="#6C7185"/>
+<path d="M12.5034 0.424194C5.61092 0.424194 0.00341797 6.03169 0.00341797 12.9242C0.00341797 19.8167 5.61092 25.4242 12.5034 25.4242C19.3959 25.4242 25.0034 19.8167 25.0034 12.9242C25.0034 6.03169 19.3959 0.424194 12.5034 0.424194ZM12.5034 23.7575C6.52983 23.7575 1.67008 18.8977 1.67008 12.9242C1.67008 6.95069 6.52983 2.09086 12.5034 2.09086C18.477 2.09086 23.3368 6.95069 23.3368 12.9242C23.3368 18.8977 18.477 23.7575 12.5034 23.7575Z" fill="#6C7185"/>
+<path d="M18.2581 5.78815C16.0897 4.03732 13.2517 3.37699 10.473 3.97607C10.0231 4.07307 9.737 4.5164 9.834 4.96632C9.931 5.41615 10.3744 5.70199 10.8242 5.60524C13.1083 5.11274 15.4363 5.65199 17.2112 7.08482C18.9857 8.51774 20.0036 10.646 20.0036 12.9241C20.0036 17.0596 16.6391 20.4241 12.5036 20.4241C8.36808 20.4241 5.00358 17.0596 5.00358 12.9241C5.00358 11.6887 5.31025 10.4642 5.89041 9.38307C6.108 8.97757 5.95566 8.4724 5.55016 8.25474C5.14458 8.03707 4.63933 8.18949 4.42183 8.59499C3.71208 9.91774 3.33691 11.4147 3.33691 12.9241C3.33691 17.9786 7.44908 22.0907 12.5036 22.0907C17.5581 22.0907 21.6702 17.9786 21.6702 12.9241C21.6702 10.1398 20.4266 7.5389 18.2581 5.78815Z" fill="#6C7185"/>
+</svg>
+                      </div>
+                    </label>
+                    <div class="find-master-item__name">
+                      Экономия<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.43867 0.424194C3.57319 0.424194 0.438965 3.55842 0.438965 7.4239C0.438965 11.2894 3.57319 14.4242 7.43867 14.4242C11.3042 14.4242 14.439 11.2894 14.439 7.4239C14.439 3.55842 11.3042 0.424194 7.43867 0.424194ZM8.89585 11.2728C8.53556 11.415 8.24874 11.5229 8.03363 11.5975C7.81911 11.6722 7.56963 11.7095 7.28578 11.7095C6.84963 11.7095 6.51008 11.6029 6.2683 11.3901C6.02652 11.1774 5.90622 10.9078 5.90622 10.58C5.90622 10.4526 5.91511 10.3223 5.93289 10.1895C5.95126 10.0568 5.9803 9.90745 6.02 9.73975L6.47096 8.14686C6.51067 7.99397 6.54504 7.84879 6.5723 7.71368C6.59956 7.57738 6.61259 7.45234 6.61259 7.33856C6.61259 7.1359 6.57052 6.99368 6.48697 6.91368C6.40222 6.83368 6.24282 6.79456 6.00519 6.79456C5.88904 6.79456 5.76934 6.81175 5.64667 6.8479C5.52519 6.88523 5.41971 6.91901 5.33319 6.95219L5.4523 6.46153C5.74741 6.34123 6.03008 6.23812 6.29971 6.15279C6.56934 6.06627 6.82415 6.0236 7.06415 6.0236C7.49734 6.0236 7.83156 6.12908 8.06682 6.33768C8.30089 6.54686 8.41882 6.81886 8.41882 7.15308C8.41882 7.22242 8.41052 7.34449 8.39452 7.51871C8.37852 7.69353 8.3483 7.85294 8.30445 7.99931L7.85585 9.58745C7.81911 9.71486 7.78652 9.86064 7.75689 10.0236C7.72785 10.1866 7.71363 10.311 7.71363 10.3946C7.71363 10.6055 7.76045 10.7495 7.85526 10.826C7.94889 10.9024 8.11304 10.9409 8.34534 10.9409C8.45496 10.9409 8.57763 10.9214 8.7163 10.8835C8.85378 10.8455 8.95333 10.8117 9.01615 10.7827L8.89585 11.2728ZM8.81645 4.82656C8.60726 5.02094 8.35541 5.11812 8.06089 5.11812C7.76697 5.11812 7.51334 5.02094 7.30237 4.82656C7.09259 4.63219 6.98652 4.39575 6.98652 4.1196C6.98652 3.84405 7.09319 3.60701 7.30237 3.41086C7.51334 3.21412 7.76697 3.11634 8.06089 3.11634C8.35541 3.11634 8.60785 3.21412 8.81645 3.41086C9.02563 3.60701 9.13052 3.84405 9.13052 4.1196C9.13052 4.39634 9.02563 4.63219 8.81645 4.82656Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="14" height="14" fill="white" transform="translate(0.438965 0.424194)"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="find-master-item__text">Частные мастера выгоднее до 40%.</div>
+                  </div>
+                </div>
+                <div class="find-master__btn btn-yellow">Найти мастера</div>
+              </div>
+              <div class="list-static">
+                <div class="list-static-item">
+                  <div class="list-static-item__name">Зарегестрировано</div>
+                  <div class="list-static-item__number">12 399 исполнителей</div>
+                </div>
+                <div class="list-static-item">
+                  <div class="list-static-item__name">На сайте размещенно более</div>
+                  <div class="list-static-item__number">1000 заданий</div>
+                </div>
+              </div>
+              <div class="mission-list">
+                <div class="mission-list-item box timer">
+                  <div class="mission-list-item__title">
+                    Прочистить раковину в ванной комнате от засора<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M13.0929 8.78229C12.9211 6.54521 11.8796 5.14333 10.9607 3.90624C10.1099 2.76096 9.375 1.77196 9.375 0.313035C9.375 0.195848 9.30938 0.0887384 9.20531 0.0350372C9.10093 -0.0189862 8.97551 -0.0101386 8.88062 0.0588263C7.50062 1.04631 6.34919 2.71063 5.94697 4.29864C5.66774 5.40422 5.6308 6.64711 5.62562 7.46798C4.3512 7.19578 4.06251 5.28949 4.05946 5.26872C4.04511 5.16984 3.9847 5.0838 3.89681 5.03681C3.80801 4.99043 3.70362 4.98706 3.61359 5.03162C3.54677 5.06396 1.97326 5.86348 1.88171 9.05569C1.87529 9.16189 1.875 9.26842 1.875 9.37491C1.875 12.4762 4.39849 14.9995 7.5 14.9995C7.50428 14.9998 7.50885 15.0004 7.51251 14.9995C7.51374 14.9995 7.51494 14.9995 7.51647 14.9995C10.6104 14.9907 13.125 12.4707 13.125 9.37491C13.125 9.21896 13.0929 8.78229 13.0929 8.78229ZM7.5 14.3746C6.46605 14.3746 5.625 13.4786 5.625 12.3773C5.625 12.3398 5.62471 12.302 5.62743 12.2556C5.63994 11.7911 5.72815 11.4741 5.82489 11.2632C6.00618 11.6526 6.33026 12.0105 6.8567 12.0105C7.02943 12.0105 7.16921 11.8708 7.16921 11.6981C7.16921 11.2532 7.17838 10.7399 7.28915 10.2766C7.38773 9.8659 7.62331 9.4289 7.92179 9.0786C8.05453 9.53329 8.31334 9.90129 8.56603 10.2605C8.92767 10.7743 9.30149 11.3056 9.36712 12.2116C9.37107 12.2653 9.37506 12.3194 9.37506 12.3773C9.375 13.4786 8.53395 14.3746 7.5 14.3746Z" fill="#FF855F"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="15" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                  </div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box">
+                  <div class="mission-list-item__title">
+                    Прочистить раковину в ванной комнате от засора<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M8.236 8.89276V8.55929C8.236 8.15327 7.90641 7.82397 7.50069 7.82397C7.09437 7.82397 6.76508 8.15327 6.76508 8.55929V8.89276C6.76508 9.29848 7.09437 9.62807 7.50069 9.62807C7.90641 9.62807 8.236 9.29878 8.236 8.89276Z" fill="#4880FF"/>
+<path d="M8.74013 9.2995C8.57743 9.833 8.08632 10.225 7.50058 10.225C6.91454 10.225 6.42344 9.83329 6.26043 9.2995H1.19446C0.874716 9.2995 0.572591 9.22516 0.301514 9.09619V12.4599C0.301514 13.1167 0.838891 13.6541 1.49569 13.6541H13.5049C14.1617 13.6541 14.6991 13.1167 14.6991 12.4599V9.09649C14.428 9.22546 14.1259 9.2998 13.8064 9.2998L8.74013 9.2995Z" fill="#4880FF"/>
+<path d="M13.7563 3.25926H10.8897C10.7168 2.17674 9.77847 1.34619 8.64819 1.34619H6.3512C5.22062 1.34619 4.28319 2.17674 4.10974 3.25926H1.24372C0.559463 3.25926 -0.000305176 3.79663 -0.000305176 4.45343V7.20987C-0.000305176 7.86906 0.534386 8.40405 1.19387 8.40405H6.20342C6.22044 8.06102 6.36792 7.75143 6.60108 7.52842C6.60825 7.52185 6.6166 7.51618 6.62407 7.50961C6.67572 7.46214 6.72945 7.41736 6.78827 7.37855C6.80917 7.36452 6.83305 7.35497 6.85484 7.34243C6.90321 7.31466 6.95097 7.28571 7.00322 7.26421C7.04412 7.24719 7.0883 7.23734 7.13129 7.2245C7.16831 7.21346 7.20354 7.19883 7.24205 7.19107C7.32564 7.17405 7.41192 7.16509 7.49999 7.16509C7.58836 7.16509 7.67434 7.17435 7.75764 7.19107C7.79585 7.19883 7.83138 7.21346 7.86869 7.2245C7.91168 7.23734 7.95527 7.24719 7.99677 7.26451C8.04872 7.286 8.09618 7.31466 8.14455 7.34243C8.16634 7.35527 8.19023 7.36482 8.21172 7.37885C8.27053 7.41736 8.32397 7.46214 8.37562 7.50961C8.38308 7.51648 8.39234 7.52185 8.39891 7.52902C8.63237 7.75233 8.77955 8.06102 8.79657 8.40464H13.8061C14.4656 8.40464 15.0003 7.86995 15.0003 7.21047V4.45402C15.0003 3.79663 14.4405 3.25926 13.7563 3.25926ZM5.26002 3.25926C5.41228 2.7992 5.84129 2.46394 6.3518 2.46394H8.64879C9.159 2.46394 9.588 2.7992 9.74026 3.25926H5.26002Z" fill="#4880FF"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="15" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                  </div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box vised">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box vised">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box vised">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="mission-list-item box">
+                  <div class="mission-list-item__title">Прочистить раковину в ванной комнате от засора</div>
+                  <div class="mission-list-item-middle">
+                    <div class="order-profile__img"><img src="static/img/irina.png" alt=""></div>
+                    <div class="order-profile-desc">
+                      <div class="order-profile-desc__name order-profile-desc__name--offline order-message-box__name order-message-box__name--offline">Ирина</div>
+                      <div class="order-profile-desc__info">
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Отзывы: </div>
+                          <div class="profile-card-table-item__right"><span class="green">+7 </span><span>/ 0 / </span><span class="orange">-1</span></div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Откликов: </div>
+                          <div class="profile-card-table-item__right">12</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Просмотров: </div>
+                          <div class="profile-card-table-item__right">49</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Статус:  </div>
+                          <div class="profile-card-table-item__right">Открыто 12 минут назад</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Раздел: </div>
+                          <div class="profile-card-table-item__right">Сантехника</div>
+                        </div>
+                        <div class="profile-card-table-item">
+                          <div class="profile-card-table-item__left">Выполнение: </div>
+                          <div class="profile-card-table-item__right red">6ч. 20мин.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-profile-btn">
+                      <div class="btn-yellow">Подробнее</div>
+                    </div>
+                  </div>
+                  <div class="mission-list-item__text">В новой квартире необходимо собрать мебель Икеа:  Диван Gimmarp, Диван Lycksele, Тумба под ТВ, журнальный столик, стол обеденный (простая конструкция), 3 стула, Возможно еще по мелочи (на вскидку не помню).</div>
+                  <div class="mission-list-item-bottom">
+                    <div class="mission-list-item-bottom__job">Сантехника</div>
+                    <div class="mission-list-item-bottom__address">
+                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C3.60363 0 1.65405 1.94958 1.65405 4.34592C1.65405 7.31986 5.54325 11.6858 5.70883 11.8702C5.86437 12.0434 6.13591 12.0431 6.29116 11.8702C6.45675 11.6858 10.3459 7.31986 10.3459 4.34592C10.3459 1.94958 8.39634 0 6 0ZM6 6.53248C4.79433 6.53248 3.81347 5.55159 3.81347 4.34592C3.81347 3.14025 4.79435 2.15939 6 2.15939C7.20565 2.15939 8.18651 3.14027 8.18651 4.34595C8.18651 5.55162 7.20565 6.53248 6 6.53248Z" fill="#6C7185"/>
+</svg>г. Реутов, р-н Новогирева, ул. сталерова, 28
+                    </div><a class="mission-list-item-bottom__show-map" href="#">Показать на карте</a>
+                    <div class="mission-list-item-bottom__spam">Пометить как спам</div>
+                  </div>
+                  <div class="mission-list-item__cost">10 500 р.</div>
+                  <div class="mission-list-item__timer">Осталось: <span>6ч. 20мин.</span></div>
+                </div>
+                <div class="pagination"><a class="pagination-item" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M2.82582 5.40594L7.98564 0.246292C8.31387 -0.0820933 8.84603 -0.0820933 9.1741 0.246292C9.50219 0.574386 9.50219 1.10652 9.1741 1.43459L4.60845 6.00009L9.17396 10.5654C9.50206 10.8937 9.50206 11.4257 9.17396 11.7538C8.84587 12.0821 8.31373 12.0821 7.9855 11.7538L2.82568 6.5941C2.66164 6.42998 2.57971 6.2151 2.57971 6.00011C2.57971 5.78502 2.6618 5.56999 2.82582 5.40594Z" fill="#6C7185"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="12" height="12" fill="white" transform="translate(12 12) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg></a><a class="pagination-item" href="#">1</a><a class="pagination-item" href="#">2</a><a class="pagination-item" href="#">3</a><a class="pagination-item" href="#">4</a>
+                  <div class="pagination-item">...</div><a class="pagination-item" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M9.17418 6.59406L4.01436 11.7537C3.68614 12.0821 3.15397 12.0821 2.8259 11.7537C2.49781 11.4256 2.49781 10.8935 2.8259 10.5654L7.39155 5.99991L2.82604 1.43457C2.49794 1.10635 2.49794 0.574263 2.82604 0.24617C3.15413 -0.0820565 3.68627 -0.0820565 4.0145 0.24617L9.17432 5.4059C9.33836 5.57002 9.42029 5.7849 9.42029 5.99989C9.42029 6.21498 9.3382 6.43001 9.17418 6.59406Z" fill="#6C7185"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="12" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row footer-top">
+          <div class="col-lg-3 col-sm-3"><a class="footer__logo" href="#"><img src="static/img/header-logo.png" alt=""><span>оплата за результат</span></a>
+            <div class="footer__copyright">Copyright © 2019.<br>						Все права защищены</div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="footer__menu"><a href="#">Правила сервиса</a><a href="#">Помощь</a><a href="#">Служба поддержки</a></div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="footer__menu"><a href="#">Контакты</a><a href="#">Конфиденциальность</a></div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="footer__menu"><a href="#">Пользовательское соглашение</a><a href="#">Партнерская програма</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-bottom__content">Предложите <a class="footer-bottom__content__button_idea" href="#">Идею</a>							или <a class="footer-bottom__content__button_eror" href="#">Ошибку</a>							за полезное вознаграждаем!</div>
+              <div class="footer-bottom__content__mob">Copyright © 2019. Все права защищены</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><script src="static/js/script.js"></script>
+  </body>
+</html>
