@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="tk-interface" lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top"><a class="header-top__logo" href="index.html"><img src="static/img/logo.png" alt="">АО "Вилюйская ГЭС-3"</a>
+          <div class="header-top-info">
+            <time><img src="static/img/time.png" alt="">МСК<span>12: 00</span>
+              <address> п. Светлый   15:46</address>
+            </time>
+            <div class="weather"><img src="static/img/weather.png" alt="">+25</div>
+          </div>
+          <div class="close-menu"><img src="static/img/close.png" alt=""></div>
+          <div class="menu"><img src="static/img/menu.png" alt=""></div>
+        </div>
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li><a href="about.html"> О компании</a></li>
+              <li><a href="performance.html">Деятельность</a></li>
+              <li><a href="#">Потребителям</a></li>
+              <li><a href="info.html">Раскрытие информации</a>
+                <ul class="dropdown">
+                  <li><a href="#">Заключение договоров</a></li>
+                  <li><a href="#">Нормативно-правовая база</a></li>
+                  <li><a href="#">Тарифы  </a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Уведомления об ограничениях</a></li>
+                  <li><a href="#">Часто задаваемые вопросы</a></li>
+                  <li><a href="#">Адреса и контакты офисов</a></li>
+                </ul>
+              </li>
+              <li><a href="purchase.html">Закупки</a></li>
+              <li><a href="career.html">Карьера</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li><ion-icon name="search" id="search"></ion-icon></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form action="">
+              <input type="text" placeholder="Поиск по сайту">
+              <button><ion-icon name="search"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><ion-icon name="ios-arrow-forward"></ion-icon>     </li>
+            <li>  Закупки</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container tabs">
+        <div class="tab"><button class="tablinks active" onclick="openCity(event, 'tabcontent1')">Нормативные документы</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent2')">Планирование закупок</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent3')">Информация о проводимых закупках</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent4')">Реализация имущества</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent5')">Информация</button>
+        </div>
+        <div class="tabcontent" id="tabcontent1" style="display: block;">
+          <h1>Нормативные документы</h1>
+          <div class="text-content">
+            <p>Публикуем основные документы, регламентирующие закупочные процедуры в АО "Вилюйская ГЭС-3"</p>
+            <div class="years">
+              <div class="year">2014 г.</div>
+              <div class="year">2015 г.</div>
+              <div class="year">2016 г.</div>
+              <div class="year">2017 г.</div>
+              <div class="year active">2018 г.</div>
+              <div class="year">2019 г.</div>
+            </div>
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>3 января</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Еще один документ, доступный для скачивания</h3>
+                <time>8 февряля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/pdf.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название документа</h3>
+                <time>18 апреля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>26 июня</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Еще один документ, доступный для скачивания</h3>
+                <time>3 июля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/pdf.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название документа</h3>
+                <time>26 августа</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent2" style="display: none;">
+          <h1>Планирование закупок</h1>
+          <div class="text-content">
+            <p>Представляем планы закупок товаров, работ, услуг на текущий год.</p>
+            <div class="years">
+              <div class="year">2017 г.</div>
+              <div class="year active">2018 г.</div>
+              <div class="year">2019 г.</div>
+              <div class="year">2020 г.</div>
+            </div>
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>3 января</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Еще один документ, доступный для скачивания</h3>
+                <time>8 февряля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название документа</h3>
+                <time>18 апреля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>26 июня</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent3" style="display: none;">
+          <h1>Информация о проводимых закупках</h1>
+          <div class="text-content">
+            <p>Процедуры закупок  АО "Вилюйская ГЭС-3", размещаемые с 1 января 2019 года, проводятся на следующих электронных торговых площадках:</p>
+            <ul class="link">
+              <li><a href="#">Конкурентные закупки АО "Вилюйская ГЭС-3" на ЗАО «Сбербанк-АСТ»</a></li>
+              <li><a href="#">Конкурентные закупки АО "Вилюйская ГЭС-3" на АО «ЕЭТП»</a></li>
+              <li><a href="#">Мелкие закупки до 500 000 рублей на АО "Вилюйская ГЭС-3"</a></li>
+            </ul>
+            <p class="share">Поделиться <a href="#"><img src="static/img/z1.png" alt=""></a><a href="#"><img src="static/img/z2.png" alt=""></a><a href="#"><img src="static/img/z3.png" alt=""></a><a href="#"><img src="static/img/z4.png" alt=""></a><a href="#"><img src="static/img/z5.png" alt=""></a><a href="#"><img src="static/img/z6.png" alt=""></a><a href="#"><img src="static/img/z7.png" alt=""></a><a href="#"><img src="static/img/z8.png" alt=""></a><a href="#"><img src="static/img/z9.png" alt=""></a></p>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent4" style="display: none;">
+          <h1>Реализация имущества</h1>
+          <div class="text-content">
+            <p>АО «Вилюйская ГЭС-3» сообщает о проведении аукциона по продаже объектов недвижимого имущества в п. Светлый,  Мирнинского района РС(Я):</p>
+            <div class="years">
+              <div class="year">2014 г.</div>
+              <div class="year">2015 г.</div>
+              <div class="year">2016 г.</div>
+              <div class="year">2017 г.</div>
+              <div class="year active">2018 г.</div>
+              <div class="year">2019 г.</div>
+            </div>
+            <h4 class="mbn">Недвижимость</h4>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>3 января</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Еще один документ, доступный для скачивания</h3>
+                <time>8 февряля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название документа</h3>
+                <time>18 апреля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>26 июня</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <h4 class="mbn">Автотранспорт</h4>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <time>3 января</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Еще один документ, доступный для скачивания</h3>
+                <time>8 февряля</time>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent5" style="display: none;">
+          <h1>Информация</h1>
+          <div class="text-content">
+            <p>На основании п.13, ст. 4, 223-ФЗ «О закупках товаров, работ, услуг отдельными видами юридических лиц» и п.10.2., ст.10,  Положения о закупках АО «Вилюйская ГЭС-3» и в связи с возникновением в системе ЕИС в сфере закупок на официальном  сайте <a href="#">www/zakupki.gov.ru </a>технических неполадок, блокирующих размещение вышеуказанного запроса котировок, </p>
+            <p>Способ закупки по 223-ФЗ:Запрос котировок в электронной форме</p>
+            <p>Прием заявок до: 17 июля 2018 10:00 MSK</p>
+            <p>Данный запрос котировок не является торгами или публичным конкурсом в понимании ст. 447-449,1057-1061 ГК РФ. Все действия до момента подписания договора с победителем считаются преддоговорной работой и не накладывают на организатора обязательств, превышающих перечисленные в условиях закупки.</p>
+            <p>Акционерное общество "Вилюйская ГЭС-3", сокращенное наименование АО «Вилюйская ГЭС-3», ИНН 1433015048,  КПП 143301001, зарегистрировано Министерством Юстиции Республики Саха (Якутия) на основании распоряжения Министра  Юстиции РС (Я) от 07 мая 1999г. № 205-п-99. Свидетельство о государственной регистрации № 2884 от 07 мая 1999г.</p>
+            <p> Внесено в Единый государственный реестр юридических лиц 12 июля 2002г. за основным государственным регистрационным  номером 1021400967037. (Свидетельство о внесении записи в Единый государственный реестр юридических лиц о  юридическом лице, зарегистрированном до 01 июля 2002г. серия 14 № 000724003).</p>
+            <p>Свидетельство о постановке на учет в налоговом органе юридического лица, образованного в соответствии с законодательством РФ, по месту нахождения на территории РФ серия 14 № 0003457, выдано 05 июля 1999г. ГНИ по г. Мирному. Юридический адрес: 678196, Республика Саха (Якутия), Мирнинский район, пос. Светлый, ул. Воропая, 22 «А».</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-nav">
+            <ul>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Карта сайта</a></li>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Задать вопрос</a></li>
+              <li><a href="#"> <ion-icon name="arrow-dropright"></ion-icon> Линия доверия</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-subscribe">
+            <p>Подписка на рассылку</p>
+            <form>
+              <input type="text" placeholder="Ваш e-mail">
+              <button><ion-icon name="ios-arrow-forward"></ion-icon></button>
+              <div class="footer-top-subscribe__bottom">
+                <input type="checkbox">
+                <p>Согласие на получение уведомлений о новостях и событиях компании</p>
+              </div>
+            </form>
+          </div>
+          <div class="footer-top-social">
+            <ul>
+              <li>
+                 <ion-icon name="pin"></ion-icon><span>678196, Республика Саха (Якутия), Мирнинский район, пос. Светлый,  ул. В.Воропая, 22 «А».</span></li>
+              <li>
+                 <i class="fa fa-phone"></i><span>Телефон: (41136) 7-16-85, 79-4-59</span></li>
+              <li>
+                 <i class="fa fa-fax"></i> <span>Факс: (41136) 7-13-22 </span></li>
+              <li>
+                 <ion-icon name="mail"></ion-icon> <span>Е-mail: vges3@shpp.ru</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">© АО "Вилюйская ГЭС-3", 2019</div>
+        </div>
+      </div>
+    </footer><script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+<script src="https://use.fontawesome.com/46d94f5fa4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="static/js/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

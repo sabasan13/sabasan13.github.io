@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="tk-interface" lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top"><a class="header-top__logo" href="index.html"><img src="static/img/logo.png" alt="">АО "Вилюйская ГЭС-3"</a>
+          <div class="header-top-info">
+            <time><img src="static/img/time.png" alt="">МСК<span>12: 00</span>
+              <address> п. Светлый   15:46</address>
+            </time>
+            <div class="weather"><img src="static/img/weather.png" alt="">+25</div>
+          </div>
+          <div class="close-menu"><img src="static/img/close.png" alt=""></div>
+          <div class="menu"><img src="static/img/menu.png" alt=""></div>
+        </div>
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li><a href="about.html"> О компании</a></li>
+              <li><a href="performance.html">Деятельность</a></li>
+              <li><a href="#">Потребителям</a></li>
+              <li><a href="info.html">Раскрытие информации</a>
+                <ul class="dropdown">
+                  <li><a href="#">Заключение договоров</a></li>
+                  <li><a href="#">Нормативно-правовая база</a></li>
+                  <li><a href="#">Тарифы  </a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Уведомления об ограничениях</a></li>
+                  <li><a href="#">Часто задаваемые вопросы</a></li>
+                  <li><a href="#">Адреса и контакты офисов</a></li>
+                </ul>
+              </li>
+              <li><a href="purchase.html">Закупки</a></li>
+              <li><a href="career.html">Карьера</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li><ion-icon name="search" id="search"></ion-icon></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form action="">
+              <input type="text" placeholder="Поиск по сайту">
+              <button><ion-icon name="search"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><ion-icon name="ios-arrow-forward"></ion-icon>     </li>
+            <li> Новости</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container tabs">
+        <div class="tab"><button class="tablinks active" onclick="openCity(event,'tabcontent1')">Структура компании</button>
+<button class="tablinks tablink-drop " onclick="openCity(event,'tabcontent2')">Управление компанией</button>
+<button class="tablinks tablink" onclick="openCity(event, 'tabcontent2')">Собрание акционеров</button>
+<button class="tablinks tablink" onclick="openCity(event, 'tabcontent3')">Генеральный директор</button>
+<button class="tablinks tablink" onclick="openCity(event, 'tabcontent4')">Руководство</button>
+<button class="tablinks" onclick="openCity(event,'tabcontent5')">Достижения и награды</button>
+<button class="tablinks" onclick="openCity(event,'tabcontent6')">Социальная политика</button>
+<button class="tablinks" onclick="openCity(event,'tabcontent7')">Стратегия развития</button>
+<button class="tablinks" onclick="openCity(event,'tabcontent8')">Наши контрагенты</button>
+<button class="tablinks" onclick="openCity(event,'tabcontent9')">История строительства</button>
+        </div>
+        <div class="tabcontent" id="tabcontent1" style="display: block;"> 
+          <h1>Структура компании</h1>
+          <div class="text-content about-content">
+            <div class="about__img"><img src="static/img/about.png" alt=""></div>
+            <div class="about-info">
+              <h3>АО «Вилюйская ГЭС-3» имеет в своем составе следующие филиалы:</h3>
+              <p><ion-icon name="pin"></ion-icon> Филиал «Светлинская ГЭС», находящийся по адресу: Республика Саха (Якутия), Мирнинский р-н, п. Светлый, створ.</p>
+              <p><ion-icon name="pin"></ion-icon> Управляющая компания ООО «Якутская генерирующая компания» (ООО «ЯГК») находится по адресу: </p>
+              <p> <strong>1. </strong>г. Москва, Карманицкий переулок, д. 4 стр. 2</p>
+              <p><strong>2. </strong>г. Якутск, ул. Орджоникидзе, д. 36 корп. 1 офис 802</p>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent2" style="display: none;">
+          <h1>Собрание акционеров</h1>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>28 <br>июня <span>2019</span></time>
+              <div class="about-link-info">
+                <h3>Годовое общее собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении ВОСА 28.06.2019г<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>43 кb</span></p>
+                <p class="mbn">Отчёт об итогах голосования<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>0.1 MB</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>18 <br>декабрь<span>2018</span></time>
+              <div class="about-link-info">
+                <h3>Внеочередное собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении ВОСА 18.12.2018г<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>44 кb</span></p>
+                <p class="mbn">Отчёт об итогах голосования<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>0.1 MB</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>30 <br>сентябрь <span>2018</span></time>
+              <div class="about-link-info">
+                <h3>Внеочередное общее собрание акционеров</h3>
+                <p class="mbn">Уведомление акционеру о проведении ВОСА<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>39 кb</span></p>
+                <p class="mbn">Бюллетень для голосования на ВОСА<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>45 кb</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>28 <br>июня <span>2018</span></time>
+              <div class="about-link-info">
+                <h3>Годовое общее собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении годового общего собрания акционеров<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>0.2 MB </span></p>
+                <p class="mbn">Отчёт об итогах голосования<a href="#"> <img src="static/img/pdf2.png" alt=""></a><span>0.1 MB</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>30<br>ноябрь<span>2017</span></time>
+              <div class="about-link-info">
+                <h3>Внеочередное собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении внеочередного общего собрания акционеров<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>40 кb</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>27<br>июль<span>2017</span></time>
+              <div class="about-link-info">
+                <h3>Внеочередное собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении внеочередного общего собрания акционеров<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>40 кb</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>26 <br>июнь<span>2017</span></time>
+              <div class="about-link-info">
+                <h3>Внеочередное собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении годового общего собрания акционеров<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>42 кb</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="about-link">
+              <time>7 <br>ноябрь<span>2016</span></time>
+              <div class="about-link-info">
+                <h3>Годовое общее собрание акционеров</h3>
+                <p class="mbn">Сообщение о проведении внеочередного общего собрания акционеров<a href="#"> <img src="static/img/pdf2.png" alt=""></a><span>170 kb</span></p>
+                <p class="mbn">Бюллетень для голосования<a href="#"> <img src="static/img/doc2.png" alt=""></a><span>60 KB</span></p>
+                <p class="mbn">Правила заполнения бюллетеня<a href="#"> <img src="static/img/pdf2.png" alt=""></a><span>180 kB</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent3" style="display: none;">
+          <h1>Структура компании</h1>
+          <div class="about-content about-director">
+            <div class="about__img"><img src="static/img/director.png" alt=""></div>
+            <div class="about-info">
+              <h4>Иванов Иван Михайлович</h4>
+              <p>Почетный представитель «Вилюйская ГЭС-3» в Республике Саха по  Мирнинскому району</p>
+              <div class="quate">
+                <p>" Вы не просто закрываете сделку. Вы открываете отношения, если  хотите построить успешное долговременное предприятие "</p>
+              </div>
+              <p>В 2008 году закончил Якутский Государственный Университет Энергетики. Присвоена  квалификация "инженер". Сейчас получает пятое высшее по направлению экономика "производственный менеджмент". <br>С детства занимается спортом и имеет разряд КМС по баскетболу, а это значит, знает цену победам и значимости команды в их достижении.</p>
+            </div>
+          </div>
+          <div class="about-education">
+            <h3>Образование</h3>
+            <div class="about-education-items">
+              <div class="about-education-item"> 
+                <div class="about-education-item__year">2008</div>
+                <p class="mbn">Якутский Государственный Университет Энергетики.</p>
+              </div>
+              <div class="about-education-item"> 
+                <div class="about-education-item__year">2010</div>
+                <p class="mbn">Институт приватизации и менеджмента (Якуск, РС), менеджер – маркетолог.</p>
+              </div>
+              <div class="about-education-item"> 
+                <div class="about-education-item__year">2012</div>
+                <p class="mbn">Курсы повешения квалификации по Энергетике.</p>
+              </div>
+              <div class="about-education-item"> 
+                <div class="about-education-item__year">2014</div>
+                <p class="mbn">Курсы в Академии энергетиков в г. Якутск.</p>
+              </div>
+              <div class="about-education-item"> 
+                <div class="about-education-item__year">2016</div>
+                <p class="mbn">Институт приватизации и менеджмента.</p>
+              </div>
+              <div class="about-education-item"> 
+                <div class="about-education-item__year">2019</div>
+                <p class="mbn">Участник семанара в Москве по развитию Энергетики.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent4" style="display: none;">
+          <h1>Руководство</h1>
+          <div class="leadership">
+            <div class="leadership-item"><img src="static/img/l1.png" alt="">
+              <h4>Иванов Иван Михайлович</h4>
+              <p class="mbn">Генеральный директор</p>
+            </div>
+            <div class="leadership-item"><img src="static/img/l2.png" alt="">
+              <h4>Васильев Михаил Васильевич</h4>
+              <p class="mbn">Заместитель генерального директора</p>
+            </div>
+            <div class="leadership-item"><img src="static/img/l3.png" alt="">
+              <h4>Тополева Татьяна Викторовна</h4>
+              <p class="mbn">Отдел расчетов</p>
+            </div>
+            <div class="leadership-item"><img src="static/img/l4.png" alt="">
+              <h4>Борисова Ирина Иванова</h4>
+              <p class="mbn">Главный бухгалтер</p>
+            </div>
+            <div class="leadership-item"><img src="static/img/l5.png" alt="">
+              <h4>Макаров Игорь Алексеевич</h4>
+              <p class="mbn">Отдел по связям с общественностью</p>
+            </div>
+            <div class="leadership-item"><img src="static/img/l6.png" alt="">
+              <h4>Петров Сергей Игоревич</h4>
+              <p class="mbn">Специалист по работе с юр. лицами</p>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent5" style="display: none;">
+          <h1>Достижения и награды</h1>
+          <div class="text-content">
+            <div class="news-gallery about-gallery">
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s1.png" alt=""><a href="static/img/s1.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s1.png" alt=""><a href="static/img/s1.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s3.png" alt=""><a href="static/img/s3.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s4.png" alt=""><a href="static/img/s4.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s5.png" alt=""><a href="static/img/s5.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s6.png" alt=""><a href="static/img/s6.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+            </div>
+            <div class="about-gallery__btn">загрузить еще</div>
+            <div class="about-gallery hidden">
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s3.png" alt=""><a href="static/img/s3.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s3.png" alt=""><a href="static/img/s3.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s3.png" alt=""><a href="static/img/s3.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s4.png" alt=""><a href="static/img/s4.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s5.png" alt=""><a href="static/img/s5.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item about-gallery-item"><img src="static/img/s6.png" alt=""><a href="static/img/s6.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent6" style="display: none;">
+          <h1>Структура компании</h1>
+          <div class="about-content about-director">
+            <div class="about__img"><img src="static/img/social-p.png" alt=""></div>
+            <div class="about-info">
+              <h4>Составная часть социальной поддержки трудящихся</h4>
+              <p>Большое внимание уделяется технике безопасности. Работодатель отвечает за то, чтобы все выполняли свою работу с соблюдением техники  безопасности. Работодатель также обязан ознакомить сотрудников с правилами техники безопасности на рабочем месте и обучить их правильным методам работы.</p>
+              <p>Работники также должны сами соблюдать технику безопасности. Работу необходимо выполнять в соответствии с указаниями. Если работа явно опасная, работник может отказаться от её выполнения.</p>
+              <p>На предприятии должно быть достаточное количество персонала, знакомого с методами оказания первой медицинской помощи, средства для оказания медицинской помощи, а также инструкции на случай  экстренных ситуаций. </p>
+            </div>
+          </div>
+          <p>На предприятии должно быть достаточное количество персонала, знакомого с методами оказания первой медицинской помощи, средства для оказания медицинской помощи, а также инструкции на случай экстренных ситуаций. Работодатели  организуют для своего персонала на предприятии инструктаж по оказанию первой медицинской помощи.</p>
+          <ul class="mb-30">
+            <li>Если на предприятии работает минимум десять работников, работники выбирают уполномоченного по вопросам охраны труда, который будет представлять их интересы. </li>
+            <li>Уполномоченный по вопросам охраны труда знакомится с вопросами охраны труда на своём предприятии, принимает участие в проверках охраны труда на предприятии и информирует сотрудников о вопросах безопасности и гигиены труда.</li>
+            <li>Работодатель назначает для каждого рабочего места начальника по охране труда, который помогает работодателю в сотрудничестве с работниками и официальными органами.</li>
+          </ul>
+          <h4>Служба охраны труда</h4>
+          <p>Региональные отделы по вопросам охраны труда консультируют сотрудников и работодателей по вопросам, относящимся к технике безопасности и к гигиене труда, а также по условиям трудовых отношений.</p>
+          <p>Инспекторы по охране труда осуществляют проверки на рабочих местах. Они проверяют, в частности, соблюдение на рабочих местах положений техники безопасности, предоставление достаточного инструктажа перед началом работы, а также соответствие условий труда и условий выполнения работы иностранных рабочих финскому законодательству и договорам.</p>
+        </div>
+        <div class="tabcontent" id="tabcontent7" style="display: none;">
+          <h1>Стратегия развития</h1>
+          <div class="strategy">
+            <div class="strategy__img"><img src="static/img/strategy.jpg" alt=""></div>
+            <div class="strategy-content">
+              <div class="strategy-content-year">
+                <div class="strategy-content-year__number">2031-2040</div>
+                <div class="strategy-content-year__number">2028-2030</div>
+                <div class="strategy-content-year__number">2025-2028</div>
+                <div class="strategy-content-year__number">2020-2025</div>
+              </div>
+              <div class="strategy-content-info">
+                <h4>План развития компании до 2040 года</h4>
+                <p>В 2031-2040 году <span>В этот период планируется укрепление подстанции и замена блочного трансформатора с ТДЦ 125000/220ХЛ1  на ТДЦ 225000/320ХЛ1, что увелит устоновленную мощность в 3 раза.</span></p>
+                <p>В 2028-2030 году <span>АО "Вилюйская ГЭС-3" планирует увеличить площать станици в 2 раза, этим обеспечит ликвидацию дефицита электроэнергии в Западном энергорайоне Республики Саха(Якутия).</span></p>
+                <p>В 2025-2028 году <span>Акционерное общество "Вилюйская ГЭС-3" планирует увеличить установленную мощность с 4х90 МВт до 4х150 МВт,  эти обеспечит ликвидацию дефицита  электроэнергии в Западном энергорайоне Республики Саха(Якутия), в который входят Мирнинский, Ленский районы и Вилюйская группа улусов</span></p>
+                <p>В 2020-2025 году <span>АО "Вилюйская ГЭС-3" планирует увеличить площать станици в 2 раза, этим обеспечит ликвидацию дефицита электроэнергии в Западном энергорайоне Республики Саха(Якутия).</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent8" style="display: none;">
+          <h1>Наши контрагенты</h1>
+          <div class="about-partner">
+            <p>Акционерное общество "Вилюйская ГЭС-3", сокращенное наименование АО «Вилюйская ГЭС-3», ИНН 1433015048, КПП  143301001, зарегистрировано Министерством Юстиции Республики Саха (Якутия) на основании распоряжения Министра Юстиции РС (Я) от 07 мая 1999г. № 205-п-99. Свидетельство о государственной регистрации № 2884 от 07 мая 1999г. </p>
+            <div class="about-partner-items"><img src="static/img/ap1.png" alt=""><img src="static/img/ap2.png" alt=""><img src="static/img/ap3.png" alt=""><img src="static/img/ap4.png" alt=""><img src="static/img/ap5.png" alt=""><img src="static/img/ap6.png" alt=""><img src="static/img/ap7.png" alt=""><img src="static/img/ap8.png" alt=""><img src="static/img/ap9.png" alt=""><img src="static/img/ap1.png" alt=""><img src="static/img/ap2.png" alt=""><img src="static/img/ap3.png" alt=""><img src="static/img/ap4.png" alt=""></div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent9" style="display: none;">
+          <h1>История строительства</h1>
+          <div class="strategy">
+            <div class="strategy__img"><img src="static/img/story.jpg" alt=""></div>
+            <h4>Основные этапы строительства ВГЭС-3:</h4>
+            <p><span>- начало работ по основным сооружениям. Первый взрыв произведен Братским управлением "Гидроспецстрой" (начальник участка В.П. Гордеюк) 22 апреля 1983 года;</span><span>- перекрытие Вилюя и пропуск расходов через строительный канал осуществили бригады автомобилистов и механизаторов во главе с B.C. Трениным и А. Г. Ткаченко 6 октября 1986 года;</span><span>- укладка первого кубометра гидротехнического бетона в здание ГЭС; ее произвели бригады В.И. Михайлова 22 апреля 1987 года;</span><span>- монтаж рабочего колеса первого агрегата завершился 23 мая 2001 года. Это сделали специалисты Спецгидроэнергомонтажа, руководимые старшим прорабом Е.Е. Телевицким.</span><span>- возвращение реки Вилюй в исконное русло - 23 июля 2002 года;</span><span>- пуск первого гидроагрегат и ввод его в эксплуатацию произведен 8 сентября 2004 года;</span><span>- пуск второго гидроагрегата и ввод его в эксплуатацию произведен 22 декабря 2005 года;</span></p>
+            <h4>Сроки строительства гидроузла:</h4>
+            <p><span>- начало работ подготовительного периода после утверждения ТЭО – 1978 г.;</span><span>- начало работ по основным сооружениям (строительный канал и береговые примыкания) – апрель 1983 г.;</span><span>- перекрытие русла реки, ввод в эксплуатацию моста через строительный канал – сентябрь 1986 г.;</span><span>- затопление котлована и перекрытие строительного канала – июль 2002 года;</span><span>- ввод в эксплуатацию первого гидроагрегата – сентябрь 2004 года;</span><span>- ввод в эксплуатацию второго гидроагрегата – декабрь 2005 года;</span><span>Электроснабжение строительства производится от распредустройств ГЭС на напряжении 6 кВ.</span><span>Водохранилище Светлинской ГЭС имеет суточное и недельное регулирование. По состоянию на начало 2007г. лесоочистка ложа водохранилища завершена полностью под отметку 175,0 м</span><span>Светлинская ГЭС работает на транзитном стоке от ВГЭС-1,2, в связи с чем воднотранспортные условия в пределах существующего судоходного участка р.Вилюй не изменились.</span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-nav">
+            <ul>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Карта сайта</a></li>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Задать вопрос</a></li>
+              <li><a href="#"> <ion-icon name="arrow-dropright"></ion-icon> Линия доверия</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-subscribe">
+            <p>Подписка на рассылку</p>
+            <form>
+              <input type="text" placeholder="Ваш e-mail">
+              <button><ion-icon name="ios-arrow-forward"></ion-icon></button>
+              <div class="footer-top-subscribe__bottom">
+                <input type="checkbox">
+                <p>Согласие на получение уведомлений о новостях и событиях компании</p>
+              </div>
+            </form>
+          </div>
+          <div class="footer-top-social">
+            <ul>
+              <li>
+                 <ion-icon name="pin"></ion-icon><span>678196, Республика Саха (Якутия), Мирнинский район, пос. Светлый,  ул. В.Воропая, 22 «А».</span></li>
+              <li>
+                 <i class="fa fa-phone"></i><span>Телефон: (41136) 7-16-85, 79-4-59</span></li>
+              <li>
+                 <i class="fa fa-fax"></i> <span>Факс: (41136) 7-13-22 </span></li>
+              <li>
+                 <ion-icon name="mail"></ion-icon> <span>Е-mail: vges3@shpp.ru</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">© АО "Вилюйская ГЭС-3", 2019</div>
+        </div>
+      </div>
+    </footer><script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+<script src="https://use.fontawesome.com/46d94f5fa4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="static/js/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

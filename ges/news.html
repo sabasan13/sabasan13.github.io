@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="tk-interface" lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top"><a class="header-top__logo" href="index.html"><img src="static/img/logo.png" alt="">АО "Вилюйская ГЭС-3"</a>
+          <div class="header-top-info">
+            <time><img src="static/img/time.png" alt="">МСК<span>12: 00</span>
+              <address> п. Светлый   15:46</address>
+            </time>
+            <div class="weather"><img src="static/img/weather.png" alt="">+25</div>
+          </div>
+          <div class="close-menu"><img src="static/img/close.png" alt=""></div>
+          <div class="menu"><img src="static/img/menu.png" alt=""></div>
+        </div>
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li><a href="about.html"> О компании</a></li>
+              <li><a href="performance.html">Деятельность</a></li>
+              <li><a href="#">Потребителям</a></li>
+              <li><a href="info.html">Раскрытие информации</a>
+                <ul class="dropdown">
+                  <li><a href="#">Заключение договоров</a></li>
+                  <li><a href="#">Нормативно-правовая база</a></li>
+                  <li><a href="#">Тарифы  </a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Уведомления об ограничениях</a></li>
+                  <li><a href="#">Часто задаваемые вопросы</a></li>
+                  <li><a href="#">Адреса и контакты офисов</a></li>
+                </ul>
+              </li>
+              <li><a href="purchase.html">Закупки</a></li>
+              <li><a href="career.html">Карьера</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li><ion-icon name="search" id="search"></ion-icon></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form action="">
+              <input type="text" placeholder="Поиск по сайту">
+              <button><ion-icon name="search"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><ion-icon name="ios-arrow-forward"></ion-icon>     </li>
+            <li> Новости</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container tabs">
+        <div class="tab"><button class="active" onclick="openCity(event,'tabcontent1')">Новости</button>
+<button class="tablinks tablink active" onclick="openCity(event, 'tabcontent1')">Новости компании</button>
+<button class="tablinks tablink" onclick="openCity(event, 'tabcontent2')">СМИ о нас</button>
+<button class="tablinks tablink" onclick="openCity(event, 'tabcontent3')">Фото/видео архив</button>
+        </div>
+        <div class="tabcontent" id="tabcontent1" style="display: block;">
+          <h1>Новости компании</h1>
+          <div class="text-content">
+            <p>АО «Вилюйская ГЭС-3» сообщает о проведении аукциона по продаже объектов недвижимого имущества в п. Светлый, Мирнинского района РС(Я):</p>
+            <div class="years">
+              <div class="year">2014 г.</div>
+              <div class="year">2015 г.</div>
+              <div class="year">2016 г.</div>
+              <div class="year">2017 г.</div>
+              <div class="year active">2018 г.</div>
+              <div class="year">2019 г.</div>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="news-link">
+              <time>4 <br>июня <span>2019</span></time>
+              <div class="news-link-info">
+                <h3>Годовое общее собрание акционеров</h3>
+                <p class="mbn">Проводится созыв годового Общего собрания акционеров АО "Вилюйская ГЭС-3"</p>
+              </div><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="news-link">
+              <time>4 <br>июня <span>2019</span></time>
+              <div class="news-link-info">
+                <h3>Внеочередное собрание акционеров</h3>
+                <p class="mbn">Проводится созыв годового Общего собрания акционеров АО "Вилюйская ГЭС-3"</p>
+              </div><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="news-link">
+              <time>4 <br>июня <span>2019</span></time>
+              <div class="news-link-info">
+                <h3>Годовое общее собрание акционеров</h3>
+                <p class="mbn">Проводится созыв годового Общего собрания акционеров АО "Вилюйская ГЭС-3"</p>
+              </div><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="news-link">
+              <time>4 <br>июня <span>2019</span></time>
+              <div class="news-link-info">
+                <h3>Внеочередное собрание акционеров</h3>
+                <p class="mbn">Проводится созыв годового Общего собрания акционеров АО "Вилюйская ГЭС-3"</p>
+              </div><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+          <div class="text-content news-content">
+            <div class="news-link">
+              <time>4 <br>июня <span>2019</span></time>
+              <div class="news-link-info">
+                <h3>Годовое общее собрание акционеров</h3>
+                <p class="mbn">Проводится созыв годового Общего собрания акционеров АО "Вилюйская ГЭС-3"</p>
+              </div><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent2" style="display: none;">
+          <h1>СМИ о нас</h1>
+          <div class="news-items">
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n1.png" alt="">
+                <time>26. 03. 2018г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n2.png" alt="">
+                <time>25. 11. 2018г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n3.png" alt="">
+                <time>25. 11. 2018г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n4.png" alt="">
+                <time>16. 05. 2019г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n5.png" alt="">
+                <time>26. 06. 2019г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n6.png" alt="">
+                <time>26. 03. 2019г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n1.png" alt="">
+                <time>01. 04. 2019г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n2.png" alt="">
+                <time>16. 05. 2019г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <div class="news-item">
+              <div class="news-item__img"><img src="static/img/n3.png" alt="">
+                <time>26. 03. 2019г.</time>
+              </div>
+              <h3>Заголовок данной темы</h3>
+              <p>Тут находится краткое описание данной темы новости ..</p><a href="#">Читать дальше  <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul> 
+              <li class="active"><a href="">1 </a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">5</a></li>
+              <li>.. </li>
+              <li><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent3" style="display: none;">
+          <h1>Фото/видео архив</h1>
+          <div class="text-content">
+            <div class="news-tabs">
+              <div class="news-tab active">История строительства и эксплуатации ГЭС</div>
+              <div class="news-tab">Досуг персонала общества</div>
+              <div class="news-tab">Вид на ГЭС</div>
+            </div>
+            <div class="news-gallery">
+              <div class="news-gallery-item"><img src="static/img/ng1.png" alt=""><a href="static/img/ng1.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item"><img src="static/img/ng2.png" alt=""><a href="static/img/ng2.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item"><img src="static/img/ng3.png" alt=""><a href="static/img/ng3.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item"><img src="static/img/ng4.png" alt=""></div>
+              <div class="news-gallery-item"><img src="static/img/ng5.png" alt=""><a href="static/img/ng5.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item"><img src="static/img/ng3.png" alt=""><a href="static/img/ng3.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item"><img src="static/img/ng1.png" alt=""><a href="static/img/ng1.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+              <div class="news-gallery-item"><img src="static/img/ng2.png" alt=""><a href="static/img/ng2.png"><ion-icon name="ios-add-circle-outline"></ion-icon></a></div>
+            </div>
+            <div class="pagination">
+              <ul> 
+                <li class="active"><a href="">1 </a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li>.. </li>
+                <li><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-nav">
+            <ul>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Карта сайта</a></li>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Задать вопрос</a></li>
+              <li><a href="#"> <ion-icon name="arrow-dropright"></ion-icon> Линия доверия</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-subscribe">
+            <p>Подписка на рассылку</p>
+            <form>
+              <input type="text" placeholder="Ваш e-mail">
+              <button><ion-icon name="ios-arrow-forward"></ion-icon></button>
+              <div class="footer-top-subscribe__bottom">
+                <input type="checkbox">
+                <p>Согласие на получение уведомлений о новостях и событиях компании</p>
+              </div>
+            </form>
+          </div>
+          <div class="footer-top-social">
+            <ul>
+              <li>
+                 <ion-icon name="pin"></ion-icon><span>678196, Республика Саха (Якутия), Мирнинский район, пос. Светлый,  ул. В.Воропая, 22 «А».</span></li>
+              <li>
+                 <i class="fa fa-phone"></i><span>Телефон: (41136) 7-16-85, 79-4-59</span></li>
+              <li>
+                 <i class="fa fa-fax"></i> <span>Факс: (41136) 7-13-22 </span></li>
+              <li>
+                 <ion-icon name="mail"></ion-icon> <span>Е-mail: vges3@shpp.ru</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">© АО "Вилюйская ГЭС-3", 2019</div>
+        </div>
+      </div>
+    </footer><script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+<script src="https://use.fontawesome.com/46d94f5fa4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="static/js/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="tk-interface" lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top"><a class="header-top__logo" href="index.html"><img src="static/img/logo.png" alt="">АО "Вилюйская ГЭС-3"</a>
+          <div class="header-top-info">
+            <time><img src="static/img/time.png" alt="">МСК<span>12: 00</span>
+              <address> п. Светлый   15:46</address>
+            </time>
+            <div class="weather"><img src="static/img/weather.png" alt="">+25</div>
+          </div>
+          <div class="close-menu"><img src="static/img/close.png" alt=""></div>
+          <div class="menu"><img src="static/img/menu.png" alt=""></div>
+        </div>
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li><a href="about.html"> О компании</a></li>
+              <li><a href="performance.html">Деятельность</a></li>
+              <li><a href="#">Потребителям</a></li>
+              <li><a href="info.html">Раскрытие информации</a>
+                <ul class="dropdown">
+                  <li><a href="#">Заключение договоров</a></li>
+                  <li><a href="#">Нормативно-правовая база</a></li>
+                  <li><a href="#">Тарифы  </a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Уведомления об ограничениях</a></li>
+                  <li><a href="#">Часто задаваемые вопросы</a></li>
+                  <li><a href="#">Адреса и контакты офисов</a></li>
+                </ul>
+              </li>
+              <li><a href="purchase.html">Закупки</a></li>
+              <li><a href="career.html">Карьера</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li><ion-icon name="search" id="search"></ion-icon></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form action="">
+              <input type="text" placeholder="Поиск по сайту">
+              <button><ion-icon name="search"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><ion-icon name="ios-arrow-forward"></ion-icon>     </li>
+            <li> Деятельность</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container tabs">
+        <div class="tab"><button class="tablinks active" onclick="openCity(event, 'tabcontent1')">Производственная</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent2')">Сбытовая</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent3')">Инвестиционная</button>
+        </div>
+        <div class="tabcontent" id="tabcontent1" style="display: block;">
+          <h1>Производственная деятельность</h1>
+          <div class="text-content">
+            <h4>Технико-экономические показатели работы ГЭС</h4>
+            <p>Выработка электроэнергии в 2009 году составила – 537 724 000 кВт.*час. при прогнозе 654 732 000 кВт.*час, выполнение – 82.13 % </p>
+            <p>С момента пуска первого гидроагрегата выработано 1 612,757  млн. кВтч. (с 2005 - 2009г.г.) </p>
+            <p>Расход электроэнергии на собственные нужды – 14 143 910  кВт.*час, или 2.63% от выработки. </p>
+            <p>Потери в электрических сетях – 6 899 101 кВт.*час, или 1.33% от отпуска электроэнергии в сеть. </p>
+            <p>Передача электрической энергии по сетям ОАО АК «Якутскэнерго» - 419 639 612 кВт.*час, договорной объем передачи –  506 847 000 кВт.*час, отклонение от договорного объема – 87 207 388 кВт.*час, или 17.21%. </p>
+            <p> <strong>В 2009 году </strong>проведены плановые ремонты основного оборудования Светлинской ГЭС:</p>
+            <ul>
+              <li>капитальный ремонт гидроагрегата  № 3,  </li>
+              <li>расширенный текущий ремонт гидроагрегата № 2, </li>
+              <li>текущий ремонт гидроагрегата № 1.</li>
+            </ul>
+          </div>
+          <div class="text-content produce">
+            <div class="produce-items">
+              <div class="produce-left">
+                <p>Произведен подъем уровня водохранилища с отм. 169,50 до отм. 175,00 м. </p>
+                <p>Произведена замена кабеля с большим сечением на кабельных вставках воздушных линий 6 кВ ГЭС-ПС Вилюй (резервного питания собственных нужд ГЭС)</p>
+              </div>
+              <div class="produce-middle">
+                <div class="produce-middle__number">01</div>
+                <div class="produce-middle__number">02</div>
+                <div class="produce-middle__number">03</div>
+                <div class="produce-middle__number">04</div>
+                <div class="produce-middle__number">05</div>
+                <p> <strong>В 2009 году</strong>выполнены мероприятия по улучшению состояния и надежности работы оборудования Светлинской ГЭС</p>
+              </div>
+              <div class="produce-right">
+                <p>Выполнен в полном объеме, запланированном на 2009 год, монтаж КИА на ПКЗП Светлинской ГЭС</p>
+                <p>На гидроагрегате №3 в системе контроль расхода воды на охлаждение и смазку турбинного подшипника произведена замена расходомерной камерной диафрагмы с дифманометром ДМЭР-МИ на ультразвуковой расходомер UFM 005</p>
+              </div>
+            </div>
+            <div class="produce-bottom">
+              <p>Введены  в эксплуатацию:</p>
+              <ul>
+                <li>межсекционная кабельную </li>
+                <li>связь 220 кВ с секционным выключателем; второй трансформатор собственных нужд Т23; </li>
+                <li>трансформатор 2-го  ввода 6 кВ щита ВН-6; </li>
+                <li> первый этап системы СКУД (система контроля  управления доступа) и СОТ (система охранного телевидения);</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent2" style="display: none;">
+          <h1>Сбытовая деятельность</h1>
+          <div class="text-content">
+            <h4>Исполнение основных показателей. План производительно-хозяйственной деятельности общества за 2009 год.</h4>
+            <div class="perfomance-table">
+              <table class="perfomance-table-body">
+                <tr class="blue">
+                  <td>№ п/п</td>
+                  <td class="table-left">Показатели</td>
+                  <td>Ед.изм</td>
+                  <td class="table">
+                    <table>
+                      <tr>
+                        <td colspan="2">2009 год</td>
+                      </tr>
+                      <tr class="table-bottom">
+                        <td>план</td>
+                        <td>отчет</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>% к плану</td>
+                </tr>
+                <tr class="gray">
+                  <td>1    </td>
+                  <td class="table-left">Объем производства, (натуральный показатель)</td>
+                  <td></td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">в том числе по видам деятельности:</td>
+                  <td></td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">выработка электрической энергии</td>
+                  <td>млн.кВтч</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>654</td>
+                        <td>538</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>82%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">передача электроэнергии</td>
+                  <td>млн.кВтч </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>507</td>
+                        <td>420	</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>83%</td>
+                </tr>
+                <tr class="gray">
+                  <td>2 </td>
+                  <td class="table-left">Объем реализации, (натуральный показатель)</td>
+                  <td> </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">в том числе по видам деятельности:</td>
+                  <td></td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">полезный оптуск электрической энерги</td>
+                  <td>млн.кВтч </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>602</td>
+                        <td>512 </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">для подразделений АК "АЛРОСА"</td>
+                  <td>млн.кВтч </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>600</td>
+                        <td>510</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">прочие потребители</td>
+                  <td>млн.кВтч </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>2</td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>102%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">передача электроэнергии</td>
+                  <td>млн.кВтч </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>507</td>
+                        <td>420</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>83%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">прочее</td>
+                  <td>усл.блюдо </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>20 169</td>
+                        <td>9 896 </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>49%</td>
+                </tr>
+                <tr class="gray">
+                  <td>3</td>
+                  <td class="table-left">Объем реализации, (стоимостной показатель без НДС)</td>
+                  <td>тыс.руб</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>1 838 107 </td>
+                        <td>1 553 636 </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">в том числе по видам деятельности:</td>
+                  <td></td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">полезный оптуск электрической энерги</td>
+                  <td>тыс.руб	</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>1 537 184</td>
+                        <td>1 305 663 </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">для подразделений АК "АЛРОСА"</td>
+                  <td>тыс.руб</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>1 531 200</td>
+                        <td>1 299 570</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">прочие потребители</td>
+                  <td>тыс.руб </td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>5 984</td>
+                        <td>609</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>102%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">передача электроэнергии	</td>
+                  <td>тыс.руб	</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>297 519</td>
+                        <td>246 329</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>83%</td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                  <td class="table-right">прочее</td>
+                  <td>тыс.руб	</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>3 403</td>
+                        <td>1 644 </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>38%</td>
+                </tr>
+                <tr class="gray">
+                  <td>4</td>
+                  <td class="table-left">Чистая прибыль</td>
+                  <td>тыс.руб</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom"> 
+                        <td>645 760</td>
+                        <td>529 531	 	</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>82%</td>
+                </tr>
+                <tr class="gray">
+                  <td>5</td>
+                  <td class="table-left">Капитальные вложения (с НДС) </td>
+                  <td>тыс.руб</td>
+                  <td class="table">
+                    <table>
+                      <tr class="table-bottom">
+                        <td>209 386</td>
+                        <td>134 517 	 	</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>64%         </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent3" style="display: none;">
+          <h1>Инвестиционная деятельность</h1>
+          <div class="text-content">
+            <h4>Капитальное строительство</h4>
+            <p>Внутрипостроечный титульный список был составлен из необходимости решения основных тематических задач по строительству станции в 2009 году:</p>
+            <p class="d-flex"><span class="number">1</span>обеспечению плана выработки электроэнергии и полезного отпуска  потребителям, за счет увеличения напора при подъеме уровня водохранилища до отм. 175,00</p>
+            <p class="d-flex"><span class="number">2</span>мероприятий по безопасности гидротехнических сооружений Светлинской ГЭС,</p>
+            <p class="d-flex"><span class="number">3</span>мероприятий по охранному комплексу гидроузла.</p>
+          </div>
+          <div class="text-content">
+            <h4>Финансовое состояние</h4>
+            <p>Финансовые результаты</p>
+            <table>
+              <tr class="blue">
+                <td>Наименование показателя	</td>
+                <td>2009 г</td>
+              </tr>
+              <tr class="gray">
+                <td>Чистая выручка  (тыс. руб.) 	</td>
+                <td>1 553 636,00</td>
+              </tr>
+              <tr class="gray">
+                <td>Чистая прибыль/убыток (тыс. руб.) 	</td>
+                <td>529 531,00</td>
+              </tr>
+            </table>
+          </div>
+          <div class="text-content">
+            <h4>Планирование капитальных вложений</h4>
+            <div class="doc-link">
+              <div class="doc-link__icon"><img src="static/img/pdf.png" alt=""></div>
+              <div class="doc-link-info">
+                <p>План капитальных вложений в строительство "Вилюйской ГЭС-3" на 2015 год</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a>
+                  <div class="doc-link-info__size">733 KB</div>
+                </div>
+              </div>
+            </div>
+            <div class="doc-link">
+              <div class="doc-link__icon"><img src="static/img/pdf.png" alt=""></div>
+              <div class="doc-link-info">
+                <p>План капитальных вложений в строительство "Вилюйской ГЭС-3" на 2016 год</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a>
+                  <div class="doc-link-info__size">6.5 MB</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-nav">
+            <ul>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Карта сайта</a></li>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Задать вопрос</a></li>
+              <li><a href="#"> <ion-icon name="arrow-dropright"></ion-icon> Линия доверия</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-subscribe">
+            <p>Подписка на рассылку</p>
+            <form>
+              <input type="text" placeholder="Ваш e-mail">
+              <button><ion-icon name="ios-arrow-forward"></ion-icon></button>
+              <div class="footer-top-subscribe__bottom">
+                <input type="checkbox">
+                <p>Согласие на получение уведомлений о новостях и событиях компании</p>
+              </div>
+            </form>
+          </div>
+          <div class="footer-top-social">
+            <ul>
+              <li>
+                 <ion-icon name="pin"></ion-icon><span>678196, Республика Саха (Якутия), Мирнинский район, пос. Светлый,  ул. В.Воропая, 22 «А».</span></li>
+              <li>
+                 <i class="fa fa-phone"></i><span>Телефон: (41136) 7-16-85, 79-4-59</span></li>
+              <li>
+                 <i class="fa fa-fax"></i> <span>Факс: (41136) 7-13-22 </span></li>
+              <li>
+                 <ion-icon name="mail"></ion-icon> <span>Е-mail: vges3@shpp.ru</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">© АО "Вилюйская ГЭС-3", 2019</div>
+        </div>
+      </div>
+    </footer><script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+<script src="https://use.fontawesome.com/46d94f5fa4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="static/js/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

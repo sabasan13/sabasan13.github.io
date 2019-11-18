@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: url('FontAwesome5FreeRegular.woff2') format('woff2'),
+        url('FontAwesome5FreeRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ionicons';
+    src: url('Ionicons.woff2') format('woff2'),
+        url('Ionicons.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ElegantIcons';
+    src: url('ElegantIcons.woff2') format('woff2'),
+        url('ElegantIcons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('FontAwesome.woff2') format('woff2'),
+        url('FontAwesome.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

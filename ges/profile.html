@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="tk-interface" lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top"><a class="header-top__logo" href="index.html"><img src="static/img/logo.png" alt="">АО "Вилюйская ГЭС-3"</a>
+          <div class="header-top-info">
+            <time><img src="static/img/time.png" alt="">МСК<span>12: 00</span>
+              <address> п. Светлый   15:46</address>
+            </time>
+            <div class="weather"><img src="static/img/weather.png" alt="">+25</div>
+          </div>
+          <div class="close-menu"><img src="static/img/close.png" alt=""></div>
+          <div class="menu"><img src="static/img/menu.png" alt=""></div>
+        </div>
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li><a href="about.html"> О компании</a></li>
+              <li><a href="performance.html">Деятельность</a></li>
+              <li><a href="#">Потребителям</a></li>
+              <li><a href="info.html">Раскрытие информации</a>
+                <ul class="dropdown">
+                  <li><a href="#">Заключение договоров</a></li>
+                  <li><a href="#">Нормативно-правовая база</a></li>
+                  <li><a href="#">Тарифы  </a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Условия выбора и смены ценовых категорий</a></li>
+                  <li><a href="#">Уведомления об ограничениях</a></li>
+                  <li><a href="#">Часто задаваемые вопросы</a></li>
+                  <li><a href="#">Адреса и контакты офисов</a></li>
+                </ul>
+              </li>
+              <li><a href="purchase.html">Закупки</a></li>
+              <li><a href="career.html">Карьера</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+              <li><ion-icon name="search" id="search"></ion-icon></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form action="">
+              <input type="text" placeholder="Поиск по сайту">
+              <button><ion-icon name="search"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><ion-icon name="ios-arrow-forward"></ion-icon>     </li>
+            <li> Личный кабинет</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container tabs">
+        <div class="tab"><button class="tablinks active" onclick="openCity(event, 'tabcontent1')">Профиль</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent2')">Документы для скачивания</button>
+<button class="tablinks" onclick="openCity(event, 'tabcontent3')">Написать обращение</button>
+        </div>
+        <div class="tabcontent" id="tabcontent1" style="display: block;">
+          <h1>Штатная информации</h1>
+          <div class="text-content">
+            <div class="profile-info">
+              <p>Наименование компании</p>
+              <div class="input">
+                <input type="text" value="ООО “Название Данной Компании”" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>Р/счет</p>
+              <div class="input">
+                <input type="text" value="88802810190510000009" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>БИК</p>
+              <div class="input">
+                <input type="text" value="066030790" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>ИНН</p>
+              <div class="input">
+                <input type="text" value="90195810900000000790" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>КПП</p>
+              <div class="input">
+                <input type="text" value="789917978262" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>ОКПО</p>
+              <div class="input">
+                <input type="text" value="018889463" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>ОГРН</p>
+              <div class="input">
+                <input type="text" value="8000945078166" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>Юридический адрес</p>
+              <div class="input">
+                <input type="text" value="192212 Санкт-Петербург, Россия, проспект Славы, 10к2" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>Руководитель</p>
+              <div class="input">
+                <input type="text" value="Иванов Виктор Иванович" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>Контактный телефон</p>
+              <div class="input">
+                <input type="text" value="+7 (912) 358 96 69" disabled="disabled"><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-info">
+              <p>Дополнительная информация</p>
+              <div class="input">
+                <textarea value="" disabled="disabled">Внесено в Единый государственный реестр юридических лиц 12 июля 2002г. за основным государственным регистрационным номером 1021400967037. (Свидетельство о внесении записи в Единый государственный реестр юридических лиц о юридическом лице, зарегистрированном до 01 июля 2002г. серия 14 № 000724003). </textarea><ion-icon name="create"></ion-icon>
+              </div>
+            </div>
+            <div class="profile-action">
+              <button class="back">отменить</button>
+              <button class="save">сохранить</button>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent2" style="display: none;">
+          <h1>Файлы доступные для скачивания</h1>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название документа</h3>
+                <p>Краткое описание</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/pdf.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название данного документа</h3>
+                <p>Краткое описание</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/avi.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного документа</h3>
+                <p>Краткое описание</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/doc.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Название документа, который можно скачать</h3>
+                <p>Краткое описание</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-content">
+            <div class="doc-link">
+              <div class="doc-link-icon"><img src="static/img/xls.png" alt="">
+                <div class="doc-link-info__size">8 кб</div>
+              </div>
+              <div class="doc-link-info">
+                <h3>Тут располагается название данного докумета</h3>
+                <p>Краткое описание</p>
+                <div class="doc-link-info-action"><a href="#">Скачать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="tabcontent3" style="display: none;">
+          <h1>Оставить заявку</h1>
+          <div class="text-content profile-form">
+            <p>Мы дорожим Вашим мнением и учитываем все сообщения. После модерации ответственный сотрудник компании ответит на него. Предельный срок ответа 7 рабочих дней.</p>
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <div class="profile-form-info">
+              <p>Ваше имя</p>
+              <input type="text" placeholder="Иванов Виктор Иванович">
+            </div>
+            <div class="profile-form-info">
+              <p>Контактный телефон</p>
+              <input type="text" placeholder="+ 7 (___) ___ - __ - __">
+            </div>
+            <div class="profile-form-info">
+              <p>Електронная почта</p>
+              <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="profile-form-bottom">
+              <button>отправить</button>
+              <div class="profile-form__check">
+                <input type="checkbox">
+                <p>Согласие на обработку <a href="#">  персональных данных</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-nav">
+            <ul>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Карта сайта</a></li>
+              <li><a href="#"><ion-icon name="arrow-dropright"></ion-icon> Задать вопрос</a></li>
+              <li><a href="#"> <ion-icon name="arrow-dropright"></ion-icon> Линия доверия</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-subscribe">
+            <p>Подписка на рассылку</p>
+            <form>
+              <input type="text" placeholder="Ваш e-mail">
+              <button><ion-icon name="ios-arrow-forward"></ion-icon></button>
+              <div class="footer-top-subscribe__bottom">
+                <input type="checkbox">
+                <p>Согласие на получение уведомлений о новостях и событиях компании</p>
+              </div>
+            </form>
+          </div>
+          <div class="footer-top-social">
+            <ul>
+              <li>
+                 <ion-icon name="pin"></ion-icon><span>678196, Республика Саха (Якутия), Мирнинский район, пос. Светлый,  ул. В.Воропая, 22 «А».</span></li>
+              <li>
+                 <i class="fa fa-phone"></i><span>Телефон: (41136) 7-16-85, 79-4-59</span></li>
+              <li>
+                 <i class="fa fa-fax"></i> <span>Факс: (41136) 7-13-22 </span></li>
+              <li>
+                 <ion-icon name="mail"></ion-icon> <span>Е-mail: vges3@shpp.ru</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">© АО "Вилюйская ГЭС-3", 2019</div>
+        </div>
+      </div>
+    </footer><script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+<script src="https://use.fontawesome.com/46d94f5fa4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="static/js/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
