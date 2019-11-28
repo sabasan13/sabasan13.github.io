@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="conatainer"><a class="header__logo" href="#"><img src="static/img/logo.svg" alt=""></a>
+          <div class="header-right">
+            <div class="header-contact"><a class="header-contact__phone" href="#">+7(831)231-07-52</a>
+              <div class="header-contact__call">Заказать звонок</div>
+              <div class="header-social">
+                <ul>
+                  <li><a href="#"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="28" height="28" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.01)"/>
+</pattern>
+<image id="image0" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXraVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTAtMjZUMjA6MzU6NTArMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTEwLTI3VDEzOjM3OjIxKzAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTEwLTI3VDEzOjM3OjIxKzAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9IkFkb2JlIFJHQiAoMTk5OCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Yzk1MDJjNDQtYTFkMy04OTRhLTgzN2EtZTUxMWQyZDE1NzlhIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZkMzc4NGFkLTU2YTctZmU0MS04NjMxLTMzZjdmZDY2YWFmZCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjZkMzc4NGFkLTU2YTctZmU0MS04NjMxLTMzZjdmZDY2YWFmZCI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NmQzNzg0YWQtNTZhNy1mZTQxLTg2MzEtMzNmN2ZkNjZhYWZkIiBzdEV2dDp3aGVuPSIyMDE5LTEwLTI2VDIwOjM1OjUwKzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmM5NTAyYzQ0LWExZDMtODk0YS04MzdhLWU1MTFkMmQxNTc5YSIgc3RFdnQ6d2hlbj0iMjAxOS0xMC0yN1QxMzozNzoyMSswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiBzdEV2dDpjaGFu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"/>
+</defs>
+</svg></a></li>
+                  <li><a href="#"><img src="static/img/fb.png" alt=""></a></li>
+                  <li><a href="#"><img src="static/img/inst.png" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-nav">
+              <ul>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Подарочные сертификаты</a></li>
+                <li><a href="#">Любимым гостям</a></li>
+                <li><a href="#">Корпоративным клиентам</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Персонал</a></li>
+                <li><a href="#">Программа лояльности</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner" style="background-image: url(static/img/banner.jpg">
+      <div class="banner-nav">
+        <ul>
+          <li><a href="#">Горьковская баня</a></li>
+          <li><a href="#">Восточная мыльня</a></li>
+          <li><a href="#">Сказки Пушкина</a></li>
+          <li><a href="#">Секреты мастеров</a></li>
+          <li><a href="#">Светлица</a></li>
+          <li><a href="#">Гостиная</a></li>
+        </ul>
+      </div>
+      <div class="banner-content">
+        <div class="banner-block">
+          <div class="banner-block__title">Горьковская баня</div>
+          <div class="banner-block__text">Европейский образ успешного человека обязательно подразумевает внимание к своему внешнему виду. Именно яркая и блистательная Европа задает тенденции в мире красоты и моды. Актуальная прическа, аккуратный маникюр и гладкая молодая кожа являются характерными признаками современной европейской женщины. </div>
+        </div>
+        <div class="banner-content__btn btn btn-grey">Записаться</div>
+      </div>
+      <div class="banner-prev"><img src="static/img/prev.png" alt=""></div>
+      <div class="banner-next"><img src="static/img/next.png" alt=""></div>
+    </div>
+    <div class="service">
+      <div class="service-tabs">
+        <div class="service-tab active"><img src="static/img/s1.png" alt="">Славянское СПА</div>
+        <div class="service-tab"><img src="static/img/s2.png" alt="">Хамам (турецкая баня)</div>
+        <div class="service-tab"><img src="static/img/s3.png" alt="">Массаж</div>
+        <div class="service-tab"><img src="static/img/s4.png" alt="">Косметология</div>
+        <div class="service-tab"><img src="static/img/s5.png" alt="">SPA-вечеринки</div>
+      </div>
+      <div class="service-content">
+        <div class="service-content__title">Услуги</div>
+        <div class="service-content-items">
+          <div class="service-content-item">Березовый пар</div>
+          <div class="service-content-item">Заливные луга</div>
+          <div class="service-content-item">Хозяин тайги </div>
+          <div class="service-content-item">Мед </div>
+          <div class="service-content-item">Хозяин тайги</div>
+        </div>
+        <div class="service-content-action">
+          <div class="service-content-action__btn btn-grey btn"> Записаться</div>
+          <div class="service-content-action__btn btn-white btn"> Все услуги</div>
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <div class="news-items">
+        <div class="news-item" style="background-image: url(static/img/news.png">
+          <time>28 ноября 2019 года</time>
+          <div class="news-item__title">Заголовок мероприятия</div>
+          <div class="news-item__text">Атмосферу острова дополянет полный комплекс бьюти-услуг из Европы. Парикмахеры- стилисты, мастера маникюра и врачи- кометологи к Вашим услугам!</div><a class="news-item__btn btn-grey btn" href="#">Просмотр</a>
+        </div>
+        <div class="news-item" style="background-image: url(static/img/news.png">
+          <time>28 ноября 2019 года</time>
+          <div class="news-item__title">Заголовок мероприятия</div>
+          <div class="news-item__text">Атмосферу острова дополянет полный комплекс бьюти-услуг из Европы. Парикмахеры- стилисты, мастера маникюра и врачи- кометологи к Вашим услугам!</div><a class="news-item__btn btn-grey btn" href="#">Просмотр</a>
+        </div>
+        <div class="news-item" style="background-image: url(static/img/news.png">
+          <time>28 ноября 2019 года</time>
+          <div class="news-item__title">Заголовок мероприятия</div>
+          <div class="news-item__text">Атмосферу острова дополянет полный комплекс бьюти-услуг из Европы. Парикмахеры- стилисты, мастера маникюра и врачи- кометологи к Вашим услугам!</div><a class="news-item__btn btn-grey btn" href="#">Просмотр</a>
+        </div>
+      </div>
+      <div class="news-pagination">
+        <div class="news-pagination-item active"></div>
+        <div class="news-pagination-item"></div>
+        <div class="news-pagination-item"></div>
+      </div><a class="news__btn btn-white btn" href="#">Все мероприятия</a>
+    </div>
+    <div class="certificate">
+      <div class="container">
+        <h2>СЕРТИФИКАТЫ</h2>
+        <div class="certificate-items">
+          <div class="certificate-item"><img src="static/img/c1.png" alt="">
+            <div class="certificate-item__name">Услуга</div>
+            <div class="certificate-item__text">Атмосферу острова дополянет полный комплекс бьюти-услуг из Европы. Парикмахеры- стилисты, мастера маникюра и врачи- кометологи к Вашим услугам! Таким образом,</div>
+            <div class="certificate-item__btn btn btn-grey">Приобрести</div>
+          </div>
+          <div class="certificate-item"><img src="static/img/c2.png" alt="">
+            <div class="certificate-item__name">Сумма</div>
+            <div class="certificate-item__text">Атмосферу острова дополянет полный комплекс бьюти-услуг из Европы. Парикмахеры- стилисты, мастера маникюра и врачи- кометологи к Вашим услугам! Таким образом,</div>
+            <div class="certificate-item__btn btn btn-grey">Приобрести</div>
+          </div>
+          <div class="certificate-item"><img src="static/img/c3.png" alt="">
+            <div class="certificate-item__name">VIP </div>
+            <div class="certificate-item__text">Атмосферу острова дополянет полный комплекс бьюти-услуг из Европы. Парикмахеры- стилисты, мастера маникюра и врачи- кометологи к Вашим услугам! Таким образом,</div>
+            <div class="certificate-item__btn btn btn-grey">Приобрести</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skidka">
+      <div class="container">
+        <div class="skidka__title">Скидка 20% для новых  клиентов</div>
+        <div class="skidka__text">При первом посещении дарим скидку 20% на любую SPA-процедуру!</div>
+      </div>
+      <div class="skidka-pagination">
+        <div class="skidka-pagination-item active"></div>
+        <div class="skidka-pagination-item"></div>
+        <div class="skidka-pagination-item"></div>
+      </div>
+    </div>
+    <div class="about">
+      <h2>О  компании</h2>
+      <div class="about-container"><img src="static/img/about.jpg" alt="">
+        <div class="about-block">
+          <p>Medical SPA «Europe&Asia» — это профессиональный косметический центр и spa-салон  Нижнего Новгорода.  «Europe&Asia» объединяет в ежедневной практике инновационные достижения европейских косметологов и традиционные азиатские SPA-ритуалы.</p>
+          <p>Европейский образ успешного человека обязательно подразумевает внимание к своему внешнему виду. Именно яркая и блистательная Европа задает тенденции в мире красоты и моды. Актуальная прическа, аккуратный маникюр и гладкая молодая кожа являются характерными признаками современной европейской женщины. Для азиатской традиции более типична концентрация на внутреннем состоянии и душевной гармонии. Медицина Азии призвана балансировать энергию духа и тела, применяя для этого тысячелетиями проверенные учения и практики.</p>
+          <p>Medical SPA «Europe&Asia» берет лучшее от культур Востока и Запада. Европейская косметология и таинственные восточные ритуалы помогут вам найти свой модный образ, настроиться на правильную энергетику и обрести равновесие внутри себя. </p>
+        </div>
+      </div>
+    </div>
+    <div class="book">
+      <h2 class="book__title">Мы выпустили Книгу!</h2>
+      <div class="book__info">Только нашим любимым гостям мы пришлем книгу абсолютно бесплатно!!!</div>
+      <div class="book__text">Наша книга “О лекарственных растениях” именно яркая и блистательная Европа задает тенденции в мире красоты и моды. Актуальная прическа, аккуратный </div>
+      <div class="book__btn btn btn-grey">Приобрести</div>
+    </div>
+    <div class="guest">
+      <div class="guest-items">
+        <div class="guest-item">
+          <div class="guest-item__title">Подарок имениннику</div>
+          <div class="guest-item__text">Всем именинникам скидка 15%. Может быть и у вас именины в этом месяце</div>
+        </div>
+        <div class="guest-item">
+          <div class="guest-item__title">Система баллов </div>
+          <div class="guest-item__text">Всем именинникам скидка 15%. Может быть и у вас именины в этом месяце</div>
+        </div>
+        <div class="guest-item">
+          <div class="guest-item__title">Индивидуальный подход</div>
+          <div class="guest-item__text">Всем именинникам скидка 15%. Может быть и у вас именины в этом месяце</div>
+        </div>
+        <div class="guest-item">
+          <div class="guest-item__title">Чистый четвер</div>
+          <div class="guest-item__text">Всем именинникам скидка 15%. Может быть и у вас именины в этом месяце</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-form">
+      <div class="main-form-container">
+        <div class="main-form">
+          <form>
+            <input type="text" placeholder="ФИО">
+            <input type="text" placeholder="Телефон">
+            <input type="text" placeholder="Эл. почта">
+          </form>
+          <label for="">
+            <input type="checkbox">Я соглашаюсь на отбработку персональных данных
+          </label>
+          <button class="main-form__btn bnt bnt-red">Зарегистрироваться</button>
+        </div>
+        <div class="main-right">
+          <div class="main-right__title">Дарим 1000 SPA-Рублей</div>
+          <div class="main-right__text">Каждому зарегистрированному пользователю начисляются  1000 SPA - бонусов</div>
+        </div>
+      </div>
+    </div>
+    <div class="feed-back">
+      <div class="feed-back-container">
+        <h2>Отзывы</h2>
+        <div class="feed-back-container-items">
+          <div class="feed-back-container-item">
+            <div class="feed-back-container-item__name">Мария</div>
+            <div class="feed-back-container-item__text">Сходила на балийский массаж к специалисту Made.все очень понравилось,от души рекомендую.час тотального релакса и положительных эмоций.Обязательно приду ещё раз,обстановка располагает к отдыху.Спасибо</div>
+          </div>
+          <div class="feed-back-container-item">
+            <div class="feed-back-container-item__name">Мария</div>
+            <div class="feed-back-container-item__text">На днях пополнила свою коллекцию массажа, посетив салон Европа*Азия В гостинице Ока. Друзья подарили сертификат на массаж. В этом вопросе я человек искушенный))))). Мастер Devi с о. Бали выше всяких похвал!!!! Я в прямом смысле улетела))))) Тело и душа после этого находятся в ощущении полета. </div>
+          </div>
+          <div class="feed-back-container-item">
+            <div class="feed-back-container-item__name">Алексей Селиванов</div>
+            <div class="feed-back-container-item__text">Обязательно нужно пробовать балийский массаж в четыре руки с ароматическими маслами, которые наполняют комнату! Тело и душа после этого находятся в ощущении полета. Ну и отличный хамам прилагается конечно.</div>
+          </div>
+        </div>
+        <div class="feed-back-container-action">
+          <div class="feed-back-container-action__btn btn btn-grey">Оставить отзыв</div>
+          <div class="feed-back-container-action__btn btn btn-white">Читать еще</div>
+        </div>
+      </div>
+      <div class="gallery-prev"><img src="static/img/prev.png" alt=""></div>
+      <div class="gallery-next"><img src="static/img/next.png" alt=""></div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-container">
+        <h2>Галерея</h2>
+        <div class="gallery-items"><img src="static/img/g.png" alt=""><img src="static/img/g.png" alt=""></div>
+        <div class="gallery__btn btn bnt-white">В галерею</div>
+      </div>
+      <div class="gallery-prev"><img src="static/img/prev.png" alt=""></div>
+      <div class="gallery-next"><img src="static/img/next.png" alt=""></div>
+    </div>
+    <div class="popular">
+      <div class="popular-container">
+        <h2>Популярные статьи</h2>
+        <div class="popular-items">
+          <div class="popular-item">
+            <div class="popular-item__img"><img src="static/img/popular.png" alt="">
+              <div class="popular-item__title">Чем полезны SPA-процедуры</div>
+            </div>
+            <div class="popular-item__text">Акция: профессиональная косметика для домашнего ухода марок Kerastase, Davines, Phyts со скидками до 20%. Для удобства и экономии времени клиентов сформированы подарочные наборы.</div><a class="popular-item__link" href="#">Читать далее</a>
+          </div>
+          <div class="popular-item">
+            <div class="popular-item__img"><img src="static/img/popular.png" alt="">
+              <div class="popular-item__title">Чем полезны SPA-процедуры</div>
+            </div>
+            <div class="popular-item__text">Акция: профессиональная косметика для домашнего ухода марок Kerastase, Davines, Phyts со скидками до 20%. Для удобства и экономии времени клиентов сформированы подарочные наборы.</div><a class="popular-item__link" href="#">Читать далее</a>
+          </div>
+          <div class="popular-item">
+            <div class="popular-item__img"><img src="static/img/popular.png" alt="">
+              <div class="popular-item__title">Чем полезны SPA-процедуры</div>
+            </div>
+            <div class="popular-item__text">Акция: профессиональная косметика для домашнего ухода марок Kerastase, Davines, Phyts со скидками до 20%. Для удобства и экономии времени клиентов сформированы подарочные наборы.</div><a class="popular-item__link" href="#">Читать далее</a>
+          </div>
+        </div>
+        <div class="popular-item__btn btn bnt-white">Читать еще</div>
+      </div>
+      <div class="gallery-prev"><img src="static/img/prev.png" alt=""></div>
+      <div class="gallery-next"><img src="static/img/next.png" alt=""></div>
+    </div>
+    <div class="map">
+      <div class="map-conatiner"><img src="static/img/map.png" alt="">
+        <div class="map-block">
+          <div class="map-block__title">Где мы находимся?</div>
+          <div class="map-block__text">Варварская ул., 32Д (Здание Нижполиграф) Вход со стороны кафе “Буфетъ”</div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
