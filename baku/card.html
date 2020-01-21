@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.css" integrity="sha256-ioAA5G7gdssuN24SL2ByxTMiyg5m5PnP3I4TS5hNIYA=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-xl-2 col-md-9 col-sm-9 col-7"><a class="logo" href="#">Baku Əmlak</a></div>
+            <div class="col-lg-8 offset-1 header-nav">
+              <nav>
+                <ul class="d-flex">
+                  <li><a href="#">Недвижимость                       </a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Агенты</a></li>
+                  <li><a href="#">Мастера</a></li>
+                  <li><a href="#">Стать риэлтором</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-1 col-xl-1 col-md-2 col-sm-2 col-3">
+              <select>
+                <option value="hide">Ru</option>
+                <option value="Eng">Eng</option>
+                <option value="Az">Az</option>
+              </select>
+            </div>
+            <div class="col-lg-1 burger col-md-1 col-sm-1 col-2"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page page-card">
+      <h1>Недвижимость</h1>
+      <section class="card cards">
+        <div class="container">
+          <div class="card-search">
+            <div class="row">
+              <div class="col-lg-9 col-12 card-search-order">
+                <div class="card-search-block d-flex">
+                  <div class="card-search-block-item">Продажа квартиры<img src="static/img/cancel-music.png" alt=""></div>
+                  <div class="card-search-block-item">Баку<img src="static/img/cancel-music.png" alt=""></div>
+                  <div class="card-search-block-item">Центр<img src="static/img/cancel-music.png" alt=""></div>
+                  <div class="card-search-block-item">Цена от: 10000 <img src="static/img/cancel-music.png" alt=""></div>
+                  <div class="card-search-block-item">Комната от: 1<img src="static/img/cancel-music.png" alt=""></div>
+                  <div class="card-search-block-item">Комната от: 2<img src="static/img/cancel-music.png" alt=""></div>
+                  <div class="card-search-block__number">+4</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-6">
+                <div class="btn btn-grey btn-filter">Уточнить поиск</div>
+              </div>
+              <div class="col-lg-12 card-sort">
+                <div class="card-sort-line">
+                  <div class="card-sort-line__name">Сортировка: </div>
+                  <select>
+                    <option value="hide">Обычная</option>
+                    <option value="Обычная">Обычная</option>
+                    <option value="Обычная">Обычная</option>
+                    <option value="Обычная">Обычная</option>
+                  </select>
+                </div>
+                <div class="card-sort-line">
+                  <div class="card-sort-line__name">Период подачи: </div>
+                  <select>
+                    <option value="hide">Обычная</option>
+                    <option value="Обычная">Обычная</option>
+                    <option value="Обычная">Обычная</option>
+                    <option value="Обычная">Обычная</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-filter">
+            <div class="d-flex">
+              <div class="card-filter-column">
+                <div class="card-filter__name">Тип объявления</div>
+                <div class="card-filter-check">
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Продажа
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Аренда
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Посуточно
+                  </label>
+                </div>
+              </div>
+              <div class="card-filter-column">
+                <div class="card-filter__name">Тип недвижимости</div>
+                <div class="card-filter-check">
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Новостройка
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Вторичка
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Дома/Виллы
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Дача
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Офис
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Участок
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Гараж
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <div class="card-filter__checkbox"></div>Мини отель/ Хостел
+                  </label>
+                </div>
+              </div>
+              <div class="card-filter-column">
+                <div class="card-filter__name">Местность</div>
+                <div class="card-filter-inputs d-flex">
+                  <div class="card-filter-inputs-left d-flex flex-column">
+                    <select>
+                      <option value="Город">Город</option>
+                    </select>
+                    <select>
+                      <option value="Район">Район</option>
+                    </select>
+                    <select>
+                      <option value="Пункт">Пункт</option>
+                    </select>
+                    <select>
+                      <option value="Метро">Метро</option>
+                    </select>
+                    <select>
+                      <option value="hide">Ориентир</option>
+                      <option value="Метро">Центр</option>
+                      <option value="Метро">Вне города</option>
+                      <option value="Метро">Еще где-то</option>
+                    </select>
+                  </div>
+                  <div class="card-filter-inputs-right">
+                    <div class="card-filter-inputs-line">
+                      <div class="card-filter-inputs-line__name">Цена</div>
+                      <input type="text" placeholder="От">
+                      <input type="text" placeholder="До">
+                    </div>
+                    <div class="card-filter-inputs-line">
+                      <div class="card-filter-inputs-line__name">Комната</div>
+                      <select>
+                        <option value="От">От</option>
+                      </select>
+                      <select>
+                        <option value="До">До</option>
+                      </select>
+                    </div>
+                    <div class="card-filter-inputs-line">
+                      <div class="card-filter-inputs-line__name">Площадь</div>
+                      <input type="text" placeholder="От">
+                      <input type="text" placeholder="До">
+                      <div class="card-filter-inputs-line__input">
+                        <input type="text" placeholder="Док-и на собств...">
+                      </div>
+                    </div>
+                    <div class="card-filter-inputs-line">
+                      <div class="card-filter-inputs-line__name">К-во этажей</div>
+                      <select>
+                        <option value="От">От</option>
+                      </select>
+                      <select>
+                        <option value="До">До</option>
+                      </select>
+                      <div class="card-filter-inputs-line__input">
+                        <input type="text" placeholder="Тип продажи">
+                      </div>
+                    </div>
+                    <div class="card-filter-inputs-line">
+                      <div class="card-filter-inputs-line__name">Этаж</div>
+                      <select>
+                        <option value="От">От</option>
+                      </select>
+                      <select>
+                        <option value="До">До</option>
+                      </select>
+                      <div class="card-filter-inputs-line__input">
+                        <input type="text" placeholder="Характеристики">
+                      </div>
+                    </div>
+                    <div class="card-filter-inputs-right-action">
+                      <div class="card-filter-inputs__btn btn">Сбросить</div>
+                      <div class="card-filter-inputs__btn btn btn-grey">Поиск</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-filter__close"><img src="static/img/close-button.png" alt=""></div>
+            </div>
+          </div>
+          <div class="card-items row">
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 card-item col-6 card-item-md">
+              <div class="card-item__img">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                    <div class="swiper-slide" style="background: url(static/img/cards-item.jpg)  no-repeat;background-size: cover;"></div>
+                  </div>
+                </div>
+                <div class="card-item-nav">
+                  <div class="card-item-nav-prev"><img src="static/img/prev.png" alt=""></div>
+                  <div class="card-item-nav-next"><img src="static/img/next.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="card-item__name">Посуточно Новостройка.  <br>м. Сахил метро, Площадь Фонтанов, <br>Сябаиль район</div>
+              <div class="card-item-desc"><span>3 комнат</span><span>156 м2</span><span>4/18 этаж</span></div>
+              <div class="card-item__text">Сдаю 2-х комнатную квартиру, 78кв. евро ремонт, встроенная кухонная мебель, мягкая мебель+ компл. двухспальная мебель, посуда, чистое постельное белье, горячая и холодная.</div><a class="card-item__link" href="javascript:void(0);">Смотреть больше ></a>
+              <ul class="card-item__social">
+                <li><a href="#"><img src="static/img/instagram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/facebook2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/telegram2.png" alt=""></a></li>
+                <li><a href="#"><img src="static/img/whatsapp2.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cards-pagination">
+            <ul>
+              <li class="cards-pagination-prev"><a href="#"><img src="static/img/prev.png" alt=""></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li class="cards-pagination-none"><a href="javascsript:void(0);">...</a></li>
+              <li><a href="#">10</a></li>
+              <li><a href="#">11</a></li>
+              <li class="cards-pagination-next"><a href="#"><img src="static/img/next.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="call-back widget">
+      <div class="widget-icon"><img src="static/img/phone-call-button.png" alt=""></div>
+      <div class="widget-ph">
+        <form class="call-back-container widget-container">
+          <div class="widget__title">Заказать звонок</div>
+          <div class="widget-content">
+            <div class="widget-content__text">Введите ваш номер телефона и мы вам перезвоним!</div>
+            <input type="text" placeholder="+994 55 123 45 67">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="chat widget active">
+      <div class="widget-icon"><img src="static/img/black-bubble-speech_copy_2.png" alt=""></div>
+      <div class="widget-ph">
+        <form class="chat-container widget-container">
+          <div class="widget__title">Чат</div>
+          <div class="widget-content">
+            <div class="widget-content-right__text">Чем могу вам помочь?</div>
+            <div class="widget-content-left__text">Добрый день. Нужна квартира</div>
+            <div class="widget-content-left__text">2 комнаты</div>
+          </div>
+          <div class="chat-send">
+            <input type="text" placeholder="+994 55 123 45 67">
+            <button><img src="static/img/right-arrow_(2).png" alt=""></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-12"><a class="footer__logo" href="#">Baku Əmlak</a></div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+              <ul class="footer__nav">
+                <li><a href="#">Главная </a></li>
+                <li><a href="#">Недвижимость</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+              <ul class="footer__nav">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Агенты</a></li>
+                <li><a href="#">Мастера</a></li>
+                <li><a href="#">Стать риэлтором</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+              <div class="footer-contact"><a class="footer-contact__phone" href="#"> +994 55 123 45 67</a><a class="footer-contact__email" href="#"> info@yeniemlak.az</a>
+                <ul>
+                  <li><a href="#"><img src="static/img/instagram.png" alt=""></a></li>
+                  <li><a href="#"><img src="static/img/facebook.png" alt=""></a></li>
+                  <li><a href="#"><img src="static/img/telegram.png" alt=""></a></li>
+                  <li><a href="#"><img src="static/img/whatsapp.png" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+              <div class="footer-stat">За месяц: 7 839</div>
+              <div class="footer-stat">За неделю: 1 538</div>
+              <div class="footer-stat">За 24 часа: 151</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer__copyright">Asan Əmlak © 2019. Все права защищены</div>
+        </div>
+      </div>
+    </footer>
+    <script src="static/js/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
