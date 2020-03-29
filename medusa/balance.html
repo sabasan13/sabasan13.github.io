@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="burger"><img src="static/img/burger.svg" alt=""></div><a class="exit" href="#0">Выйти<img src="static/img/exit.svg" alt=""></a>
+        <nav><a class="logo" href="#0"><img src="static/img/logo.svg" alt=""></a>
+          <ul>
+            <li class="active"><a href="#"><img src="static/img/m1.svg" alt="">Главная</a></li>
+            <li><a href="#"><img src="static/img/m2.svg" alt="">Топ 10</a></li>
+            <li><a href="#"><img src="static/img/m3.svg" alt="">Баланс</a></li>
+            <li><a href="#"><img src="static/img/m4.svg" alt="">Мануал</a></li>
+            <li><a href="#"><img src="static/img/m5.svg" alt="">Поддержка</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="balance">
+        <div class="balance-left">
+          <form><img src="static/img/money.png" alt="">
+            <div class="balance-form__title">Вывод денег</div>
+            <div class="input">
+              <input type="text" placeholder="Сумма"><img src="static/img/money-icon.svg" alt="">
+            </div>
+            <div class="input">
+              <input type="text" placeholder="Ваш логин телеграм"><img src="static/img/@.svg" alt="">
+            </div>
+            <button class="btn">Отправить заявку<img src="static/img/arrow.svg" alt=""></button>
+          </form>
+        </div>
+        <div class="balance-right">
+          <div class="balance-table">
+            <div class="balance-table__title">Транзакции</div>
+            <div class="balance-table-ph">
+              <table>
+                <tr>
+                  <td>ID</td>
+                  <td class="message">Сообщение</td>
+                  <td>Сумма</td>
+                  <td>Создан</td>
+                </tr>
+                <tr>
+                  <td>1803</td>
+                  <td class="message">AVITO - Оплата ID товара: 4320 Товар: Asus TUF 15,6 Gaming FX505DY R5-3550H/16GB/256+1TB</td>
+                  <td class="green">+66р</td>
+                  <td>22:32 04.02.2020</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="balance-table">
+            <div class="balance-table__title">Выводы</div>
+            <div class="balance-table-ph">
+              <table>
+                <tr>
+                  <td>ID</td>
+                  <td>Сумма</td>
+                  <td>Телеграм</td>
+                  <td>Статус</td>
+                  <td>Создан</td>
+                </tr>
+                <tr>
+                  <td>1803</td>
+                  <td class="red">-1266р</td>
+                  <td>@test</td>
+                  <td>Оплачена</td>
+                  <td>22:32 04.02.2020</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
